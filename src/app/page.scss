@@ -451,14 +451,19 @@
   // .find-genius__container
 
   &__container {
-    padding: 0;
+  }
+
+  // .find-genius__body
+
+  &__body {
   }
 
   // .find-genius__items
 
   &__items {
-    padding: 78px 80px 122px;
+    padding: 78px 0 122px;
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(12, 1fr);
 
     border-radius: 30px;
@@ -483,6 +488,7 @@
   // .find-genius__box
 
   &__box {
+    padding-left: 80px;
     max-width: 466px;
     // display: flex;
     // flex-direction: column;
@@ -522,10 +528,10 @@
   // .find-genius__cards
 
   &__cards {
+    padding-right: 80px;
     grid-column: span 4;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+    display: grid;
+    gap: 30px;
   }
 
   // .find-genius__card
@@ -715,8 +721,11 @@
   // .find-love-work__items
 
   &__items {
-    padding: 28px 113px 42px 119px;
-    display: flex;
+    padding: 41px 113px 41px 119px;
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(12, 1fr);
+    // display: flex;
     // align-items: center;
 
     border-radius: 25px;
@@ -730,10 +739,10 @@
 
   &__item {
     &:not(:last-child) {
-      padding-right: 79px;
+      // padding-right: 79px;
     }
-    flex: 0 0 25%;
-    // grid-column: span 3;
+    // flex: 0 0 25%;
+    grid-column: span 3;
     display: flex;
     flex-direction: column;
   }
@@ -1446,7 +1455,7 @@
     line-height: 1.11; /* 111.321% */
     letter-spacing: -0.53px;
     // color: #e6e6e8;
-    // transition: color 0.3s ease 0s;
+    // transition: color 200ms ease-in;
 
     color: var(--font-black);
     opacity: 0.1;
