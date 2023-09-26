@@ -1043,6 +1043,8 @@
   // .genius-banner__content
 
   &__content {
+    position: relative;
+    z-index: 2;
     grid-column: span 4;
     padding: 60px 67px 43px 63px;
 
