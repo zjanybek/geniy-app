@@ -69,7 +69,7 @@ export default function Home() {
                   </div>
                   <Link
                     href='#'
-                    className='main-link-arrow main-link-arrow_second'
+                    className='find-expert__register-link main-link-arrow main-link-arrow_second'
                   >
                     <span className='main-link-arrow__text'>
                       Зарегистрируйтесь как заказчик

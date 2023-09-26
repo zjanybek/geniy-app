@@ -361,9 +361,17 @@
     color: var(--font-grey);
   }
 
-  // .find-expert__register
+  // .find-expert__register-link
 
-  &__register {
+  &__register-link {
+    .main-link-arrow__text {
+      font-family: var(--font5);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px; /* 105.556% */
+      letter-spacing: -0.36px;
+    }
   }
 
   // .find-expert__body
