@@ -672,8 +672,9 @@
     line-height: 1.19; /* 119.048% */
     letter-spacing: -0.42px;
     color: var(--font-black);
+
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 1px;
     }
   }
 
@@ -1307,12 +1308,24 @@
   // .catalog-specialties__categories
 
   &__categories {
+    position: relative;
     flex: 0 0 29%;
 
     display: grid;
     row-gap: 8px;
 
-    border-right: 1px solid #dbe0e2;
+    // border-right: 1px solid #dbe0e2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: calc(100% - 6%);
+      background-color: #dbe0e2;
+    }
 
     // position: relative;
     // &::after {
@@ -1452,6 +1465,13 @@
   // .questions__item
 
   &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid #c0c0c9;
+    }
+
+    &.questions__item-active {
+      border-color: transparent;
+    }
   }
 
   // .questions__button
@@ -1481,14 +1501,6 @@
       .questions__item-active & {
         transform: rotate(180deg);
       }
-    }
-
-    &:not(:last-child) {
-      border-bottom: 1px solid #c0c0c9;
-    }
-
-    .questions__item-active & {
-      border-color: transparent;
     }
   }
 

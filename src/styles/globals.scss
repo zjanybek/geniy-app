@@ -3,13 +3,13 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --font-family: 'HelveticaNeueCyr', sans-serif;
-  --second-family: 'Baskerville Cyrillic LT Std', sans-serif;
-  --third-family: 'Georgia', sans-serif;
-  --font3: 'Vauxhall Neue', sans-serif;
-  --font4: 'Proxima Nova', sans-serif;
-  --font5: 'Geologica', sans-serif;
-  --font6: 'Montserrat', sans-serif;
+  // --font-family: 'HelveticaNeueCyr', sans-serif;
+  // --second-family: 'Baskerville Cyrillic LT Std', sans-serif;
+  // --third-family: 'Georgia', sans-serif;
+  // --font3: 'Vauxhall Neue', sans-serif;
+  // --font4: 'Proxima Nova', sans-serif;
+  // --font5: 'Geologica', sans-serif;
+  // --font6: 'Montserrat', sans-serif;
 
   --bg-color: #ffffff;
 
@@ -29,7 +29,8 @@
 }
 
 // Сброс стандартных стилей браузера
-@import './base/fonts.scss';
+// @import './base/fonts.scss';
+
 @import './base/null.scss';
 
 body {
@@ -140,6 +141,9 @@ body {
   letter-spacing: -0.34px;
   color: var(--green-dark);
   transition: all 0.3s ease 0s;
+
+  display: flex;
+  align-items: center;
 
   svg {
     margin-left: 5px !important;
