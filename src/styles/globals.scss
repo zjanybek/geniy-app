@@ -29,8 +29,8 @@
 }
 
 // Сброс стандартных стилей браузера
-@import './base/null.scss';
 @import './base/fonts.scss';
+@import './base/null.scss';
 
 body {
   font-family: var(--font-family);
