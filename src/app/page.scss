@@ -1005,7 +1005,6 @@
 }
 
 .secure-payment {
-  padding-bottom: 30px;
   // .secure-payment__container
 
   &__container {
@@ -1271,8 +1270,8 @@
   // .catalog-specialties__items
 
   &__items {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    align-items: flex-start;
     // column-gap: 80px;
 
     text-align: left;
@@ -1281,7 +1280,7 @@
   // .catalog-specialties__categories
 
   &__categories {
-    grid-column: span 4;
+    flex: 0 0 29%;
 
     display: grid;
     row-gap: 8px;
@@ -1304,6 +1303,7 @@
 
   &__button {
     text-align: left;
+    padding-right: 10px;
 
     font-size: 24px;
     font-weight: 400;
@@ -1321,7 +1321,7 @@
   // .catalog-specialties__content
 
   &__content {
-    grid-column: span 8;
+    flex: 1 1 auto;
     padding-left: 60px;
 
     display: grid;
@@ -1480,7 +1480,7 @@
 }
 
 .section-text-block {
-  padding: 189px 0 134px;
+  padding: 148px 0 129px;
   // .section-text-block__container
 
   &__container {
