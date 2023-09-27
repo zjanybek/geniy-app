@@ -11,7 +11,7 @@ export default function Home() {
       <section className='hero'>
         <div className='hero__container hero__container_change'>
           <div className='hero__content'>
-            <div className='hero__success'>Ваш успех - наша миссия...</div>
+            <p className='hero__success'>Ваш успех - наша миссия...</p>
             <h1 className='hero__title'>
               Реализуй <span>проект мечты ,</span>
             </h1>
