@@ -584,14 +584,24 @@
     position: absolute;
     top: -25%;
     left: 89px;
-    font-size: 14px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: #fc6d63;
+    span {
+      color: #fff;
+      text-align: center;
+      font-family: var(--font6);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   // .find-genius__card-text
@@ -803,14 +813,25 @@
     position: absolute;
     top: -25%;
     left: 89px;
-    font-size: 14px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: #fc6d63;
+
+    span {
+      color: #fff;
+      text-align: center;
+      font-family: var(--font6);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 }
 
