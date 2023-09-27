@@ -501,12 +501,14 @@
   // .find-genius__top-text
 
   &__top-text {
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
     line-height: 2.57; /* 257.143% */
     letter-spacing: 0.14px;
     text-transform: uppercase;
     color: var(--font-black);
+    margin-bottom: 12px;
   }
 
   // .find-genius__title
@@ -1508,16 +1510,16 @@
     font-weight: 400;
     line-height: 1.11; /* 111.321% */
     letter-spacing: -0.53px;
-    // color: #e6e6e8;
-    // transition: color 200ms ease-in;
+    color: #e6e6e8;
+    transition: color 200ms ease-in;
 
-    color: var(--font-black);
-    opacity: 0.1;
-    transition: opacity 200ms ease-in;
+    // color: var(--font-black);
+    // opacity: 0.1;
+    // transition: opacity 200ms ease-in;
 
     &.active {
-      // color: var(--font-black);
-      opacity: 1;
+      color: var(--font-black);
+      // opacity: 1;
     }
   }
 }
