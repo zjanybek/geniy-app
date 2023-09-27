@@ -579,27 +579,23 @@
   // }
 
   &__card-text-decor {
-    position: relative;
-    &::before {
-      content: attr(data-card-value);
-      position: absolute;
-      top: -25%;
-      left: 89px;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #fc6d63;
-      text-align: center;
-    }
+    position: absolute;
+    top: -25%;
+    left: 89px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fc6d63;
   }
 
   // .find-genius__card-text
 
   &__card-text {
+    position: relative;
     // font-size: 24px;
     // font-weight: 400;
     // line-height: 1.04; /* 104.167% */
@@ -789,6 +785,7 @@
   // .find-love-work__item-text
 
   &__item-text {
+    position: relative;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.16; /* 116.667% */
@@ -801,22 +798,17 @@
   // .find-love-work__item-text-decor
 
   &__item-text-decor {
-    position: relative;
-    &::before {
-      content: attr(data-card-value);
-      position: absolute;
-      top: -25%;
-      left: 89px;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #fc6d63;
-      text-align: center;
-    }
+    position: absolute;
+    top: -25%;
+    left: 89px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fc6d63;
   }
 }
 

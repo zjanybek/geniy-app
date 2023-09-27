@@ -311,11 +311,10 @@ export default function Home() {
                 </Link>
                 <Link href='#' className='find-genius__card'>
                   <div className='find-genius__card-text'>
-                    {/* <span className='find-genius__card-notification'>1</span> */}
-                    <span
-                      data-card-value='1'
-                      className='find-genius__card-text-decor'
-                    >
+                    <div className='find-genius__card-text-decor'>
+                      <span>1</span>
+                    </div>
+                    <span>
                       Каталог <br /> экспертов
                     </span>
                     <span className='find-genius__card-icon'>
@@ -398,12 +397,10 @@ export default function Home() {
             <div className='find-love-work__items'>
               <Link href='#' className='find-love-work__item'>
                 <div className='find-love-work__item-text'>
-                  <span
-                    data-card-value='1'
-                    className='find-love-work__item-text-decor'
-                  >
-                    Каталог <br /> экспертов
-                  </span>
+                  <div className='find-love-work__item-text-decor'>
+                    <span>1</span>
+                  </div>
+                  Каталог <br /> экспертов
                 </div>
                 <span className='main-link-arrow main-link-arrow_white'>
                   <span className='main-link-arrow__text'>Подробнее</span>
