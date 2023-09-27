@@ -1,6 +1,7 @@
 .header {
   padding: 15px 25px;
   border-bottom: 1px solid #dbdbdb;
+  font-family: var(--font-family);
 }
 .header__content {
   display: grid;
@@ -54,9 +55,12 @@
   }
 }
 .menu__text {
-  font-weight: 400;
-  font-size: 14px;
   color: var(--font-black);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
 }
 .header__actions {
 }
@@ -146,7 +150,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  padding: 15px 12px 15px;
+  padding: 15px 12px 15px 11px;
 
   &::before {
     content: '';
@@ -191,6 +195,13 @@
   padding: 0px 30px;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
   color: #fff;
 
   border-radius: 50px;

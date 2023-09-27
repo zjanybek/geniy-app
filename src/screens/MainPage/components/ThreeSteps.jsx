@@ -53,11 +53,11 @@ export const ThreeSteps = () => {
                 </div>
                 <div className='three-steps-item__body'>
                   <div className='three-steps-item__title'>
-                    Бесплатно зарегистрируйтесь
+                    Разместите задание или вакансию
                   </div>
                   <div className='three-steps-item__text'>
-                    Создайте свой профиль, расскажите о себе или о вашей
-                    компании.{' '}
+                    Опишите, что вам нужно: конкретную работу, вакансию или
+                    проект.
                   </div>
                   <Link
                     href='#'
@@ -87,13 +87,13 @@ export const ThreeSteps = () => {
                 <div className='three-steps-item__image'>
                   <img src='images/star-black.svg' alt='' />
                 </div>
+                <div className='three-steps-item__title'>
+                  Выберите <br /> эксперта
+                </div>
                 <div className='three-steps-item__body'>
-                  <div className='three-steps-item__title'>
-                    Бесплатно зарегистрируйтесь
-                  </div>
                   <div className='three-steps-item__text'>
-                    Создайте свой профиль, расскажите о себе или о вашей
-                    компании.{' '}
+                    Общайтесь с кандидатами и выберите того, кто вам больше
+                    всего подходит.
                   </div>
                   <Link
                     href='#'

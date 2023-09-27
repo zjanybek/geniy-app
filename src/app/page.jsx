@@ -214,8 +214,13 @@ export default function Home() {
                   </div>
                 </div>
 
-                <Link href='#' className='main-link-arrow main-link-arrow_blue'>
-                  <span className='main-link-arrow__text'>Регистрация</span>
+                <Link
+                  href='#'
+                  className='main-link-arrow main-link-arrow_blue main-link-arrow_second'
+                >
+                  <span className='main-link-arrow__text'>
+                    Смотреть весь каталог
+                  </span>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     width='16'
@@ -306,7 +311,13 @@ export default function Home() {
                 </Link>
                 <Link href='#' className='find-genius__card'>
                   <div className='find-genius__card-text'>
-                    Каталог <br /> экспертов
+                    {/* <span className='find-genius__card-notification'>1</span> */}
+                    <span
+                      data-card-value='1'
+                      className='find-genius__card-text-decor'
+                    >
+                      Каталог <br /> экспертов
+                    </span>
                     <span className='find-genius__card-icon'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -387,7 +398,12 @@ export default function Home() {
             <div className='find-love-work__items'>
               <Link href='#' className='find-love-work__item'>
                 <div className='find-love-work__item-text'>
-                  Каталог <br /> проектов
+                  <span
+                    data-card-value='1'
+                    className='find-love-work__item-text-decor'
+                  >
+                    Каталог <br /> экспертов
+                  </span>
                 </div>
                 <span className='main-link-arrow main-link-arrow_white'>
                   <span className='main-link-arrow__text'>Подробнее</span>
@@ -629,13 +645,13 @@ export default function Home() {
                 <span className='main-link-arrow__text'>Подробнее</span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  width='16'
-                  height='16'
-                  viewBox='0 0 16 16'
+                  width='12'
+                  height='12'
+                  viewBox='0 0 12 12'
                   fill='none'
                 >
                   <path
-                    d='M13.1049 8.87248H0.851508C0.607413 8.87248 0.404471 8.7898 0.242682 8.62445C0.0808941 8.4591 0 8.25169 0 8.00222C0 7.75274 0.0808941 7.54533 0.242682 7.37998C0.404471 7.21463 0.607413 7.13195 0.851508 7.13195H13.1049L7.56998 1.47518C7.39969 1.30113 7.31596 1.09806 7.31879 0.865974C7.32163 0.633908 7.40821 0.430847 7.57851 0.256793C7.74882 0.0885523 7.9475 0.00297832 8.17457 7.16168e-05C8.40163 -0.00283509 8.60032 0.0827389 8.77062 0.256793L15.7531 7.39303C15.8439 7.48586 15.9078 7.58159 15.9447 7.68022C15.9816 7.77884 16 7.88617 16 8.00222C16 8.11826 15.9816 8.22559 15.9447 8.32421C15.9078 8.42284 15.8439 8.51857 15.7531 8.6114L8.77062 15.7476C8.606 15.9159 8.40874 16 8.17883 16C7.94892 16 7.74882 15.9159 7.57851 15.7476C7.40821 15.5736 7.32306 15.3691 7.32306 15.1341C7.32306 14.8991 7.40821 14.6946 7.57851 14.5206L13.1049 8.87248Z'
+                    d='M9.82866 6.65436H0.638631C0.455559 6.65436 0.303353 6.59235 0.182012 6.46834C0.0606706 6.34433 0 6.18877 0 6.00166C0 5.81456 0.0606706 5.659 0.182012 5.53499C0.303353 5.41097 0.455559 5.34897 0.638631 5.34897H9.82866L5.67748 1.10639C5.54977 0.975845 5.48697 0.823544 5.48909 0.649481C5.49123 0.475431 5.55616 0.323136 5.68388 0.192595C5.81161 0.0664142 5.96062 0.00223374 6.13092 5.37126e-05C6.30122 -0.00212632 6.45024 0.0620542 6.57796 0.192595L11.8148 5.54478C11.8829 5.61439 11.9308 5.68619 11.9585 5.76017C11.9862 5.83413 12 5.91463 12 6.00166C12 6.08869 11.9862 6.16919 11.9585 6.24316C11.9308 6.31713 11.8829 6.38893 11.8148 6.45855L6.57796 11.8107C6.4545 11.9369 6.30656 12 6.13412 12C5.96169 12 5.81161 11.9369 5.68388 11.8107C5.55616 11.6802 5.49229 11.5268 5.49229 11.3506C5.49229 11.1743 5.55616 11.021 5.68388 10.8904L9.82866 6.65436Z'
                     fill='currentColor'
                   />
                 </svg>
