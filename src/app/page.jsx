@@ -632,11 +632,11 @@ export default function Home() {
                 Ваше <span>вдохновение</span>
               </h2>
               <div className='your-inspiration__subtitle text-main-page text-main-page_white'>
-                Успех в бизнесе, карьере и личное счастье тесно связаны
+                Успех в бизнесе, карьере <br /> и личное счастье тесно связаны
               </div>
               <p className='your-inspiration__text'>
-                Оплата за работу переводятся исполнителю только после того, как
-                работа будет завершена и принята вами.
+                В этом разделе мы обсуждаем новые технологии, тренды, психологию
+                бизнеса, культуру и этику отношений
               </p>
               <Link href='#' className='your-inspiration__link main-link-arrow'>
                 <span className='main-link-arrow__text'>Подробнее</span>

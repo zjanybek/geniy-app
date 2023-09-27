@@ -494,7 +494,7 @@
 
   &__box {
     padding-left: 80px;
-    max-width: 466px;
+    max-width: 524px;
     // display: flex;
     // flex-direction: column;
   }
@@ -514,6 +514,7 @@
   // .find-genius__title
 
   &__title {
+    max-width: 395px;
     &:not(:last-child) {
       margin-bottom: 25px;
     }
@@ -631,7 +632,6 @@
 .find-genius-list {
   // .find-genius-list__item
   &__item {
-    max-width: 304px;
     display: flex;
     align-items: flex-start;
 
@@ -680,6 +680,12 @@
   // .find-genius-list__text
 
   &__text {
+    max-width: 290px;
+    color: var(--font, #7c7c80);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: -0.34px;
   }
 }
 
