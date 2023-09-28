@@ -351,10 +351,13 @@
   // .find-expert__ready-search
 
   &__ready-search {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    // display: flex;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // gap: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
   }
 
   // .find-expert__search-text
@@ -368,13 +371,12 @@
   }
 
   &__search-col {
-    height: 19px;
   }
 
   // .find-expert__register-link
 
   &__register-link {
-    height: 19px;
+    margin-left: 16px;
     display: flex;
     align-items: center;
 
