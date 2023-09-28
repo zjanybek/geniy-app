@@ -71,7 +71,7 @@ export const Questions = () => {
                 className='questions__button'
               >
                 <h2 className='questions__button-text'>
-                  Как создать и настроить профиль исполнителя или заказчика?
+                  Что такое безопасная оплата?
                 </h2>
                 <span className='questions__button-arrow'>
                   <svg
@@ -112,8 +112,7 @@ export const Questions = () => {
                 className='questions__button'
               >
                 <h2 className='questions__button-text'>
-                  Могу ли я иметь одновременно несколько учетных записей на
-                  одной бирже?
+                  Как найти подходящего исполнителя для моего заказа?
                 </h2>
                 <span className='questions__button-arrow'>
                   <svg
@@ -154,7 +153,7 @@ export const Questions = () => {
                 className='questions__button'
               >
                 <h2 className='questions__button-text'>
-                  Как настроить параметры проекта и указать бюджет?
+                  Как опубликовать задание или вакансию?
                 </h2>
                 <span className='questions__button-arrow'>
                   <svg
@@ -195,7 +194,8 @@ export const Questions = () => {
                 className='questions__button'
               >
                 <h2 className='questions__button-text'>
-                  Как найти подходящего исполнителя для моего проекта?
+                  Могу ли я иметь несколько учётных записей на платформе
+                  ‘Гений’?
                 </h2>
                 <span className='questions__button-arrow'>
                   <svg

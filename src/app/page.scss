@@ -351,8 +351,13 @@
   // .find-expert__ready-search
 
   &__ready-search {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
+    -webkit-align-items: flex-end;
     flex-wrap: wrap;
     gap: 16px;
   }
