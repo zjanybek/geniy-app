@@ -47,24 +47,24 @@ const baskervillecyrltstd = localFont({
   preload: true
 })
 
-// const geologica = localFont({
-//   src: [
-//     {
-//       path: '../fonts/geologica/geologica-regular.woff2',
-//       style: 'normal',
-//       weight: '400'
-//     }
-//   ],
-//   display: 'swap',
-//   variable: '--font5',
-//   preload: true
-// })
-
-const geologica = Geologica({
-  subsets: ['latin'],
+const geologica = localFont({
+  src: [
+    {
+      path: '../fonts/geologica/geologicaa-regular.woff2',
+      style: 'normal',
+      weight: '400'
+    }
+  ],
+  display: 'swap',
   variable: '--font5',
-  display: 'swap'
+  preload: true
 })
+
+// const geologica = Geologica({
+//   subsets: ['latin'],
+//   variable: '--font5',
+//   display: 'swap'
+// })
 
 const montserrat = Montserrat({
   subsets: ['latin'],
