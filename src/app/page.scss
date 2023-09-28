@@ -259,6 +259,8 @@
   // .three-steps-item__title
 
   &__title {
+    max-width: 254px;
+    align-self: center;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
@@ -351,13 +353,10 @@
   // .find-expert__ready-search
 
   &__ready-search {
-    // display: flex;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // gap: 16px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   // .find-expert__search-text
@@ -376,28 +375,6 @@
   // .find-expert__register-link
 
   &__register-link {
-    margin-left: 16px;
-    display: flex;
-    align-items: center;
-
-    font-family: var(--font5);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.05; /* 105.556% */
-    letter-spacing: -0.36px;
-    color: var(--green-dark);
-
-    svg {
-      margin-left: 5px;
-      transition: transform 0.3s ease 0s;
-      transform: translate(0);
-    }
-
-    &:hover {
-      svg {
-        transform: translate(5px);
-      }
-    }
   }
 
   // .find-expert__body

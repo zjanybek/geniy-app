@@ -67,8 +67,11 @@ export default function Home() {
                   <span className='find-expert__search-text'>
                     Готовы к поиску?
                   </span>
-                  <Link href='#' className='find-expert__register-link'>
-                    Зарегистрируйтесь как заказчик
+                  <Link
+                    href='#'
+                    className='find-expert__register-link main-link-arrow main-link-arrow_second'
+                  >
+                    <span>Зарегистрируйтесь как заказчик</span>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       width='16'
