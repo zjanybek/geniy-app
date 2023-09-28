@@ -64,9 +64,9 @@ export default function Home() {
                   Найдите эксперта <br /> <span>в каталоге.</span>
                 </h2>
                 <div className='find-expert__ready-search'>
-                  <div className='find-expert__search-text'>
+                  <span className='find-expert__search-text'>
                     Готовы к поиску?
-                  </div>
+                  </span>
                   <Link
                     href='#'
                     className='find-expert__register-link main-link-arrow main-link-arrow_second'
