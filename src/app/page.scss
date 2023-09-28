@@ -367,9 +367,14 @@
     color: var(--font-grey);
   }
 
+  &__search-col {
+    height: 19px;
+  }
+
   // .find-expert__register-link
 
   &__register-link {
+    height: 19px;
     display: flex;
     align-items: center;
 
