@@ -169,7 +169,14 @@ body {
   }
 
   &_second {
-    // font-family: Geologica;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.05; /* 105.556% */
+    letter-spacing: -0.36px;
+  }
+
+  &_second-font {
+    font-family: var(--font5);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.05; /* 105.556% */

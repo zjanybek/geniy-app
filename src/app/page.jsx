@@ -71,9 +71,7 @@ export default function Home() {
                     href='#'
                     className='find-expert__register-link main-link-arrow main-link-arrow_second'
                   >
-                    <span className='main-link-arrow__text'>
-                      Зарегистрируйтесь как заказчик
-                    </span>
+                    <span>Зарегистрируйтесь как заказчик</span>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       width='16'
@@ -218,9 +216,7 @@ export default function Home() {
                   href='#'
                   className='main-link-arrow main-link-arrow_blue main-link-arrow_second'
                 >
-                  <span className='main-link-arrow__text'>
-                    Смотреть весь каталог
-                  </span>
+                  <span>Смотреть весь каталог</span>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     width='16'
