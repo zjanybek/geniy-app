@@ -1,0 +1,94 @@
+.checkbox {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  &:focus + .label:before {
+    // box-shadow: 0 0 5px #000;
+  }
+  &:checked + .label:before {
+    // background: #000;
+    background: var(--green-light);
+    border-color: var(--green-light);
+  }
+
+  &:checked + .label .tick-icon {
+    visibility: visible;
+  }
+}
+
+.label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  // gap: 12px;
+  &:before {
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aeaeb2;
+    border-radius: 4px;
+  }
+  // &::after {
+  //   content: '';
+  //   // transform: scale(0);
+  //   position: absolute;
+  //   background-image: url('/images/experts/white-tick.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   width: 12px;
+  //   height: 10px;
+  //   top: 5px;
+  //   left: 4px;
+  //   color: #fff;
+  //   background-color: transparent;
+  //   transition: all 0.3s ease 0s;
+  // }
+}
+
+.text {
+  margin-left: 12px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--font-dark-grey, #6c6c70);
+  &_change {
+    margin-left: 5px;
+  }
+}
+
+.tick-icon {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  color: #fff;
+  visibility: hidden;
+
+  svg {
+    object-fit: contain;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    overflow: visible;
+  }
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 10px;
+  width: 18px;
+  height: 16px;
+}

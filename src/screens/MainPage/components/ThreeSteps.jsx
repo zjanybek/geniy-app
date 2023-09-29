@@ -3,14 +3,15 @@ import Link from 'next/link'
 export const ThreeSteps = () => {
   return (
     <section className='three-steps'>
-      <div className='three-steps__container'>
-        <h2
-          id='section-three-steps'
-          className='three-steps__title title-main-page'
-        >
-          Всего три шага <span>и готово.</span>
-        </h2>
+      <div className='three-steps__main-container'>
         <div className='three-steps__content'>
+          <h2
+            id='section-three-steps'
+            className='three-steps__title title-main-page'
+          >
+            Всего три шага <br />
+            <span>и готово.</span>
+          </h2>
           <div className='three-steps__items'>
             <div className='three-steps__column'>
               <div className='three-steps__item three-steps-item'>
@@ -87,9 +88,7 @@ export const ThreeSteps = () => {
                 <div className='three-steps-item__image'>
                   <img src='images/star-black.svg' alt='' />
                 </div>
-                <div className='three-steps-item__title'>
-                  Выберите <br /> эксперта
-                </div>
+                <div className='three-steps-item__title'>Выберите эксперта</div>
                 <div className='three-steps-item__body'>
                   <div className='three-steps-item__text'>
                     Общайтесь с кандидатами и выберите того, кто вам больше

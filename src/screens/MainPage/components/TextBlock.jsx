@@ -38,7 +38,7 @@ export const TextBlock = () => {
 
   return (
     <section className='section-text-block'>
-      <div className='section-text-block__container'>
+      <div className='section-text-block__main-container'>
         <span className='section-text-block__decor'>
           <img src='/images/decor-quotes.svg' alt='' />
         </span>

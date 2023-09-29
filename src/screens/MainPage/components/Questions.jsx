@@ -14,7 +14,7 @@ export const Questions = () => {
 
   return (
     <section className='questions'>
-      <div className='questions__container'>
+      <div className='questions__main-container'>
         <div className='questions__content'>
           <h2 className='questions__title title-main-page'>
             Часто задаваемые <span>вопросы</span>

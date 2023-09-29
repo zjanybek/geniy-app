@@ -6,8 +6,14 @@ const TheHeader = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__content}>
+        <button type='button' className={styles['icon-menu']}>
+          <span></span>
+        </button>
         <Link href='/' className={styles.header__logo}>
-          <img src='/images/logo.svg' alt='' />
+          <picture>
+            <source media='(min-width: 1280.98px)' srcset='/images/logo.svg' />
+            <img src='/images/logo-mobile.svg' alt='Flowers' />
+          </picture>
         </Link>
         <div className={styles.menu}>
           <nav className={styles.menu__nav}>
@@ -161,11 +167,29 @@ const TheHeader = () => {
               </button>
             </div>
           </form>
+          <button className={styles['actions__search-mobile']}>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='25'
+              height='25'
+              viewBox='0 0 25 25'
+              fill='none'
+            >
+              <path
+                d='M10.2759 20.5453C7.40638 20.5453 4.97637 19.5503 2.98584 17.5604C0.99528 15.5705 0 13.1412 0 10.2726C0 7.40405 0.99528 4.97479 2.98584 2.98486C4.97637 0.994952 7.40638 0 10.2759 0C13.1454 0 15.5754 0.994952 17.566 2.98486C19.5565 4.97479 20.5518 7.40405 20.5518 10.2726C20.5518 11.4722 20.3504 12.6179 19.9475 13.7098C19.5446 14.8017 19.0071 15.7514 18.335 16.559L24.6428 22.8648C24.8754 23.0973 24.9944 23.3897 24.9998 23.7418C25.0052 24.0939 24.8862 24.3916 24.6428 24.635C24.3993 24.8783 24.1042 25 23.7574 25C23.4106 25 23.1154 24.8783 22.872 24.635L16.5642 18.3292C15.724 19.0227 14.7578 19.5654 13.6656 19.9573C12.5734 20.3493 11.4435 20.5453 10.2759 20.5453ZM10.2759 18.0256C12.4409 18.0256 14.2748 17.2746 15.7774 15.7724C17.28 14.2703 18.0313 12.437 18.0313 10.2726C18.0313 8.10825 17.28 6.27499 15.7774 4.77285C14.2748 3.27071 12.4409 2.51963 10.2759 2.51963C8.11081 2.51963 6.27697 3.27071 4.77435 4.77285C3.27176 6.27499 2.52047 8.10825 2.52047 10.2726C2.52047 12.437 3.27176 14.2703 4.77435 15.7724C6.27697 17.2746 8.11081 18.0256 10.2759 18.0256Z'
+                fill='#6C6C70'
+              />
+            </svg>
+          </button>
           <a href='#' className={styles['actions__button-login']}>
             Вход
           </a>
           <a href='#' className={styles['actions__button-register']}>
             Регистрация
+          </a>
+
+          <a href='#' className={styles['actions__button-register-mobile']}>
+            Вход
           </a>
         </div>
       </div>

@@ -7,9 +7,9 @@ import './page.scss'
 
 export default function Home() {
   return (
-    <main className='main'>
+    <main className='main-block'>
       <section className='hero'>
-        <div className='hero__container hero__container_change'>
+        <div className='hero__main-container hero__main-container_change'>
           <div className='hero__content'>
             <p className='hero__success'>Ваш успех - наша миссия...</p>
             <h1 className='hero__title'>
@@ -21,18 +21,18 @@ export default function Home() {
             <Link href='#' className='hero__button'>
               Разместить задание бесплатно
             </Link>
-
-            <ButtonScrollTo className='hero__scroll-button' />
           </div>
+          <ButtonScrollTo className='hero__scroll-button' />
         </div>
       </section>
 
       <section className='find-collaborator'>
-        <div className='find-collaborator__container'>
+        <div className='find-collaborator__main-container'>
           <div className='find-collaborator__body'>
             <div className='find-collaborator__content'>
               <h2 className='find-collaborator__title title-main-page'>
-                Вы ищете сотрудника? <span>Очень просто...</span>
+                Вы ищете сотрудника? <br />
+                <span>Очень просто...</span>
               </h2>
               <p className='find-collaborator__text text-main-page'>
                 Ваш идеальный программист, дизайнер, маркетолог или писатель уже
@@ -56,7 +56,7 @@ export default function Home() {
       <ThreeSteps />
 
       <section className='find-expert'>
-        <div className='find-expert__container'>
+        <div className='find-expert__main-container'>
           <div className='find-expert__items'>
             <div className='find-expert__content'>
               <div className='find-expert__box'>
@@ -240,7 +240,7 @@ export default function Home() {
       </section>
 
       <section className='find-genius'>
-        <div className='find-genius__container'>
+        <div className='find-genius__main-container'>
           <div className='find-genius__body'>
             <div className='find-genius__items'>
               <div className='find-genius__content'>
@@ -374,7 +374,7 @@ export default function Home() {
       </section>
 
       <section className='find-love-work'>
-        <div className='find-love-work__container'>
+        <div className='find-love-work__main-container'>
           <div className='find-love-work__body'>
             <div className='find-love-work__content'>
               <div className='find-love-work__for-text'>Для гениев</div>
@@ -488,7 +488,7 @@ export default function Home() {
       </section>
 
       <section className='new-culture'>
-        <div className='new-culture__container'>
+        <div className='new-culture__main-container'>
           <div className='new-culture__items'>
             <div className='new-culture__content'>
               <div className='new-culture__box'>
@@ -566,7 +566,7 @@ export default function Home() {
       </section>
 
       <section className='secure-payment'>
-        <div className='secure-payment__container'>
+        <div className='secure-payment__main-container'>
           <div className='secure-payment__content'>
             <div className='secure-payment__body'>
               <div className='secure-payment__title title-main-page'>
@@ -599,7 +599,7 @@ export default function Home() {
       <TextBlock />
 
       <section className='genius-banner'>
-        <div className='genius-banner__container'>
+        <div className='genius-banner__main-container'>
           <div className='genius-banner__items'>
             <div className='genius-banner__content'>
               <div className='genius-banner__top-text'>
@@ -621,7 +621,7 @@ export default function Home() {
       </section>
 
       <section className='your-inspiration'>
-        <div className='your-inspiration__container'>
+        <div className='your-inspiration__main-container'>
           <div className='your-inspiration__content'>
             <div className='your-inspiration__body'>
               <h2 className='your-inspiration__title title-main-page title-main-page_white-orange'>
@@ -655,7 +655,7 @@ export default function Home() {
       </section>
 
       <section className='catalog-specialties'>
-        <div className='catalog-specialties__container'>
+        <div className='catalog-specialties__main-container'>
           <h2 className='catalog-specialties__title title-main-page'>
             Каталог <span>специальностей.</span>
           </h2>
