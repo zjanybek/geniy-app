@@ -13,7 +13,8 @@ export default function Home() {
           <div className='hero__content'>
             <p className='hero__success'>Ваш успех - наша миссия...</p>
             <h1 className='hero__title'>
-              Реализуй <span>проект мечты ,</span>
+              Реализуй <br />
+              <span>проект мечты ,</span>
             </h1>
             <p className='hero__subtitle'>
               Тысячи профессионалов со всего мира готовы помочь тебе

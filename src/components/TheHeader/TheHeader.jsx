@@ -11,7 +11,7 @@ const TheHeader = () => {
         </button>
         <Link href='/' className={styles.header__logo}>
           <picture>
-            <source media='(min-width: 1280.98px)' srcset='/images/logo.svg' />
+            <source media='(min-width: 1280.98px)' srcSet='/images/logo.svg' />
             <img src='/images/logo-mobile.svg' alt='Flowers' />
           </picture>
         </Link>
