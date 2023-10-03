@@ -1,4 +1,6 @@
-/* autoprefixer grid: autoplace */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -37,6 +39,7 @@
 
 body {
   font-family: var(--font-family);
+  font-weight: 400;
   background-color: var(--bg-color);
   color: var(--font);
   .lock & {

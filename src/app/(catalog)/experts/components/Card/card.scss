@@ -1,0 +1,330 @@
+.experts-card {
+  display: block;
+  padding: 30px 0 34px;
+  border-top: 1px solid #dbdbdb;
+  overflow: hidden;
+  cursor: pointer;
+
+  // .experts-card__top
+
+  &__top {
+    display: flex;
+  }
+
+  // .experts-card___image
+
+  &__image {
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    img {
+      display: inline-flex;
+      width: 82px;
+      height: 82px;
+      max-width: 82px;
+      max-height: 82px;
+      overflow: hidden;
+      object-fit: cover;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+  }
+
+  // .experts-card__top-box
+
+  &__top-box {
+    flex: 1 1 auto;
+    margin-bottom: 19px;
+  }
+
+  // .experts-card__name
+
+  &__name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.17; /* 117.647% */
+    letter-spacing: -0.68px;
+    color: var(--green-dark);
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+
+  // .experts-card__desc
+
+  &__desc {
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.33; /* 133.333% */
+    letter-spacing: -0.6px;
+    color: var(--font-black);
+    margin-bottom: 12px;
+  }
+
+  // .experts-card__status-info
+
+  &__status-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__location {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    letter-spacing: -0.48px;
+    color: var(--font-grey);
+  }
+
+  &__status-now {
+    padding: 6px 10px 6px 13px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: var(--blue-light);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    // line-height: 1.66; /* 166.667% */
+    letter-spacing: -0.48px;
+    border-radius: 50px;
+    border: 1px solid var(--Blue_light, #039df7);
+  }
+
+  // .experts-card__profile-stats
+
+  &__profile-stats {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .experts-card__rate
+
+  &__rate {
+    color: var(--font-black);
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.06; /* 106.667% */
+    letter-spacing: -0.6px;
+  }
+
+  // .experts-card__completed-projects
+
+  &__completed-projects {
+    color: var(--font-black);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.06; /* 106.667% */
+    letter-spacing: -0.6px;
+  }
+
+  // .experts-card__rating
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    color: var(--font-black);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.06; /* 106.667% */
+    letter-spacing: -0.6px;
+
+    svg {
+      margin-right: 6px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  // .experts-card__level
+
+  &__level {
+    display: flex;
+    align-items: center;
+
+    color: var(--font-black);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.06; /* 106.667% */
+    letter-spacing: -0.6px;
+
+    img {
+      display: block;
+      margin-right: 6px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  // .experts-card__text
+
+  &__text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    color: var(--font-dark-grey);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.33; /* 133.333% */
+    letter-spacing: -0.3px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .experts-card__skills
+
+  &__skills {
+    display: flex;
+    column-gap: 17px;
+    width: 567px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    div {
+      // overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.66; /* 166.667% */
+      letter-spacing: -0.24px;
+    }
+  }
+
+  // .experts-card__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 21px;
+  }
+
+  // .experts-card__consultation
+
+  &__consultation {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: var(--font-black);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.76; /* 276.923% */
+    letter-spacing: 0.13px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // .experts-card__consultation-price
+
+  &__consultation-price {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.23; /* 123.077% */
+    letter-spacing: -0.26px;
+    color: var(--font-black);
+  }
+
+  // .experts-card__consultation-time
+
+  &__consultation-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+    font-weight: 500;
+    // line-height: 1.23; /* 123.077% */
+    letter-spacing: -0.26px;
+    color: var(--font-black);
+
+    svg {
+      width: 14px;
+      height: 17px;
+    }
+  }
+
+  // .experts-card__actions
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  // .experts-card__invite-button
+
+  &__invite-button {
+    padding: 0px 20px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.69; /* 269.231% */
+    letter-spacing: -0.52px;
+    border-radius: 50px;
+    background-color: #24a322;
+    color: #fff;
+  }
+
+  // .experts-card__message-button
+
+  &__message-button {
+    padding: 0px 20px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.69; /* 269.231% */
+    letter-spacing: -0.52px;
+    border-radius: 50px;
+    border: 2px solid #24a322;
+    color: #24a322;
+  }
+
+  // .experts-card__favorite-button
+
+  &__favorite-button {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #d1d1d6;
+    color: var(--green-dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 18px !important;
+      height: 16px !important;
+    }
+  }
+}

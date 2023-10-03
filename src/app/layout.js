@@ -60,12 +60,6 @@ const geologica = localFont({
   preload: true
 })
 
-// const geologica = Geologica({
-//   subsets: ['latin'],
-//   variable: '--font5',
-//   display: 'swap'
-// })
-
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font6',
