@@ -9,6 +9,11 @@ import '@/styles/globals.scss'
 const helveticaneuecyr = localFont({
   src: [
     {
+      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Roman.woff2',
+      style: 'normal',
+      weight: '400'
+    },
+    {
       path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Black.woff2',
       style: 'normal',
       weight: '900'
