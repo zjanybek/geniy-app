@@ -1,3 +1,5 @@
+'use client'
+
 import Comment from '@/components/CatalogComment/Comment'
 import CommentRating from '@/components/CatalogComment/CommentRating'
 import CatalogOffers from '@/components/CatalogOffers/CatalogOffers'
@@ -41,7 +43,7 @@ const ExpertModal = () => {
               <div className={styles.header__stats}>
                 <div className={styles.header__rate}>
                   <span>
-                    <strong>1 500 ₽</strong>
+                    <strong className='font-medium'>1 500 ₽</strong>
                     <span aria-label='per hour'>/ час</span>
                   </span>
                 </div>

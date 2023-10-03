@@ -48,10 +48,10 @@ const page = ({ params }) => {
                 <Checkbox icon={true} id='c_1' label='Начинающий'>
                   <img src='/images/experts/diamond-green.svg' alt='' />
                 </Checkbox>
-                <Checkbox icon={true} id='c_1' label='Продвинутый'>
+                <Checkbox icon={true} id='c_2' label='Продвинутый'>
                   <img src='/images/experts/diamond-blue.svg' alt='' />
                 </Checkbox>
-                <Checkbox icon={true} id='c_1' label='Эксперт'>
+                <Checkbox icon={true} id='c_3' label='Эксперт'>
                   <img src='/images/experts/diamond-violet.svg' alt='' />
                 </Checkbox>
               </div>
@@ -85,10 +85,10 @@ const page = ({ params }) => {
 
                 <CatalogAccordion title='Язык'>
                   <div className='experts-filters__language'>
-                    <Checkbox id='c_1' label='Русский' />
-                    <Checkbox id='c_1' label='English' />
-                    <Checkbox id='c_1' label='Spanish' />
-                    <Checkbox id='c_1' label='Chineese' />
+                    <Checkbox id='c_4' label='Русский' />
+                    <Checkbox id='c_5' label='English' />
+                    <Checkbox id='c_6' label='Spanish' />
+                    <Checkbox id='c_7' label='Chineese' />
                   </div>
                 </CatalogAccordion>
               </div>
