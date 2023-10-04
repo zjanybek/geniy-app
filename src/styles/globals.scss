@@ -27,6 +27,7 @@
   --font-black: #1d1d1f;
   --font-grey: #8e8e93;
   --font-dark-grey: #6c6c70;
+  --grey-third: #aeaeb2;
   --purple: #5e5be6;
 
   --green-gradient: linear-gradient(90deg, #51b82d 1.54%, #007000 100%);
@@ -45,6 +46,11 @@ body {
   .lock & {
     overflow: hidden;
     touch-action: none;
+
+    // inset: 0px;
+    // inset-inline-end: 17px;
+    // position: fixed;
+    // --scrollbar-gutter: 17px;
   }
 }
 
@@ -67,6 +73,13 @@ body {
   margin: 0 auto;
   box-sizing: content-box;
   max-width: 1280px;
+  padding: 0 15px;
+}
+
+[class*='__second-container'] {
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: 1120px;
   padding: 0 15px;
 }
 

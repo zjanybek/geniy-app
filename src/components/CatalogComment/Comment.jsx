@@ -6,10 +6,10 @@ import CommentRating from './CommentRating'
 
 const Comment = ({}) => {
   return (
-    <div className='py-8 border-b border-[#DBDBDB]'>
+    <div className='border-[#DBDBDB] py-8 [&:not(:last-child)]:border-b'>
       <div className='mb-[13px] flex items-start gap-x-[7px]'>
         <CommentRating initialValue={3.7} maxRating={5} />
-        <span className='leading-4 text-15 tracking-[-0.6px] text-fontBlack'>
+        <span className='text-15 leading-4 tracking-[-0.6px] text-fontBlack'>
           5.0
         </span>
       </div>
@@ -19,7 +19,7 @@ const Comment = ({}) => {
       <div className='mb-[9px] text-12 leading-[1.33] tracking-[-0.48px] text-fontGrey'>
         <span>02 июл. 2023 – 08 июл. 2023</span>
       </div>
-      <p className='text-15 italic font-medium leading-[1.33] tracking-[-0.3px] text-fontGrey'>
+      <p className='text-15 font-medium italic leading-[1.33] tracking-[-0.3px] text-fontGrey'>
         Результат работы превзошел все ожидания! Елена очень тонко почувствовала
         все наши эмоции и чувства, которые хотелось переложить на изображение.
         Все сошлось и милота, и нежность, и детство, и ассоциативный ряд с

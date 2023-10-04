@@ -1,17 +1,60 @@
 'use client'
 
+import Link from 'next/link'
+
 import Comment from '@/components/CatalogComment/Comment'
 import CommentRating from '@/components/CatalogComment/CommentRating'
-import CatalogOffers from '@/components/CatalogOffers/CatalogOffers'
 import Button from '@/components/ui/Button'
 
 import styles from './expert.module.scss'
 
-const ExpertModal = () => {
+const ExpertModal = ({ onClose }) => {
   return (
     <div className={styles.expert}>
-      <div className={styles.expert__top}></div>
-      <div className={styles.expert__content}>
+      <div className='flex items-center justify-between px-5'>
+        <button
+          onClick={onClose}
+          className='flex h-6 w-6 items-center justify-center rounded-[50%] border-2 border-fontDarkGrey'
+        >
+          <svg
+            className='h-[10px] w-[10px] flex-[0_0_10px]'
+            xmlns='http://www.w3.org/2000/svg'
+            width='10'
+            height='10'
+            viewBox='0 0 10 10'
+            fill='none'
+          >
+            <path
+              d='M5 6.13324L1.36945 9.76379C1.21196 9.92126 1.02309 10 0.802827 10C0.582568 10 0.393696 9.92126 0.23621 9.76379C0.0787367 9.60631 0 9.41743 0 9.19717C0 8.97691 0.0787367 8.78804 0.23621 8.63056L3.86677 5L0.23621 1.36945C0.0787367 1.21196 0 1.02309 0 0.802828C0 0.582568 0.0787367 0.393696 0.23621 0.23621C0.393696 0.078737 0.582568 0 0.802827 0C1.02309 0 1.21196 0.078737 1.36945 0.23621L5 3.86677L8.63056 0.23621C8.78804 0.078737 8.97691 0 9.19717 0C9.41743 0 9.60631 0.078737 9.76379 0.23621C9.92126 0.393696 10 0.582568 10 0.802828C10 1.02309 9.92126 1.21196 9.76379 1.36945L6.13324 5L9.76379 8.63056C9.92126 8.78804 10 8.97691 10 9.19717C10 9.41743 9.92126 9.60631 9.76379 9.76379C9.60631 9.92126 9.41743 10 9.19717 10C8.97691 10 8.78804 9.92126 8.63056 9.76379L5 6.13324Z'
+              fill='currentColor'
+            />
+          </svg>
+        </button>
+        <Link
+          href='/experts/1'
+          className='ml-[19px] flex items-center gap-x-[6px]'
+        >
+          <span className='text-13 tracking-[-0.52px] text-greenDark'>
+            Открыть в новом окне
+          </span>
+          <div className='h-[10px] w-[10px]'>
+            <svg
+              className='h-full w-full text-greenDark'
+              xmlns='http://www.w3.org/2000/svg'
+              width='10'
+              height='10'
+              viewBox='0 0 10 10'
+              fill='none'
+            >
+              <path
+                d='M1.17211 10C0.84907 10 0.57296 9.88541 0.343776 9.65622C0.114592 9.42704 0 9.15093 0 8.82789V1.17712C0 0.852708 0.114592 0.575419 0.343776 0.345252C0.57296 0.115084 0.84907 0 1.17211 0H4.22528C4.38928 0 4.52795 0.0578078 4.6413 0.173424C4.75465 0.289031 4.81133 0.428909 4.81133 0.59306C4.81133 0.757211 4.75465 0.895593 4.6413 1.0082C4.52795 1.12081 4.38928 1.17712 4.22528 1.17712H1.17211V8.82789H8.82288V5.77472C8.82288 5.61072 8.87971 5.47205 8.99335 5.3587C9.107 5.24535 9.2459 5.18867 9.41005 5.18867C9.5742 5.18867 9.71356 5.24535 9.82813 5.3587C9.94271 5.47205 10 5.61072 10 5.77472V8.82789C10 9.15093 9.88492 9.42704 9.65475 9.65622C9.42458 9.88541 9.14729 10 8.82288 10H1.17211ZM8.82288 1.99944L4.32184 6.50549C4.20515 6.61957 4.06935 6.67388 3.91443 6.66842C3.75949 6.66296 3.62498 6.60319 3.51089 6.48911C3.39681 6.37502 3.33977 6.23944 3.33977 6.08238C3.33977 5.92531 3.39681 5.78973 3.51089 5.67564L8.00943 1.17712H6.28386C6.11985 1.17712 5.98118 1.1203 5.86783 1.00665C5.75448 0.893 5.69781 0.7541 5.69781 0.589949C5.69781 0.425798 5.75448 0.286438 5.86783 0.171868C5.98118 0.0572891 6.11985 0 6.28386 0H10V3.71614C10 3.88015 9.94219 4.01882 9.82658 4.13217C9.71097 4.24552 9.57109 4.30219 9.40694 4.30219C9.24279 4.30219 9.10441 4.24552 8.9918 4.13217C8.87919 4.01882 8.82288 3.88015 8.82288 3.71614V1.99944Z'
+                fill='currentColor'
+              />
+            </svg>
+          </div>
+        </Link>
+      </div>
+      <div className='px-[60px]'>
         <div className={styles.header}>
           <div className={styles['header__column-info']}>
             <div className={styles.header__image}>
@@ -73,16 +116,16 @@ const ExpertModal = () => {
             </div>
           </div>
           <div className={styles['header__column-actions']}>
-            <button className={styles['header__button-more']}>
+            <button className='flex h-[35px] w-[35px] flex-[0_0_35px] items-center justify-center rounded-[50%] border border-[#D1D1D6]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                width='35'
-                height='35'
-                viewBox='0 0 35 35'
+                width='16'
+                height='4'
+                viewBox='0 0 16 4'
                 fill='none'
               >
                 <path
-                  d='M12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16ZM24 16C22.9 16 22 16.9 22 18C22 19.1 22.9 20 24 20C25.1 20 26 19.1 26 18C26 16.9 25.1 16 24 16ZM18 16C16.9 16 16 16.9 16 18C16 19.1 16.9 20 18 20C19.1 20 20 19.1 20 18C20 16.9 19.1 16 18 16Z'
+                  d='M2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0ZM14 0C12.9 0 12 0.9 12 2C12 3.1 12.9 4 14 4C15.1 4 16 3.1 16 2C16 0.9 15.1 0 14 0ZM8 0C6.9 0 6 0.9 6 2C6 3.1 6.9 4 8 4C9.1 4 10 3.1 10 2C10 0.9 9.1 0 8 0Z'
                   fill='#24A322'
                 />
               </svg>
@@ -147,89 +190,9 @@ const ExpertModal = () => {
                 </p>
               </div>
 
-              <div className={styles.content__bottom}>
-                <div className={styles.content__image}>
-                  <div
-                    style={{
-                      backgroundColor: '#D9D9D9',
-                      width: '247px',
-                      height: '154px',
-                      borderRadius: '15px'
-                    }}
-                  ></div>
-                </div>
-                <div className={styles.content__record}>
-                  <div className={styles.content__consultation}>
-                    <span
-                      className={styles['content__consultation-first-icon']}
-                    >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='20'
-                        height='20'
-                        viewBox='0 0 20 20'
-                        fill='none'
-                      >
-                        <path
-                          d='M14.8246 16.3H12.886C12.6747 16.3 12.4976 16.2279 12.3547 16.0836C12.2118 15.9394 12.1404 15.7606 12.1404 15.5474C12.1404 15.3341 12.2118 15.1563 12.3547 15.0138C12.4976 14.8713 12.6747 14.8 12.886 14.8H14.8246V12.85C14.8246 12.6375 14.8963 12.4594 15.0397 12.3156C15.1831 12.1719 15.3608 12.1 15.5728 12.1C15.7848 12.1 15.9616 12.1719 16.1033 12.3156C16.245 12.4594 16.3158 12.6375 16.3158 12.85V14.8H18.2544C18.4656 14.8 18.6427 14.8721 18.7856 15.0164C18.9285 15.1607 19 15.3394 19 15.5526C19 15.7659 18.9285 15.9438 18.7856 16.0863C18.6427 16.2288 18.4656 16.3 18.2544 16.3H16.3158V18.25C16.3158 18.4625 16.2441 18.6406 16.1007 18.7844C15.9573 18.9281 15.7796 19 15.5676 19C15.3556 19 15.1787 18.9281 15.0371 18.7844C14.8954 18.6406 14.8246 18.4625 14.8246 18.25V16.3ZM3.49121 17.2C3.08858 17.2 2.73939 17.0513 2.44363 16.7538C2.14788 16.4563 2 16.105 2 15.7V3.99999C2 3.59499 2.14788 3.24375 2.44363 2.94625C2.73939 2.64874 3.08858 2.49999 3.49121 2.49999H4.75876V1.78001C4.75876 1.559 4.83308 1.37375 4.98171 1.22426C5.13034 1.07475 5.31451 1 5.53421 1C5.75815 1 5.94586 1.07475 6.09734 1.22426C6.24881 1.37375 6.32455 1.559 6.32455 1.78001V2.49999H11.9912V1.78001C11.9912 1.559 12.0655 1.37375 12.2142 1.22426C12.3628 1.07475 12.547 1 12.7667 1C12.9906 1 13.1783 1.07475 13.3298 1.22426C13.4813 1.37375 13.557 1.559 13.557 1.78001V2.49999H14.8246C15.2272 2.49999 15.5764 2.64874 15.8722 2.94625C16.1679 3.24375 16.3158 3.59499 16.3158 3.99999V10.36C16.0672 10.325 15.8187 10.3075 15.5702 10.3075C15.3216 10.3075 15.0731 10.325 14.8246 10.36V8.04999H3.49121V15.7H10.3509C10.3509 15.95 10.3733 16.2 10.418 16.45C10.4627 16.7 10.5298 16.95 10.6193 17.2H3.49121ZM3.49121 6.55001H14.8246V3.99999H3.49121V6.55001Z'
-                          fill='#1D1D1F'
-                        />
-                      </svg>
-                    </span>
-                    <span className={styles['content__consultation-text']}>
-                      Запланировать консультацию
-                    </span>
-                    <span
-                      className={styles['content__consultation-second-icon']}
-                    >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                      >
-                        <circle cx='8' cy='8' r='8' fill='#24A322' />
-                        <path
-                          d='M7.4 11.8C7.4 12.2418 7.75817 12.6 8.2 12.6C8.64183 12.6 9 12.2418 9 11.8C9 11.3582 8.64183 11 8.2 11C7.75817 11 7.4 11.3582 7.4 11.8ZM8.2 3C6.70536 3 5.45084 4.02342 5.09865 5.40808C4.98973 5.83627 5.35817 6.2 5.8 6.2C6.24183 6.2 6.58396 5.82034 6.79697 5.43325C7.06967 4.93772 7.59731 4.6 8.2 4.6C9.08 4.6 9.8 5.32 9.8 6.2C9.8 7.61558 7.92137 7.62219 7.4883 9.40552C7.38404 9.83487 7.75817 10.2 8.2 10.2C8.64183 10.2 8.98142 9.82361 9.17376 9.42585C9.72525 8.28535 11.4 7.8707 11.4 6.2C11.4 4.432 9.968 3 8.2 3Z'
-                          fill='white'
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className={styles.content__text}>
-                    Хотите обсудить свой проект подробнее? Выберите удобное
-                    время и дату
-                  </div>
-                  <div className={styles['content__consultation-info']}>
-                    <span className={styles['content__consultation-price']}>
-                      1 000 ₽
-                    </span>
-                    <span className={styles['content__consultation-time']}>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='14'
-                        height='17'
-                        viewBox='0 0 14 17'
-                        fill='none'
-                      >
-                        <path
-                          d='M5.28394 1.44306C5.08608 1.44306 4.92114 1.37321 4.78914 1.23349C4.65712 1.09377 4.59111 0.921555 4.59111 0.716854C4.59111 0.512141 4.65712 0.341486 4.78914 0.204891C4.92114 0.0682968 5.08608 0 5.28394 0H8.71303C8.91089 0 9.07582 0.0687729 9.20783 0.206319C9.33985 0.343865 9.40586 0.51559 9.40586 0.721493C9.40586 0.926193 9.33985 1.09763 9.20783 1.23581C9.07582 1.37398 8.91089 1.44306 8.71303 1.44306H5.28394ZM7.00007 10.3675C7.19672 10.3675 7.36103 10.2986 7.493 10.1608C7.62496 10.0229 7.69093 9.85209 7.69093 9.64833V6.45066C7.69093 6.24689 7.62442 6.07609 7.4914 5.93826C7.35837 5.80042 7.19354 5.7315 6.9969 5.7315C6.80024 5.7315 6.63593 5.80042 6.50396 5.93826C6.37201 6.07609 6.30603 6.24689 6.30603 6.45066V9.64833C6.30603 9.85209 6.37254 10.0229 6.50557 10.1608C6.63859 10.2986 6.80343 10.3675 7.00007 10.3675ZM6.99778 17C6.03547 17 5.13008 16.8085 4.28158 16.4255C3.43309 16.0425 2.69147 15.5218 2.05672 14.8633C1.42197 14.2048 0.9205 13.4351 0.552308 12.554C0.184103 11.673 0 10.7329 0 9.73368C0 8.73447 0.184236 7.79427 0.552709 6.91308C0.921194 6.0319 1.42279 5.26152 2.05748 4.60195C2.6922 3.94238 3.43377 3.42079 4.28221 3.03717C5.13064 2.65353 6.03606 2.46172 6.99848 2.46172C7.83584 2.46172 8.63018 2.60487 9.38151 2.89118C10.1328 3.17748 10.8112 3.58209 11.4165 4.10501L11.9808 3.51884C12.118 3.37637 12.2809 3.30513 12.4695 3.30513C12.6581 3.30513 12.821 3.37689 12.9582 3.52043C13.0954 3.66396 13.164 3.83366 13.164 4.02953C13.164 4.22539 13.0954 4.39457 12.9582 4.53706L12.3968 5.12006C12.8664 5.69794 13.251 6.36743 13.5506 7.12852C13.8502 7.88963 14 8.75786 14 9.73323C14 10.7329 13.8155 11.6734 13.4465 12.5549C13.0775 13.4363 12.5754 14.2061 11.9404 14.8643C11.3054 15.5224 10.5634 16.043 9.71454 16.4258C8.86566 16.8086 7.96007 17 6.99778 17ZM6.99797 15.4953C8.54044 15.4953 9.85159 14.9355 10.9314 13.816C12.0113 12.6965 12.5512 11.3357 12.5512 9.73376C12.5512 8.13181 12.0114 6.77009 10.932 5.64861C9.85246 4.52714 8.54148 3.9664 6.999 3.9664C5.45653 3.9664 4.14537 4.52696 3.06553 5.64807C1.9857 6.76919 1.44578 8.13073 1.44578 9.73269C1.44578 11.3346 1.98553 12.6956 3.06501 13.8155C4.1445 14.9354 5.45549 15.4953 6.99797 15.4953Z'
-                          fill='#1D1D1F'
-                        />
-                      </svg>
-                      1 000 ₽
-                    </span>
-                  </div>
-                  <Button className={styles['content__record-btn']}>
-                    Записаться
-                  </Button>
-                </div>
-              </div>
-
-              <div className='py-[27px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[27px]'>
                 <div className='mb-[35px]'>
-                  <div className='[&:not(:last-child)]:mb-5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack [&:not(:last-child)]:mb-5'>
                     Отзывы <span>(127)</span>
                   </div>
                   <div className='flex items-center'>
@@ -323,7 +286,7 @@ const ExpertModal = () => {
                         </div>
                         <div className='flex gap-x-8'>
                           <div className='w-[39.8%]'>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Качество
                               </span>
@@ -345,7 +308,7 @@ const ExpertModal = () => {
                                 </span>
                               </div>
                             </div>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Соблюдение сроков
                               </span>
@@ -367,7 +330,7 @@ const ExpertModal = () => {
                                 </span>
                               </div>
                             </div>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Профессионализм
                               </span>
@@ -391,7 +354,7 @@ const ExpertModal = () => {
                             </div>
                           </div>
                           <div className='w-[39.8%]'>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Доступность
                               </span>
@@ -413,7 +376,7 @@ const ExpertModal = () => {
                                 </span>
                               </div>
                             </div>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Этичность
                               </span>
@@ -435,7 +398,7 @@ const ExpertModal = () => {
                                 </span>
                               </div>
                             </div>
-                            <div className='[&:not(:last-child)]:mb-2 flex justify-between items-center'>
+                            <div className='flex items-center justify-between [&:not(:last-child)]:mb-2'>
                               <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
                                 Дружелюбность
                               </span>
@@ -473,31 +436,8 @@ const ExpertModal = () => {
                 </div>
               </div>
 
-              <div className='py-[27px]'>
-                <div className='mb-[18px] flex items-center gap-x-2.5 font-medium text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
-                  Каталог ‘Все включено’
-                  <div className='w-4 h-4'>
-                    <svg
-                      className='w-full h-full'
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 16 16'
-                      fill='none'
-                    >
-                      <circle cx='8' cy='8' r='8' fill='#24A322' />
-                      <path
-                        d='M7.4 11.8C7.4 12.2418 7.75817 12.6 8.2 12.6C8.64183 12.6 9 12.2418 9 11.8C9 11.3582 8.64183 11 8.2 11C7.75817 11 7.4 11.3582 7.4 11.8ZM8.2 3C6.70536 3 5.45084 4.02342 5.09865 5.40808C4.98973 5.83627 5.35817 6.2 5.8 6.2C6.24183 6.2 6.58396 5.82034 6.79697 5.43325C7.06967 4.93772 7.59731 4.6 8.2 4.6C9.08 4.6 9.8 5.32 9.8 6.2C9.8 7.61558 7.92137 7.62219 7.4883 9.40552C7.38404 9.83487 7.75817 10.2 8.2 10.2C8.64183 10.2 8.98142 9.82361 9.17376 9.42585C9.72525 8.28535 11.4 7.8707 11.4 6.2C11.4 4.432 9.968 3 8.2 3Z'
-                        fill='white'
-                      />
-                    </svg>
-                  </div>
-                </div>
-                {[...Array(4)].map((_, index) => {
-                  return <CatalogOffers key={index} />
-                })}
-              </div>
-
               <div
-                className={`${styles.more} py-[27px] border-t border-[#D9D9D9]`}
+                className={`${styles.more} border-t border-[#D9D9D9] py-[27px]`}
               >
                 <div className={styles.more__content}>
                   <div className={styles.more__title}>
@@ -516,16 +456,16 @@ const ExpertModal = () => {
                 </div>
               </div>
 
-              <div className='py-7 border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-7'>
                 <div className='mb-[22px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Навыки
                 </div>
-                <div className='flex items-center flex-wrap gap-2.5'>
+                <div className='flex flex-wrap items-center gap-2.5'>
                   {[...Array(16)].map((item, index) => {
                     return (
                       <div
                         key={index}
-                        className='px-[13px]  text-12 leading-[2.5] tracking-[-0.48px] text-fontBlack rounded-[15px] bg-[#f2f2f7]'
+                        className='rounded-[15px]  bg-[#f2f2f7] px-[13px] text-12 leading-[2.5] tracking-[-0.48px] text-fontBlack'
                       >
                         Adobe photoshop
                       </div>
@@ -551,22 +491,22 @@ const ExpertModal = () => {
                   UI / UX дизайн
                 </p>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Видеопрезентация:
                 </div>
-                <div className='w-[227px] h-[128px] bg-[#D9D9D9] rounded-[15px]'></div>
+                <div className='h-[128px] w-[227px] rounded-[15px] bg-[#D9D9D9]'></div>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-[18px] text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Верификация:
                 </div>
                 <div className=''>
                   <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                     Телефон
-                    <div className='w-[15px] h-[14px] text-[#039DF7]'>
+                    <div className='h-[14px] w-[15px] text-[#039DF7]'>
                       <svg
-                        className='w-full h-full'
+                        className='h-full w-full'
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 15 14'
                         fill='none'
@@ -582,9 +522,9 @@ const ExpertModal = () => {
                 <div className=''>
                   <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                     Email
-                    <div className='w-[15px] h-[14px] text-[#039DF7]'>
+                    <div className='h-[14px] w-[15px] text-[#039DF7]'>
                       <svg
-                        className='w-full h-full'
+                        className='h-full w-full'
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 15 14'
                         fill='none'
@@ -600,9 +540,9 @@ const ExpertModal = () => {
                 <div className=''>
                   <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                     Оплата
-                    <div className='w-[15px] h-[14px] text-[#039DF7]'>
+                    <div className='h-[14px] w-[15px] text-[#039DF7]'>
                       <svg
-                        className='w-full h-full'
+                        className='h-full w-full'
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 15 14'
                         fill='none'
@@ -616,7 +556,7 @@ const ExpertModal = () => {
                   </div>
                 </div>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Языки:
                 </div>
@@ -637,7 +577,7 @@ const ExpertModal = () => {
                   носителя
                 </div>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Образование:
                 </div>
@@ -657,7 +597,7 @@ const ExpertModal = () => {
                   </div>
                 </div>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Период работы:
                 </div>
@@ -676,7 +616,7 @@ const ExpertModal = () => {
                   </div>
                 </div>
               </div>
-              <div className='py-[17px] pb-[29px] border-t border-[#D9D9D9]'>
+              <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
                 <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Сертификаты:
                 </div>

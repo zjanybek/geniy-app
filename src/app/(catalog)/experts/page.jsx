@@ -59,7 +59,7 @@ const page = ({ params }) => {
               <div className='experts-filters__body'>
                 <CatalogAccordion title='Категория'>
                   <ul className='experts-filters__list'>
-                    {[...Array(10)].map((item, index) => {
+                    {[...Array(10)].map((_, index) => {
                       return (
                         <li key={index}>
                           <button>Веб-разработка</button>

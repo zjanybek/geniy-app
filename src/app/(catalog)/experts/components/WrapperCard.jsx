@@ -34,8 +34,13 @@ export function WrapperCard({ children, id }) {
     <>
       {cloneElement(children, { onClick: handleClick })}
       {showModal && (
-        <Modal show={showModal} onClose={handleClose} maxWidth='xl'>
-          <ExpertModal />
+        <Modal
+          isOpen={showModal}
+          onClose={handleClose}
+          headerClose={false}
+          maxWidth='xl'
+        >
+          <ExpertModal onClose={handleClose} />
         </Modal>
       )}
     </>

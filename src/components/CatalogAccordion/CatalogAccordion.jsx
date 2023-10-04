@@ -2,22 +2,36 @@
 
 import { useState } from 'react'
 
-const Accordion = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(true)
+import './accordion.scss'
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen)
-  }
+const mountedStyle = {
+  animation: 'inAnimation 250ms ease-in'
+}
+const unmountedStyle = {
+  animation: 'outAnimation 270ms ease-out',
+  animationFillMode: 'forwards'
+}
 
+export default function App({ title, children }) {
+  const [isMounted, setIsMounted] = useState(true)
+  const [showDiv, setShowDiv] = useState(true)
   return (
-    <div className='experts-filters__border-item'>
+    <div className='catalog-filter-accordion'>
       <button
-        onClick={toggleAccordion}
-        className='experts-filters__button-accordion'
+        className='catalog-filter-accordion__button'
+        onClick={() => {
+          setIsMounted(!isMounted)
+          if (!showDiv) setShowDiv(true)
+        }}
       >
-        <span className='experts-filters__button-text'>{title}</span>
-        <div className='experts-filters__up-icon'>
+        <span className='catalog-filter-accordion__button-text'>{title}</span>
+        <div
+          className={`w-[14px] h-[9px] text-fontBlack rotate ${
+            isMounted ? 'rotate-180' : ''
+          }`}
+        >
           <svg
+            className='w-full h-full'
             xmlns='http://www.w3.org/2000/svg'
             width='14'
             height='9'
@@ -32,9 +46,16 @@ const Accordion = ({ title, children }) => {
         </div>
       </button>
 
-      {isOpen && children}
+      {showDiv && (
+        <div
+          style={isMounted ? mountedStyle : unmountedStyle}
+          onAnimationEnd={() => {
+            if (!isMounted) setShowDiv(false)
+          }}
+        >
+          {children}
+        </div>
+      )}
     </div>
   )
 }
-
-export default Accordion

@@ -9,6 +9,8 @@
 
   &__top {
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 19px;
   }
 
   // .experts-card___image
@@ -34,7 +36,6 @@
 
   &__top-box {
     flex: 1 1 auto;
-    margin-bottom: 19px;
   }
 
   // .experts-card__name
@@ -58,12 +59,17 @@
   // .experts-card__desc
 
   &__desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
     font-size: 15px;
     font-weight: 500;
     line-height: 1.33; /* 133.333% */
     letter-spacing: -0.6px;
     color: var(--font-black);
-    margin-bottom: 12px;
+    margin-bottom: 7px;
   }
 
   // .experts-card__status-info
@@ -135,7 +141,7 @@
 
   &__rating {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     color: var(--font-black);
     font-size: 15px;
@@ -184,7 +190,7 @@
     line-height: 1.33; /* 133.333% */
     letter-spacing: -0.3px;
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 15px;
     }
   }
 
@@ -277,6 +283,7 @@
   // .experts-card__actions
 
   &__actions {
+    margin-top: 21px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

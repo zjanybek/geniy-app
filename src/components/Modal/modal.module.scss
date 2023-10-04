@@ -24,10 +24,17 @@
   //   // background-color: rgba(0, 0, 0, 0.6);
   // }
 
-  animation-duration: 400ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: overlayOpenAnimatin;
+  // animation-duration: 400ms;
+  // animation-iteration-count: 1;
+  // animation-fill-mode: both;
+  // animation-name: overlayOpenAnimatin;
+
+  &_open {
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: overlayOpenAnimatin;
+  }
 
   &_close {
     animation-duration: 400ms;
@@ -40,6 +47,85 @@
     padding: 40px;
     align-items: center;
   }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--font-dark-grey);
+
+  svg {
+    flex: 0 0 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px 0 50px;
+  width: 100vw;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+
+  // animation-duration: 400ms;
+  // animation-iteration-count: 1;
+  // animation-fill-mode: both;
+  // animation-name: contentOpenAnimatin;
+
+  &_open {
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: contentOpenAnimatin;
+  }
+
+  @media (min-width: 744.98px) {
+    height: auto;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &_close {
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: contentCloseAnimatin;
+  }
+
+  &_width-big {
+    max-width: 1235px;
+  }
+
+  // opacity: 0;
+  // transform: translate(0, 100%);
+  // transition: all 0.4s ease 0s;
+
+  // &_active {
+  //   opacity: 1;
+  //   transform: none;
+  // }
+}
+
+.body {
+  overflow-y: auto;
 }
 
 @keyframes overlayOpenAnimatin {
@@ -81,54 +167,4 @@
     opacity: 0;
     transform: translate(0, 100%);
   }
-}
-
-.content {
-  position: relative;
-  z-index: 10;
-  background-color: #fff;
-  border-radius: 25px;
-  padding: 20px 0;
-  width: 100vw;
-  height: 100%;
-  max-width: 100vw;
-  max-height: 100%;
-  overflow: clip;
-  display: flex;
-  flex-direction: column;
-
-  animation-duration: 400ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: contentOpenAnimatin;
-
-  @media (min-width: 744.98px) {
-    height: 100%;
-    width: 100%;
-    max-width: 750px;
-  }
-
-  &_close {
-    animation-duration: 400ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-name: contentCloseAnimatin;
-  }
-
-  &_width-big {
-    max-width: 1235px;
-  }
-
-  // opacity: 0;
-  // transform: translate(0, 100%);
-  // transition: all 0.4s ease 0s;
-
-  // &_active {
-  //   opacity: 1;
-  //   transform: none;
-  // }
-}
-
-.body {
-  overflow-y: auto;
 }

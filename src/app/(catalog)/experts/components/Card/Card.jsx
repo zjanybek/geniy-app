@@ -14,7 +14,6 @@ const card = ({ id }) => {
             <div className='experts-card__name'>Гений Г.</div>
             <div className='experts-card__desc'>
               Дизайнер со стажем более 9 лет. Нестандартный подход к работе
-              которая станет не только источником радости для вас, но и вдох...
             </div>
             <div className='experts-card__status-info'>
               <span className='experts-card__location'>Россия, Москва</span>
@@ -91,7 +90,7 @@ const card = ({ id }) => {
             <div>авыа photoshop</div>
           </div>
         </div>
-        <div className='experts-card__bottom'>
+        {/* <div className='experts-card__bottom'>
           <span className='experts-card__consultation'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -123,7 +122,7 @@ const card = ({ id }) => {
             </svg>
             <span>30 мин</span>
           </span>
-        </div>
+        </div> */}
         <div className='experts-card__actions'>
           <button className='experts-card__invite-button'>Пригласить</button>
           <button className='experts-card__message-button'>Написать</button>
