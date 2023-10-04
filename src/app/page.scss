@@ -57,7 +57,7 @@
 .text-main-page {
   font-size: 32px;
   @include adaptiveValue1('font-size', 32, 24);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.12;
   letter-spacing: -0.64px;
   color: var(--font-black);
@@ -285,7 +285,7 @@
 
     // font-size: 17px;
     @include adaptiveValue1('font-size', 17px, 14);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.47; /* 147.059% */
     letter-spacing: -0.34px;
     color: var(--Font-black, #1d1d1f);
@@ -431,7 +431,7 @@
     }
 
     @media (min-width: 768.98px) {
-      font-weight: 400;
+      font-weight: 500;
       max-width: 254px;
     }
   }
@@ -443,7 +443,7 @@
     text-align: center;
     // font-size: 17px;
     @include adaptiveValue1('font-size', 17, 14);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.64; /* 164.706% */
     letter-spacing: -0.34px;
   }
@@ -788,7 +788,10 @@
     width: 16px;
     height: 16px;
     transform: translateX(0);
-    transition: transform, color, 0.3s ease 0s;
+    transition:
+      transform,
+      color,
+      0.3s ease 0s;
     color: #fff;
   }
 }
