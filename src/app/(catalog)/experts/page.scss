@@ -120,7 +120,7 @@
     align-items: center;
 
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: -0.3px;
     color: var(--green-dark);
@@ -129,6 +129,10 @@
       margin-left: 5px;
       width: 10px !important;
       height: 10px !important;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 

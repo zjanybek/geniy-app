@@ -1,7 +1,7 @@
 .option {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   // .options__item
   &__item {
     position: relative;
@@ -23,6 +23,11 @@
     }
     &:checked + .option__label:after {
       transform: scale(1);
+    }
+    &:checked + .option__label {
+      .option__text {
+        color: var(--green-light);
+      }
     }
   }
   // .options__label
@@ -55,5 +60,10 @@
   }
   // .options__text
   &__text {
+    color: var(--font-black);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.15px;
   }
 }

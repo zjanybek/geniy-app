@@ -325,7 +325,7 @@ const page = ({ params }) => {
                         fill='#D1D1D6'
                       />
                     </svg>
-                    <span className='ml-2.5 text-13 leading-[0.92] text-[#D1D1D6]'>
+                    <span className='ml-2.5 text-13 text-[#D1D1D6]'>
                       Предыдущая
                     </span>
                   </button>
@@ -352,7 +352,7 @@ const page = ({ params }) => {
                   </div>
 
                   <button className='flex items-center'>
-                    <span className='mr-2.5 text-13 leading-[0.92] text-greenDark'>
+                    <span className='mr-2.5 text-13 text-greenDark'>
                       Предыдущая
                     </span>
                     <svg

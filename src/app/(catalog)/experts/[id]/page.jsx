@@ -5,6 +5,24 @@ import Button from '@/components/ui/Button'
 import ActionsButton from './components/ActionsButton'
 import styles from './page.module.scss'
 
+const skills = [
+  'Adobe photoshop',
+  'Adobe photoshop',
+  'Adobe photoshop',
+  'Adobe illustrator',
+  'Adobe illustrator',
+  'Adobe illustrator',
+  'Figma',
+  'Figma',
+  'Figma',
+  'Digital Painting',
+  'Digital Painting',
+  'Digital Painting',
+  'Adobe photoshop',
+  'Adobe photoshop',
+  'Adobe photoshop'
+]
+
 const page = () => {
   return (
     <div className='pb-[66px] pt-[29px]'>
@@ -197,16 +215,19 @@ const page = () => {
                       </button>
                     </div>
                   </div>
-                  <p className='text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
+                  <div className='max-w-[687px] text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
                     Специализируюсь на проектировании и дизайне сайтов со
                     сложным и нестандартным функционалом (сервисы, порталы,
-                    крупные интернет-магазины и тп). Помимо основной работы
-                    занимаюсь обучением дизайну сайтов (лендинг, визитка,
-                    магазин, проектирование интерфейсов, логика, юзабилити,
-                    Figma). 2023 г. - спикер на Фриланс-форуме "Цифровые
-                    воротнички". Выступала с докладом "Специфика работы с
-                    иностранными заказчиками"...
-                  </p>
+                    крупные интернет-магазины и тп). <br />
+                    <div className='mb-6'></div>
+                    Помимо основной работы занимаюсь обучением дизайну сайтов
+                    (лендинг, визитка, магазин, проектирование интерфейсов,
+                    логика, юзабилити, Figma). <br />
+                    <div className='mb-6'></div>
+                    2023 г. - спикер на Фриланс-форуме "Цифровые воротнички".
+                    Выступала с докладом "Специфика работы с иностранными
+                    заказчиками"...
+                  </div>
                 </div>
 
                 <div className='border-t border-[#D9D9D9] pt-[27px]'>
@@ -482,13 +503,13 @@ const page = () => {
                     Навыки
                   </div>
                   <div className='flex flex-wrap items-center gap-2.5'>
-                    {[...Array(16)].map((item, index) => {
+                    {skills.map((item, index) => {
                       return (
                         <div
                           key={index}
                           className='rounded-[15px]  bg-[#f2f2f7] px-[13px] text-12 leading-[2.5] tracking-[-0.48px] text-fontBlack'
                         >
-                          Adobe photoshop
+                          {item}
                         </div>
                       )
                     })}
@@ -582,20 +603,19 @@ const page = () => {
                     Языки:
                   </div>
                   <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
-                    <strong className='text-fontBlack'>Русский:</strong> родной
-                    язык
+                    <span className='text-fontBlack'>Русский:</span> родной язык
                   </div>
                   <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
-                    <strong className='text-fontBlack'>Английский:</strong>{' '}
+                    <span className='text-fontBlack'>Английский:</span>{' '}
                     разговорный язык
                   </div>
                   <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
-                    <strong className='text-fontBlack'>Китайский:</strong>{' '}
-                    базовый язык
+                    <span className='text-fontBlack'>Китайский:</span> базовый
+                    язык
                   </div>
                   <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
-                    <strong className='text-fontBlack'>Испанский:</strong>{' '}
-                    уровень носителя
+                    <span className='text-fontBlack'>Испанский:</span> уровень
+                    носителя
                   </div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>

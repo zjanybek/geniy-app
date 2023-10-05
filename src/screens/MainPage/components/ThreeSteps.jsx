@@ -88,7 +88,9 @@ export const ThreeSteps = () => {
                 <div className='three-steps-item__image'>
                   <img src='images/star-black.svg' alt='' />
                 </div>
-                <div className='three-steps-item__title'>Выберите эксперта</div>
+                <div className='three-steps-item__title'>
+                  Выберите <br /> эксперта
+                </div>
                 <div className='three-steps-item__body'>
                   <div className='three-steps-item__text'>
                     Общайтесь с кандидатами и выберите того, кто вам больше
