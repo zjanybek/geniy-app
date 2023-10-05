@@ -14,7 +14,7 @@ const ExpertModal = ({ onClose }) => {
       <div className='flex items-center justify-between px-5'>
         <button
           onClick={onClose}
-          className='flex h-6 w-6 items-center justify-center rounded-[50%] border-2 border-fontDarkGrey'
+          className='flex h-6 w-6 items-center justify-center rounded-[50%] border border-fontDarkGrey'
         >
           <svg
             className='h-[10px] w-[10px] flex-[0_0_10px]'
@@ -32,9 +32,10 @@ const ExpertModal = ({ onClose }) => {
         </button>
         <Link
           href='/experts/1'
+          target='_blank'
           className='ml-[19px] flex items-center gap-x-[6px]'
         >
-          <span className='text-13 tracking-[-0.52px] text-greenDark'>
+          <span className='text-13 tracking-[-0.52px] text-greenDark hover:underline'>
             Открыть в новом окне
           </span>
           <div className='h-[10px] w-[10px]'>
@@ -116,7 +117,7 @@ const ExpertModal = ({ onClose }) => {
             </div>
           </div>
           <div className={styles['header__column-actions']}>
-            <button className='flex h-[35px] w-[35px] flex-[0_0_35px] items-center justify-center rounded-[50%] border border-[#D1D1D6]'>
+            <button className='flex h-[35px] w-[35px] flex-[0_0_35px] items-center justify-center rounded-[50%] border-2 border-[#D1D1D6]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
@@ -140,6 +141,7 @@ const ExpertModal = ({ onClose }) => {
         </div>
 
         <div className={styles.expert__items}>
+          {/* left */}
           <div className={styles['expert__column-content']}>
             <div className={styles.content}>
               <div className={styles.content__top}>
@@ -190,7 +192,7 @@ const ExpertModal = ({ onClose }) => {
                 </p>
               </div>
 
-              <div className='border-t border-[#D9D9D9] py-[27px]'>
+              <div className='border-t border-[#D9D9D9] pt-[27px]'>
                 <div className='mb-[35px]'>
                   <div className='text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack [&:not(:last-child)]:mb-5'>
                     Отзывы <span>(127)</span>
@@ -475,10 +477,12 @@ const ExpertModal = ({ onClose }) => {
               </div>
             </div>
           </div>
+
+          {/* right */}
           <div className={styles['expert__column-info']}>
             <div className='py-[21px] pl-[30px]'>
               <div className='pb-[26px]'>
-                <div className='mb-[15px] text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-[15px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Специализация:
                 </div>
                 <div className='mb-3 text-15 font-normal leading-[1.06] tracking-[-0.6px] text-fontBlack'>
@@ -492,13 +496,13 @@ const ExpertModal = ({ onClose }) => {
                 </p>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Видеопрезентация:
                 </div>
                 <div className='h-[128px] w-[227px] rounded-[15px] bg-[#D9D9D9]'></div>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-[18px] text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-[18px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Верификация:
                 </div>
                 <div className=''>
@@ -557,7 +561,7 @@ const ExpertModal = ({ onClose }) => {
                 </div>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Языки:
                 </div>
                 <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
@@ -578,7 +582,7 @@ const ExpertModal = ({ onClose }) => {
                 </div>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Образование:
                 </div>
                 <div>
@@ -598,7 +602,7 @@ const ExpertModal = ({ onClose }) => {
                 </div>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Период работы:
                 </div>
                 <div>
@@ -617,7 +621,7 @@ const ExpertModal = ({ onClose }) => {
                 </div>
               </div>
               <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Сертификаты:
                 </div>
                 <div>

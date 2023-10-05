@@ -26,12 +26,12 @@ export default function App({ title, children }) {
       >
         <span className='catalog-filter-accordion__button-text'>{title}</span>
         <div
-          className={`w-[14px] h-[9px] text-fontBlack rotate ${
-            isMounted ? 'rotate-180' : ''
+          className={`rotate h-[9px] w-[14px] text-fontBlack ${
+            isMounted ? '' : 'rotate-180'
           }`}
         >
           <svg
-            className='w-full h-full'
+            className='h-full w-full'
             xmlns='http://www.w3.org/2000/svg'
             width='14'
             height='9'

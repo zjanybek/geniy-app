@@ -30,7 +30,7 @@ const ActionsButton = () => {
       )}
 
       <div className='flex items-center gap-x-[9px]'>
-        <button className='flex h-[35px] w-[35px] flex-[0_0_35px] items-center justify-center rounded-[50%] border border-[#D1D1D6]'>
+        <button className='flex h-[35px] w-[35px] flex-[0_0_35px] items-center justify-center rounded-[50%] border-2 border-[#D1D1D6]'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='16'

@@ -8,7 +8,7 @@ const Comment = ({}) => {
   return (
     <div className='border-[#DBDBDB] py-8 [&:not(:last-child)]:border-b'>
       <div className='mb-[13px] flex items-start gap-x-[7px]'>
-        <CommentRating initialValue={3.7} maxRating={5} />
+        <CommentRating initialValue={5} maxRating={5} />
         <span className='text-15 leading-4 tracking-[-0.6px] text-fontBlack'>
           5.0
         </span>

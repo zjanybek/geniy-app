@@ -22,7 +22,7 @@ const ModalInvite = () => {
         </div>
         <div>
           <div className='mb-[9px] flex'>
-            <div className='flex items-center'>
+            <div className='flex items-start'>
               <span className='text-15 leading-[1.33] tracking-[-0.6px] text-greenDark'>
                 Афанасий В.
               </span>
@@ -120,7 +120,7 @@ const ModalInvite = () => {
           </label>
           <input
             type='text'
-            className='border-greyThrid mb-[11px] h-[40px] w-full rounded-[10px] border py-3 pl-[19px] pr-[12px]'
+            className='mb-[11px] h-[40px] w-full rounded-[10px] border border-greyThrid py-3 pl-[19px] pr-[12px]'
             placeholder='Например, редизайн сайта интернет-магазина игрушек.'
           />
           <span className='text-13 leading-[1.53] tracking-[-0.13px] text-fontGrey'>
@@ -144,7 +144,7 @@ const ModalInvite = () => {
             id=''
             cols='30'
             rows='10'
-            className='border-greyThrid placeholder:text-greyThrid mb-[13px] w-full rounded-[10px] border px-5 py-[15px] text-15 leading-[1.33] tracking-[-0.15px]'
+            className='mb-[13px] w-full rounded-[10px] border border-greyThrid px-5 py-[15px] text-15 leading-[1.33] tracking-[-0.15px] placeholder:text-greyThrid'
           ></textarea>
           <span className='text-13 leading-[1.53] tracking-[-0.13px] text-fontGrey'>
             0 / 80 символов
@@ -184,7 +184,7 @@ const ModalInvite = () => {
         <div>
           <input
             type='text'
-            className='border-greyThrid mb-2 h-[40px] max-w-[320px] rounded-[10px] border py-3 pl-[19px] pr-[12px]'
+            className='mb-2 h-[40px] max-w-[320px] rounded-[10px] border border-greyThrid py-3 pl-[19px] pr-[12px]'
             placeholder='Укажите сумму'
           />
           <span className='block text-12 leading-[1.66] tracking-[-0.12px] text-fontGrey'>
@@ -202,7 +202,7 @@ const ModalInvite = () => {
         </div>
         <input
           type='text'
-          className='border-greyThrid mb-[11px] h-[40px] max-w-xs rounded-[10px] border py-3 pl-[19px] pr-[12px]'
+          className='mb-[11px] h-[40px] max-w-xs rounded-[10px] border border-greyThrid py-3 pl-[19px] pr-[12px]'
           placeholder='01 сентября 2023'
         />
       </div>

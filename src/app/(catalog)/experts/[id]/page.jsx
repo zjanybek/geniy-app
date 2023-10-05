@@ -9,16 +9,40 @@ const page = () => {
   return (
     <div className='pb-[66px] pt-[29px]'>
       <div className='expert-detail__second-container pt-[27px]'>
-        <div className='pb-[62px]'>
+        <div className='mb-[35px]'>
           <div className='text-12 font-medium uppercase leading-[3.00] tracking-[0.12px] text-fontBlack'>
             Для Заказчика
           </div>
-          <h1 className='font-secondFamily text-40 font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
+          <h1 className='mb-[7px] font-secondFamily text-40 font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
             Каталог экспертов
           </h1>
+          <div className='flex items-center gap-x-2'>
+            <div className='flex items-center'>
+              <span className='mr-[10px] text-12 font-medium tracking-[-0.48px] text-greenDark'>
+                Главная
+              </span>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='5'
+                height='8'
+                viewBox='0 0 5 8'
+                fill='none'
+              >
+                <path
+                  d='M5 3.99411C5 4.07277 4.98608 4.14553 4.95824 4.21239C4.93039 4.27926 4.88218 4.34415 4.81364 4.40708L1.08611 7.82892C0.961872 7.94297 0.811916 8 0.636248 8C0.460579 8 0.310624 7.94297 0.186382 7.82892C0.0621272 7.71486 -1.85674e-08 7.57523 -2.57882e-08 7.41004C-3.30089e-08 7.24484 0.0621271 7.10522 0.186382 6.99117L3.45118 3.99411L0.186382 0.997045C0.0621269 0.882991 -3.17112e-07 0.745333 -3.24161e-07 0.584071C-3.31209e-07 0.42282 0.0621268 0.285162 0.186381 0.171097C0.310623 0.0570321 0.462719 -2.02261e-08 0.642668 -2.80919e-08C0.822617 -3.59577e-08 0.974718 0.0570321 1.09897 0.171097L4.81364 3.58113C4.88218 3.64406 4.93039 3.70896 4.95824 3.77582C4.98608 3.84268 5 3.91544 5 3.99411Z'
+                  fill='#8E8E93'
+                />
+              </svg>
+            </div>
+            <div className='flex items-center'>
+              <span className='mr-[10px] text-12 font-medium tracking-[-0.48px] text-fontGrey'>
+                Найти гения
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div className='rounded-[30px] border border-[#DBDBDB] py-[42px]'>
+        <div className='rounded-[30px] border border-[#DBDBDB] pt-[42px]'>
           <div>
             <div className='flex pb-[37px] pl-[39px] pr-[30px]'>
               <div className='flex flex-auto items-start gap-x-[30px]'>
@@ -127,8 +151,10 @@ const page = () => {
               </div>
             </div>
           </div>
+
           <div className='border-t border-[#DBDBDB]'>
             <div className='grid grid-cols-[1fr_25.68%]'>
+              {/* left */}
               <div className='px-[40px]'>
                 <div className='pb-[37px] pt-[33px]'>
                   <div className='mb-[26px] flex justify-between gap-x-2'>
@@ -451,7 +477,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className='border-t border-[#D9D9D9] py-7'>
+                <div className='border-t border-[#D9D9D9] pb-[75px] pt-7'>
                   <div className='mb-[22px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Навыки
                   </div>
@@ -469,9 +495,11 @@ const page = () => {
                   </div>
                 </div>
               </div>
-              <div className='px-[30px] py-[21px]'>
+
+              {/* right */}
+              <div className='border-l border-[#D9D9D9] px-[30px] py-[21px]'>
                 <div className='pb-[26px]'>
-                  <div className='mb-[15px] text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-[15px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Специализация:
                   </div>
                   <div className='mb-3 text-15 font-normal leading-[1.06] tracking-[-0.6px] text-fontBlack'>
@@ -491,7 +519,7 @@ const page = () => {
                   <div className='h-[128px] w-full rounded-[15px] bg-[#D9D9D9]'></div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-[18px] text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-[18px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Верификация:
                   </div>
                   <div className=''>
@@ -550,7 +578,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Языки:
                   </div>
                   <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
@@ -571,7 +599,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Образование:
                   </div>
                   <div>
@@ -592,7 +620,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Период работы:
                   </div>
                   <div>
@@ -611,7 +639,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-4 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Сертификаты:
                   </div>
                   <div>

@@ -186,7 +186,7 @@
 
     color: var(--font-dark-grey);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.33; /* 133.333% */
     letter-spacing: -0.3px;
     &:not(:last-child) {
@@ -322,7 +322,7 @@
   &__favorite-button {
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid #d1d1d6;
+    border: 2px solid #d1d1d6;
     color: var(--green-dark);
 
     display: flex;

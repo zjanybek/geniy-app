@@ -18,7 +18,7 @@ const ModalSendMessage = () => {
         </div>
         <div>
           <div className='mb-[9px] flex'>
-            <div className='flex items-center'>
+            <div className='flex items-start'>
               <span className='text-15 leading-[1.33] tracking-[-0.6px] text-greenDark'>
                 Афанасий В.
               </span>
