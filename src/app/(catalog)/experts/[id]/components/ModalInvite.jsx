@@ -5,6 +5,18 @@ import { useState } from 'react'
 
 import Radio from '@/components/ui/Radio/Radio'
 
+const placeholderTextArea = `Например, задание:
+
+- Проанализировать текущий дизайн и предложить улучшения.
+- Разработать 3 макета главной страницы.
+- Проанализировать пользовательский опыт и предложить изменения.
+- Разработать дизайн для мобильной версии сайта.
+
+Требования:
+- Опыт работы с Figma или Adobe XD.
+- Понимание основ UX/UI.
+- Портфолио с примерами релевантных работ.`
+
 const ModalInvite = () => {
   const [payment, setPayment] = useState()
   return (
@@ -49,12 +61,10 @@ const ModalInvite = () => {
               <span className='text-13 tracking-[-0.52px] text-greenDark'>
                 Перейти в профиль
               </span>
-              <div className='h-[10px] w-[10px]'>
+              <div className='h-[10px] w-[10px] flex-[0_0_10px]'>
                 <svg
                   className='h-full w-full text-greenDark'
                   xmlns='http://www.w3.org/2000/svg'
-                  width='10'
-                  height='10'
                   viewBox='0 0 10 10'
                   fill='none'
                 >
@@ -143,8 +153,9 @@ const ModalInvite = () => {
             name=''
             id=''
             cols='30'
-            rows='10'
-            className='mb-[13px] w-full rounded-[10px] border border-greyThrid px-5 py-[15px] text-15 leading-[1.33] tracking-[-0.15px] placeholder:text-greyThrid'
+            rows='12'
+            className='text-pre-line text-break mb-[13px] w-full rounded-[10px] border border-greyThrid px-5 py-[15px] text-15 leading-[1.33] tracking-[-0.15px]  placeholder:text-greyThrid'
+            placeholder={placeholderTextArea}
           ></textarea>
           <span className='text-13 leading-[1.53] tracking-[-0.13px] text-fontGrey'>
             0 / 80 символов
@@ -159,27 +170,104 @@ const ModalInvite = () => {
           Укажите бюджет задания.
         </div>
         <div className='mb-[30px] flex flex-col gap-y-5'>
-          <Radio
-            onChange={(value) => setPayment(value)}
-            id='o_1'
-            name='payment'
-            value='1'
-            label='Фиксированная цена'
-          />
-          <Radio
-            onChange={(value) => setPayment(value)}
-            id='o_2'
-            name='payment'
-            value='2'
-            label='Почасовая оплата'
-          />
-          <Radio
-            onChange={(value) => setPayment(value)}
-            id='o_3'
-            name='payment'
-            value='3'
-            label='Бюджет не определен'
-          />
+          <div className='flex items-center gap-x-[5px]'>
+            <Radio
+              onChange={(value) => setPayment(value)}
+              id='o_1'
+              name='payment'
+              value='1'
+              label='Фиксированная цена'
+            />
+            <div className='group relative'>
+              <span>
+                <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 16 16'
+                    role='image'
+                  >
+                    <circle cx='8' cy='8' r='8' fill='currentColor' />
+                    <path
+                      d='M7.4 11.8C7.4 12.2418 7.75817 12.6 8.2 12.6C8.64183 12.6 9 12.2418 9 11.8C9 11.3582 8.64183 11 8.2 11C7.75817 11 7.4 11.3582 7.4 11.8ZM8.2 3C6.70536 3 5.45084 4.02342 5.09865 5.40808C4.98973 5.83627 5.35817 6.2 5.8 6.2C6.24183 6.2 6.58396 5.82034 6.79697 5.43325C7.06967 4.93772 7.59731 4.6 8.2 4.6C9.08 4.6 9.8 5.32 9.8 6.2C9.8 7.61558 7.92137 7.62219 7.4883 9.40552C7.38404 9.83487 7.75817 10.2 8.2 10.2C8.64183 10.2 8.98142 9.82361 9.17376 9.42585C9.72525 8.28535 11.4 7.8707 11.4 6.2C11.4 4.432 9.968 3 8.2 3Z'
+                      fill='#FFF'
+                    />
+                  </svg>
+                </div>
+              </span>
+              {/* <div className='popaver-view max-w-[369px w-[369px] py-[20px] pl-[25px] pr-[20px] group-hover:visible group-hover:translate-x-[-50%] group-hover:translate-y-0 group-hover:opacity-100'>
+                <div className='mb-2 text-13 tracking-[-0.13px] text-fontBlack'>
+                  Фиксированная цена
+                </div>
+                <div className='mb-3 text-13 leading-[1.23] tracking-[-0.13px] text-fontGrey'>
+                  Вы заранее определяете конечную сумму, которую готовы
+                  заплатить за выполнение всего задания.
+                </div>
+                <div className='text-13 leading-[1.23] tracking-[-0.13px] text-fontGrey'>
+                  Хороший выбор для проектов с четко обозначенными задачами и
+                  сроками.
+                </div>
+              </div> */}
+            </div>
+          </div>
+
+          {/* <div>
+            <div className='tooltip w-[400px]'>
+              <div className='tooltip__text'>
+                tooltip text
+                <span className='tooltip__arrow'></span>
+              </div>
+              <span>hover on me</span>
+            </div>
+          </div> */}
+
+          <div className='flex items-center gap-x-[5px]'>
+            <Radio
+              onChange={(value) => setPayment(value)}
+              id='o_2'
+              name='payment'
+              value='2'
+              label='Почасовая оплата'
+            />
+            <span>
+              <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 16 16'
+                  role='image'
+                >
+                  <circle cx='8' cy='8' r='8' fill='currentColor' />
+                  <path
+                    d='M7.4 11.8C7.4 12.2418 7.75817 12.6 8.2 12.6C8.64183 12.6 9 12.2418 9 11.8C9 11.3582 8.64183 11 8.2 11C7.75817 11 7.4 11.3582 7.4 11.8ZM8.2 3C6.70536 3 5.45084 4.02342 5.09865 5.40808C4.98973 5.83627 5.35817 6.2 5.8 6.2C6.24183 6.2 6.58396 5.82034 6.79697 5.43325C7.06967 4.93772 7.59731 4.6 8.2 4.6C9.08 4.6 9.8 5.32 9.8 6.2C9.8 7.61558 7.92137 7.62219 7.4883 9.40552C7.38404 9.83487 7.75817 10.2 8.2 10.2C8.64183 10.2 8.98142 9.82361 9.17376 9.42585C9.72525 8.28535 11.4 7.8707 11.4 6.2C11.4 4.432 9.968 3 8.2 3Z'
+                    fill='#FFF'
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
+          <div className='flex items-center gap-x-[5px]'>
+            <Radio
+              onChange={(value) => setPayment(value)}
+              id='o_3'
+              name='payment'
+              value='3'
+              label='Бюджет не определен'
+            />
+            <span>
+              <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 16 16'
+                  role='image'
+                >
+                  <circle cx='8' cy='8' r='8' fill='currentColor' />
+                  <path
+                    d='M7.4 11.8C7.4 12.2418 7.75817 12.6 8.2 12.6C8.64183 12.6 9 12.2418 9 11.8C9 11.3582 8.64183 11 8.2 11C7.75817 11 7.4 11.3582 7.4 11.8ZM8.2 3C6.70536 3 5.45084 4.02342 5.09865 5.40808C4.98973 5.83627 5.35817 6.2 5.8 6.2C6.24183 6.2 6.58396 5.82034 6.79697 5.43325C7.06967 4.93772 7.59731 4.6 8.2 4.6C9.08 4.6 9.8 5.32 9.8 6.2C9.8 7.61558 7.92137 7.62219 7.4883 9.40552C7.38404 9.83487 7.75817 10.2 8.2 10.2C8.64183 10.2 8.98142 9.82361 9.17376 9.42585C9.72525 8.28535 11.4 7.8707 11.4 6.2C11.4 4.432 9.968 3 8.2 3Z'
+                    fill='#FFF'
+                  />
+                </svg>
+              </div>
+            </span>
+          </div>
         </div>
         <div>
           <input
@@ -246,7 +334,7 @@ const ModalInvite = () => {
           Вы можете прикрепить файлы, которые могут быть полезны для
           исполнителя, например, чертежи, документы, образцы и т.д.
         </div>
-        <div>
+        <div className='mb-[22px]'>
           <input id='upload-file' type='file' className='hidden' />
           <label
             htmlFor='upload-file'
@@ -268,6 +356,43 @@ const ModalInvite = () => {
             Прикрепить файл
           </label>
         </div>
+
+        <div>
+          {[...Array(3)].map((_, index) => {
+            return (
+              <div
+                key={index}
+                className='flex w-[317px] items-center justify-between border-b border-[#DBDBDB] py-2'
+              >
+                <span className='flex-[0_0_190px] text-13 leading-[1.53] tracking-[-0.13px] text-greenDark'>
+                  Task_instructions.docx
+                </span>
+                <button className='flex items-center'>
+                  <div className='h-[11px] w-[10px] flex-[0_0_10px]'>
+                    <svg
+                      className='h-full w-full  text-[#6C6C70]'
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 10 11'
+                      fill='none'
+                    >
+                      <path
+                        d='M5 6.63323L1.36944 10.2638C1.21196 10.4213 1.02309 10.5 0.802827 10.5C0.582568 10.5 0.393695 10.4213 0.23621 10.2638C0.0787367 10.1063 0 9.91743 0 9.69717C0 9.47691 0.0787367 9.28804 0.23621 9.13055L3.86677 5.5L0.23621 1.86944C0.0787367 1.71196 0 1.52309 0 1.30283C0 1.08257 0.0787367 0.893696 0.23621 0.73621C0.393695 0.578737 0.582568 0.5 0.802827 0.5C1.02309 0.5 1.21196 0.578737 1.36944 0.73621L5 4.36677L8.63055 0.73621C8.78804 0.578737 8.97691 0.5 9.19717 0.5C9.41743 0.5 9.6063 0.578737 9.76379 0.73621C9.92126 0.893696 10 1.08257 10 1.30283C10 1.52309 9.92126 1.71196 9.76379 1.86944L6.13323 5.5L9.76379 9.13055C9.92126 9.28804 10 9.47691 10 9.69717C10 9.91743 9.92126 10.1063 9.76379 10.2638C9.6063 10.4213 9.41743 10.5 9.19717 10.5C8.97691 10.5 8.78804 10.4213 8.63055 10.2638L5 6.63323Z'
+                        fill='currentColor'
+                      />
+                    </svg>
+                  </div>
+                  <span className='ml-[5px] text-13 leading-[1.53] tracking-[-0.13px] text-fontDarkGrey'>
+                    Удалить
+                  </span>
+                </button>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <div className='mt-[30px] flex items-center gap-x-2.5'>
+        <button className='btn-primary px-[20px]'>Отправить</button>
+        <button className='btn-secondary px-[20px]'>Отмена</button>
       </div>
     </div>
   )

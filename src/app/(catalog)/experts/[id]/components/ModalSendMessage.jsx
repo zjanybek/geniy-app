@@ -45,12 +45,10 @@ const ModalSendMessage = () => {
               <span className='text-13 tracking-[-0.52px] text-greenDark'>
                 Перейти в профиль
               </span>
-              <div className='h-[10px] w-[10px]'>
+              <div className='h-[10px] w-[10px] flex-[0_0_10px]'>
                 <svg
                   className='h-full w-full text-greenDark'
                   xmlns='http://www.w3.org/2000/svg'
-                  width='10'
-                  height='10'
                   viewBox='0 0 10 10'
                   fill='none'
                 >
@@ -118,7 +116,7 @@ const ModalSendMessage = () => {
           0 / 3000 символов
         </p>
       </div>
-      <div>
+      <div className='mb-8'>
         <div className='mb-[7px] text-17 tracking-[-0.17px] text-fontBlack'>
           Добавить файл
         </div>
@@ -127,7 +125,7 @@ const ModalSendMessage = () => {
           исполнителя, например, чертежи, документы, образцы и т.д.
         </p>
 
-        <div className='mb-8'>
+        <div className='mb-[22px]'>
           <input id='upload-file' type='file' className='hidden' />
           <label
             htmlFor='upload-file'
@@ -150,10 +148,42 @@ const ModalSendMessage = () => {
           </label>
         </div>
 
-        <div className='flex items-center gap-x-2.5'>
-          <button className='btn-primary px-[20px]'>Отправить</button>
-          <button className='btn-secondary px-[20px]'>Отмена</button>
+        <div>
+          {[...Array(3)].map((_, index) => {
+            return (
+              <div
+                key={index}
+                className='flex w-[317px] items-center justify-between border-b border-[#DBDBDB] py-2'
+              >
+                <span className='flex-[0_0_190px] text-13 leading-[1.53] tracking-[-0.13px] text-greenDark'>
+                  Task_instructions.docx
+                </span>
+                <button className='flex items-center'>
+                  <div className='h-[11px] w-[10px] flex-[0_0_10px]'>
+                    <svg
+                      className='h-full w-full  text-[#6C6C70]'
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 10 11'
+                      fill='none'
+                    >
+                      <path
+                        d='M5 6.63323L1.36944 10.2638C1.21196 10.4213 1.02309 10.5 0.802827 10.5C0.582568 10.5 0.393695 10.4213 0.23621 10.2638C0.0787367 10.1063 0 9.91743 0 9.69717C0 9.47691 0.0787367 9.28804 0.23621 9.13055L3.86677 5.5L0.23621 1.86944C0.0787367 1.71196 0 1.52309 0 1.30283C0 1.08257 0.0787367 0.893696 0.23621 0.73621C0.393695 0.578737 0.582568 0.5 0.802827 0.5C1.02309 0.5 1.21196 0.578737 1.36944 0.73621L5 4.36677L8.63055 0.73621C8.78804 0.578737 8.97691 0.5 9.19717 0.5C9.41743 0.5 9.6063 0.578737 9.76379 0.73621C9.92126 0.893696 10 1.08257 10 1.30283C10 1.52309 9.92126 1.71196 9.76379 1.86944L6.13323 5.5L9.76379 9.13055C9.92126 9.28804 10 9.47691 10 9.69717C10 9.91743 9.92126 10.1063 9.76379 10.2638C9.6063 10.4213 9.41743 10.5 9.19717 10.5C8.97691 10.5 8.78804 10.4213 8.63055 10.2638L5 6.63323Z'
+                        fill='currentColor'
+                      />
+                    </svg>
+                  </div>
+                  <span className='ml-[5px] text-13 leading-[1.53] tracking-[-0.13px] text-fontDarkGrey'>
+                    Удалить
+                  </span>
+                </button>
+              </div>
+            )
+          })}
         </div>
+      </div>
+      <div className='flex items-center gap-x-2.5'>
+        <button className='btn-primary px-[20px]'>Отправить</button>
+        <button className='btn-secondary px-[20px]'>Отмена</button>
       </div>
     </div>
   )

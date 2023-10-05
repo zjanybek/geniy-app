@@ -173,7 +173,7 @@ const page = () => {
           <div className='border-t border-[#DBDBDB]'>
             <div className='grid grid-cols-[1fr_25.68%]'>
               {/* left */}
-              <div className='px-[40px]'>
+              <div className='overflow-hidden px-[40px]'>
                 <div className='pb-[37px] pt-[33px]'>
                   <div className='mb-[26px] flex justify-between gap-x-2'>
                     <div className='max-w-[548px] text-22 font-medium leading-[1.18] tracking-[-0.88px] text-fontBlack'>
@@ -227,6 +227,85 @@ const page = () => {
                     2023 г. - спикер на Фриланс-форуме "Цифровые воротнички".
                     Выступала с докладом "Специфика работы с иностранными
                     заказчиками"...
+                  </div>
+
+                  <a
+                    href='#'
+                    className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                  >
+                    <span className='mr-[6px]'>развернуть</span>
+                    <svg
+                      className='h-[6px] w-[10px]'
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='10'
+                      height='6'
+                      viewBox='0 0 10 6'
+                      fill='none'
+                    >
+                      <path
+                        d='M5.00737 6C4.90903 6 4.81808 5.9833 4.73451 5.94989C4.65093 5.91646 4.56981 5.85862 4.49115 5.77636L0.21385 1.30334C0.0712832 1.15425 0 0.974299 0 0.763497C0 0.552695 0.0712832 0.372748 0.21385 0.223658C0.356431 0.0745526 0.530966 0 0.737456 0C0.943945 0 1.11847 0.0745526 1.26104 0.223658L5.00737 4.14142L8.75369 0.223658C8.89626 0.0745526 9.06833 0 9.26991 0C9.47147 0 9.64355 0.0745526 9.78613 0.223658C9.92871 0.372748 10 0.555263 10 0.771202C10 0.98714 9.92871 1.16966 9.78613 1.31877L5.52358 5.77636C5.44493 5.85862 5.36381 5.91646 5.28022 5.94989C5.19665 5.9833 5.1057 6 5.00737 6Z'
+                        fill='currentColor'
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div className='overflow-hidden border-t border-[#D9D9D9] pb-[30px] pt-[27px]'>
+                  <div className='mb-3 flex items-center justify-between'>
+                    <div className='text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                      Портфолио (18)
+                    </div>
+                    <a
+                      href='#'
+                      className='text-15 leading-[1.06] tracking-[-0.6px] text-greenDark'
+                    >
+                      смотреть все
+                    </a>
+                  </div>
+                  <div className='relative'>
+                    <div className='flex gap-x-[20px] overflow-hidden'>
+                      {[...Array(4)].map((_, index) => {
+                        return (
+                          <div className='flex-[0_0_195px]'>
+                            <div
+                              key={index}
+                              className='h-[283px] rounded-[15px] bg-[#D1D1D6]'
+                            ></div>
+                            <div className='mt-[15px] text-15 leading-[1.33] tracking-[-0.3px] text-fontGrey'>
+                              Цифровые воротнички"
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                    <button className='absolute left-2.5 top-2/4 flex h-[32px] w-[32px] translate-y-[-50%] items-center justify-center rounded-[50%] bg-white text-fontDarkGrey'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='6'
+                        height='10'
+                        viewBox='0 0 6 10'
+                        fill='none'
+                      >
+                        <path
+                          d='M-6.95716e-07 5.00737C-6.91418e-07 4.90903 0.0167043 4.81808 0.050113 4.73451C0.0835374 4.65093 0.141378 4.56981 0.223635 4.49115L4.69666 0.21385C4.84575 0.0712831 5.0257 -4.2588e-08 5.2365 -3.33735e-08C5.44731 -2.41591e-08 5.62725 0.0712832 5.77634 0.21385C5.92545 0.356431 6 0.530966 6 0.737456C6 0.943945 5.92545 1.11847 5.77634 1.26104L1.85858 5.00737L5.77634 8.75369C5.92545 8.89626 6 9.06833 6 9.26991C6 9.47147 5.92545 9.64355 5.77634 9.78613C5.62725 9.92871 5.44474 10 5.2288 10C5.01286 10 4.83034 9.92871 4.68123 9.78613L0.223635 5.52358C0.141378 5.44493 0.0835373 5.36381 0.050113 5.28022C0.0167043 5.19665 -7.00014e-07 5.1057 -6.95716e-07 5.00737Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </button>
+                    <button className='absolute right-2.5 top-2/4 flex h-[32px] w-[32px] translate-y-[-50%] items-center justify-center rounded-[50%] bg-white text-fontDarkGrey'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='6'
+                        height='10'
+                        viewBox='0 0 6 10'
+                        fill='none'
+                      >
+                        <path
+                          d='M6 4.99263C6 5.09097 5.9833 5.18192 5.94989 5.26549C5.91646 5.34907 5.85862 5.43019 5.77636 5.50885L1.30334 9.78615C1.15425 9.92872 0.974299 10 0.763497 10C0.552695 10 0.372748 9.92872 0.223658 9.78615C0.0745526 9.64357 -2.32093e-08 9.46903 -3.22352e-08 9.26254C-4.12611e-08 9.05605 0.0745526 8.88153 0.223658 8.73896L4.14142 4.99263L0.223658 1.24631C0.0745522 1.10374 -3.96389e-07 0.931666 -4.05201e-07 0.730088C-4.14011e-07 0.528525 0.0745522 0.356453 0.223658 0.213872C0.372748 0.07129 0.555263 -2.42713e-08 0.771201 -3.37103e-08C0.98714 -4.31493e-08 1.16966 0.07129 1.31877 0.213872L5.77636 4.47642C5.85862 4.55507 5.91646 4.63619 5.94989 4.71978C5.9833 4.80335 6 4.8943 6 4.99263Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
 
@@ -477,6 +556,67 @@ const page = () => {
                         )
                       })}
                     </div>
+
+                    <div className='flex justify-center border-t border-[#DBDBDB] pb-[50px] pt-[30px]'>
+                      <div className='flex items-center gap-x-[16px]'>
+                        <button className='flex items-center'>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='7'
+                            height='10'
+                            viewBox='0 0 7 10'
+                            fill='none'
+                          >
+                            <path
+                              d='M0.499999 5.00737C0.499999 4.90903 0.516704 4.81808 0.550113 4.73451C0.583537 4.65093 0.641378 4.56981 0.723635 4.49115L5.19666 0.21385C5.34575 0.0712831 5.5257 -4.2588e-08 5.7365 -3.33735e-08C5.94731 -2.41591e-08 6.12725 0.0712832 6.27634 0.21385C6.42545 0.356431 6.5 0.530966 6.5 0.737456C6.5 0.943945 6.42545 1.11847 6.27634 1.26104L2.35858 5.00737L6.27634 8.75369C6.42545 8.89626 6.5 9.06833 6.5 9.26991C6.5 9.47147 6.42545 9.64355 6.27634 9.78613C6.12725 9.92871 5.94474 10 5.7288 10C5.51286 10 5.33034 9.92871 5.18123 9.78613L0.723635 5.52358C0.641378 5.44493 0.583537 5.36381 0.550113 5.28022C0.516704 5.19665 0.499999 5.1057 0.499999 5.00737Z'
+                              fill='#D1D1D6'
+                            />
+                          </svg>
+                          <span className='ml-2.5 text-13 text-[#D1D1D6]'>
+                            Предыдущая
+                          </span>
+                        </button>
+
+                        <div className='flex items-center gap-x-[6px]'>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent  text-center text-15 text-fontGrey'>
+                            <span>1</span>
+                          </button>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-greenDark text-center text-15 leading-[0.93] text-[#FFF]'>
+                            <span>2</span>
+                          </button>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
+                            3
+                          </button>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
+                            4
+                          </button>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
+                            5
+                          </button>
+                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
+                            6
+                          </button>
+                        </div>
+
+                        <button className='flex items-center'>
+                          <span className='mr-2.5 text-13 text-greenDark'>
+                            Предыдущая
+                          </span>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='6'
+                            height='10'
+                            viewBox='0 0 6 10'
+                            fill='none'
+                          >
+                            <path
+                              d='M6 4.99263C6 5.09097 5.9833 5.18192 5.94989 5.26549C5.91646 5.34907 5.85862 5.43019 5.77636 5.50885L1.30334 9.78615C1.15425 9.92872 0.974299 10 0.763497 10C0.552695 10 0.372748 9.92872 0.223658 9.78615C0.0745526 9.64357 -2.32093e-08 9.46903 -3.22352e-08 9.26254C-4.12612e-08 9.05605 0.0745526 8.88153 0.223658 8.73896L4.14142 4.99263L0.223658 1.24631C0.0745522 1.10374 -3.96389e-07 0.931666 -4.05201e-07 0.730088C-4.14011e-07 0.528525 0.0745522 0.356453 0.223658 0.213872C0.372748 0.07129 0.555263 -2.42713e-08 0.771201 -3.37103e-08C0.98714 -4.31493e-08 1.16966 0.07129 1.31877 0.213872L5.77636 4.47642C5.85862 4.55507 5.91646 4.63619 5.94989 4.71978C5.9833 4.80335 6 4.8943 6 4.99263Z'
+                              fill='#24A322'
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -534,7 +674,7 @@ const page = () => {
                   </p>
                 </div>
                 <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
-                  <div className='mb-3 text-17 leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Видеопрезентация:
                   </div>
                   <div className='h-[128px] w-full rounded-[15px] bg-[#D9D9D9]'></div>
@@ -623,58 +763,116 @@ const page = () => {
                     Образование:
                   </div>
                   <div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Программист-техник
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курский Государственный Политехнический Колледж (КГПК)
                       2011 - 2015
                     </div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Бакалавр Инженер-программист
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Юго-западный Государственный Университет (ЮЗГУ) 2016 -
                       2020
                     </div>
+
+                    <a
+                      href='#'
+                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                    >
+                      <span className='mr-[6px]'>развернуть</span>
+                      <svg
+                        className='h-[6px] w-[10px]'
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='10'
+                        height='6'
+                        viewBox='0 0 10 6'
+                        fill='none'
+                      >
+                        <path
+                          d='M5.00737 6C4.90903 6 4.81808 5.9833 4.73451 5.94989C4.65093 5.91646 4.56981 5.85862 4.49115 5.77636L0.21385 1.30334C0.0712832 1.15425 0 0.974299 0 0.763497C0 0.552695 0.0712832 0.372748 0.21385 0.223658C0.356431 0.0745526 0.530966 0 0.737456 0C0.943945 0 1.11847 0.0745526 1.26104 0.223658L5.00737 4.14142L8.75369 0.223658C8.89626 0.0745526 9.06833 0 9.26991 0C9.47147 0 9.64355 0.0745526 9.78613 0.223658C9.92871 0.372748 10 0.555263 10 0.771202C10 0.98714 9.92871 1.16966 9.78613 1.31877L5.52358 5.77636C5.44493 5.85862 5.36381 5.91646 5.28022 5.94989C5.19665 5.9833 5.1057 6 5.00737 6Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[17px] pb-[26px]'>
                   <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Период работы:
                   </div>
                   <div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       NF portal
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курск, Россия Главный дизайнер 2018 - по настоящее время
                     </div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Art-Hall
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курск, Россия Штатный дизайнер 2015 - 2018
                     </div>
+                    <a
+                      href='#'
+                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                    >
+                      <span className='mr-[6px]'>развернуть</span>
+                      <svg
+                        className='h-[6px] w-[10px]'
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='10'
+                        height='6'
+                        viewBox='0 0 10 6'
+                        fill='none'
+                      >
+                        <path
+                          d='M5.00737 6C4.90903 6 4.81808 5.9833 4.73451 5.94989C4.65093 5.91646 4.56981 5.85862 4.49115 5.77636L0.21385 1.30334C0.0712832 1.15425 0 0.974299 0 0.763497C0 0.552695 0.0712832 0.372748 0.21385 0.223658C0.356431 0.0745526 0.530966 0 0.737456 0C0.943945 0 1.11847 0.0745526 1.26104 0.223658L5.00737 4.14142L8.75369 0.223658C8.89626 0.0745526 9.06833 0 9.26991 0C9.47147 0 9.64355 0.0745526 9.78613 0.223658C9.92871 0.372748 10 0.555263 10 0.771202C10 0.98714 9.92871 1.16966 9.78613 1.31877L5.52358 5.77636C5.44493 5.85862 5.36381 5.91646 5.28022 5.94989C5.19665 5.9833 5.1057 6 5.00737 6Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[17px] pb-[26px]'>
                   <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Сертификаты:
                   </div>
                   <div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Skillbox (14.07.2023) 1452 4451 4124
                     </div>
-                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Skillbox (14.07.2023) 1452 4451 4124
                     </div>
+                    <a
+                      href='#'
+                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                    >
+                      <span className='mr-[6px]'>развернуть</span>
+                      <svg
+                        className='h-[6px] w-[10px]'
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='10'
+                        height='6'
+                        viewBox='0 0 10 6'
+                        fill='none'
+                      >
+                        <path
+                          d='M5.00737 6C4.90903 6 4.81808 5.9833 4.73451 5.94989C4.65093 5.91646 4.56981 5.85862 4.49115 5.77636L0.21385 1.30334C0.0712832 1.15425 0 0.974299 0 0.763497C0 0.552695 0.0712832 0.372748 0.21385 0.223658C0.356431 0.0745526 0.530966 0 0.737456 0C0.943945 0 1.11847 0.0745526 1.26104 0.223658L5.00737 4.14142L8.75369 0.223658C8.89626 0.0745526 9.06833 0 9.26991 0C9.47147 0 9.64355 0.0745526 9.78613 0.223658C9.92871 0.372748 10 0.555263 10 0.771202C10 0.98714 9.92871 1.16966 9.78613 1.31877L5.52358 5.77636C5.44493 5.85862 5.36381 5.91646 5.28022 5.94989C5.19665 5.9833 5.1057 6 5.00737 6Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
