@@ -1,11 +1,17 @@
+import { getServerSession } from 'next-auth'
 import Link from 'next/link'
 
 import { ThreeSteps } from '@/screens/MainPage'
 import { ButtonScrollTo, Questions, TextBlock } from '@/screens/MainPage/client'
 
+import { authOptions } from './api/auth/[...nextauth]/route'
 import './page.scss'
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions)
+
+  console.log('PAGE', session?.user.id)
+
   return (
     <main className='main-block'>
       <section className='hero'>

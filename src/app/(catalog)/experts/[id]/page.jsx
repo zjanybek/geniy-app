@@ -673,13 +673,13 @@ const page = () => {
                     UI / UX дизайн
                   </p>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Видеопрезентация:
                   </div>
                   <div className='h-[128px] w-full rounded-[15px] bg-[#D9D9D9]'></div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-[18px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Верификация:
                   </div>
@@ -738,7 +738,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-3 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Языки:
                   </div>
@@ -758,19 +758,19 @@ const page = () => {
                     носителя
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[29px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Образование:
                   </div>
                   <div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       Программист-техник
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курский Государственный Политехнический Колледж (КГПК)
                       2011 - 2015
                     </div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       Бакалавр Инженер-программист
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -799,18 +799,18 @@ const page = () => {
                     </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[26px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Период работы:
                   </div>
                   <div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       NF portal
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курск, Россия Главный дизайнер 2018 - по настоящее время
                     </div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       Art-Hall
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -837,18 +837,18 @@ const page = () => {
                     </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[17px] pb-[26px]'>
+                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
                   <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Сертификаты:
                   </div>
                   <div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Skillbox (14.07.2023) 1452 4451 4124
                     </div>
-                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-1 text-15 tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>

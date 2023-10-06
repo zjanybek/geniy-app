@@ -1,6 +1,8 @@
+import { getServerSession } from 'next-auth'
 import { Geologica, Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 
+import Providers from '@/components/Providers'
 import TheFooter from '@/components/TheFooter/TheFooter'
 import TheHeader from '@/components/TheHeader/TheHeader'
 
@@ -112,8 +114,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Гении',
-  description: 'Гении тысячи профессионалов со всего мира готовы помочь тебе'
+  title: 'Next.js 13.5',
+  description: 'React server components (SSR, SSG, ISR, CSR)'
 }
 
 export default function RootLayout({ children }) {
@@ -123,11 +125,13 @@ export default function RootLayout({ children }) {
       className={`${baskervillecyrltstd.variable} ${helveticaneuecyr.variable} ${geologica.variable} ${montserrat.variable}`}
     >
       <body>
-        <div className='wrapper'>
-          <TheHeader />
-          {children}
-          <TheFooter />
-        </div>
+        <Providers>
+          <div className='wrapper'>
+            <TheHeader />
+            {children}
+            <TheFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   )

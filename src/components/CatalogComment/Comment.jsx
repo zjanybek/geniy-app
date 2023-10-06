@@ -19,7 +19,7 @@ const Comment = ({}) => {
       <div className='mb-[9px] text-12 leading-[1.33] tracking-[-0.48px] text-fontGrey'>
         <span>02 июл. 2023 – 08 июл. 2023</span>
       </div>
-      <p className='text-15 font-medium italic leading-[1.33] tracking-[-0.3px] text-fontGrey'>
+      <p className='text-15 font-medium italic leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
         Результат работы превзошел все ожидания! Елена очень тонко почувствовала
         все наши эмоции и чувства, которые хотелось переложить на изображение.
         Все сошлось и милота, и нежность, и детство, и ассоциативный ряд с

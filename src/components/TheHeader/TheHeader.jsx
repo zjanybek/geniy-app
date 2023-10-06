@@ -1,5 +1,6 @@
 'use client'
 
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -8,7 +9,7 @@ import styles from './header.module.scss'
 const TheHeader = () => {
   const pathName = usePathname()
 
-  console.log(pathName)
+  const { data: session } = useSession()
 
   return (
     <>
@@ -192,16 +193,39 @@ const TheHeader = () => {
                 />
               </svg>
             </button>
-            <a href='#' className={styles['actions__button-login']}>
-              Вход
-            </a>
-            <a href='#' className={styles['actions__button-register']}>
-              Регистрация
-            </a>
+            {session ? (
+              <>
+                <div className='ml-[19px]'>{session?.user?.name}</div>
+                <button
+                  onClick={() => signOut()}
+                  className={`${styles['actions__button-register']} ml-[19px]`}
+                >
+                  Выйти
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  href='/auth/login'
+                  className={styles['actions__button-login']}
+                >
+                  Вход
+                </Link>
+                <Link
+                  href='/auth/register'
+                  className={styles['actions__button-register']}
+                >
+                  Регистрация
+                </Link>
 
-            <a href='#' className={styles['actions__button-register-mobile']}>
-              Вход
-            </a>
+                <Link
+                  href='#'
+                  className={styles['actions__button-register-mobile']}
+                >
+                  Вход
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </header>

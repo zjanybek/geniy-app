@@ -20,6 +20,7 @@
       box-shadow: 0 0 5px #23904d;
     }
     &:checked + .option__label:before {
+      border: 1px solid var(--green-light);
     }
     &:checked + .option__label:after {
       transform: scale(1);
@@ -43,7 +44,7 @@
       height: 20px;
       flex: 0 0 20px;
       border-radius: 50%;
-      border: 1px solid var(--green-light);
+      border: 1px solid var(--grey-third);
     }
     &:after {
       content: '';
