@@ -312,8 +312,8 @@ const page = ({ params }) => {
 
               <div className='flex justify-center border-t border-[#DBDBDB] pt-[40px]'>
                 <div className='flex items-center gap-x-[16px]'>
-                  <button className='flex items-center'>
-                    <div className='up-icon h-[10px] w-[7px] text-[#D1D1D6]'>
+                  <button className='inline-flex items-center justify-center text-center'>
+                    <div className='up-icon w-[7px]text-[#D1D1D6] h-[10px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='7'
@@ -351,7 +351,7 @@ const page = ({ params }) => {
                     </button>
                   </div>
 
-                  <button className='flex items-center'>
+                  <button className='inline-flex items-center justify-center text-center'>
                     <span className='mr-2.5 text-13 text-greenDark'>
                       Предыдущая
                     </span>
