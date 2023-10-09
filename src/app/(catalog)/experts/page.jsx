@@ -367,7 +367,7 @@ const page = ({ params }) => {
 
                   <button className='flex items-center text-13 text-greenDark'>
                     <span>Следующая</span>
-                    <div className='up-icon w-[7px ml-2.5 h-[10px]'>
+                    <div className='up-icon ml-2.5 h-[10px] w-[7px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='6'
