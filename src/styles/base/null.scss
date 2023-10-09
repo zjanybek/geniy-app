@@ -1,14 +1,14 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+// * {
+//   padding: 0px;
+//   margin: 0px;
+// }
+// *,
+// *:before,
+// *:after {
+//   -moz-box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
 :focus,
 :active {
   // outline: none;
@@ -17,19 +17,21 @@ a:focus,
 a:active {
   // outline: none;
 }
-html,
+// html,
+// body {
+//   height: 100%;
+//   min-width: 320px;
+// }
+
 body {
-  height: 100%;
-  min-width: 320px;
-}
-body {
-  line-height: 1;
-  // text-rendering: optimizeLegibility;
+  line-height: normal;
+  text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
 input,
 button,
 textarea {

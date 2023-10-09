@@ -4,7 +4,6 @@ import CatalogAccordion from '@/components/CatalogAccordion/CatalogAccordion'
 import Checkbox from '@/components/ui/Checkbox'
 
 import Card from './components/Card/Card'
-import './page.scss'
 
 const category = [
   'Веб-разработка',
@@ -22,13 +21,38 @@ const category = [
   'Продуктовый менеджмент'
 ]
 
-const page = ({ params }) => {
+const page = () => {
   return (
-    <div className='catalog-experts'>
-      <div className='catalog-experts__container-box'>
-        <div className='catalog-experts__header'>
-          <div className='catalog-experts__for-text'>Для заказчика</div>
-          <h1 className='catalog-experts__title mb-[7px]'>Каталог экспертов</h1>
+    <div className='pb-[66px] pt-[51px]'>
+      <div className='catalog__second-container'>
+        <div style={{ display: 'flex', alignItems: 'center', padding: '20px' }}>
+          <div
+            style={{ width: '7px', height: '10px', marginRight: '15px' }}
+            className='up-icon'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='7'
+              height='10'
+              viewBox='0 0 7 10'
+              fill='none'
+            >
+              <path
+                d='M0.499999 5.00737C0.499999 4.90903 0.516704 4.81808 0.550113 4.73451C0.583537 4.65093 0.641378 4.56981 0.723635 4.49115L5.19666 0.21385C5.34575 0.0712831 5.5257 -4.2588e-08 5.7365 -3.33735e-08C5.94731 -2.41591e-08 6.12725 0.0712832 6.27634 0.21385C6.42545 0.356431 6.5 0.530966 6.5 0.737456C6.5 0.943945 6.42545 1.11847 6.27634 1.26104L2.35858 5.00737L6.27634 8.75369C6.42545 8.89626 6.5 9.06833 6.5 9.26991C6.5 9.47147 6.42545 9.64355 6.27634 9.78613C6.12725 9.92871 5.94474 10 5.7288 10C5.51286 10 5.33034 9.92871 5.18123 9.78613L0.723635 5.52358C0.641378 5.44493 0.583537 5.36381 0.550113 5.28022C0.516704 5.19665 0.499999 5.1057 0.499999 5.00737Z'
+                fill='currentColor'
+              />
+            </svg>
+          </div>
+          <span>Россия</span>
+        </div>
+
+        <div className='mb-[34px]'>
+          <div className='mb-1 text-12 tracking-[0.12] text-fontBlack'>
+            Для Исполнителей
+          </div>
+          <h1 className='mb-[7px] text-[40px] font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
+            Каталог проектов
+          </h1>
           <div className='flex items-center gap-x-2'>
             <div className='flex items-center'>
               <span className='mr-[10px] text-12 tracking-[-0.48px] text-fontGrey'>
@@ -49,7 +73,7 @@ const page = ({ params }) => {
             </div>
             <div className='flex items-center'>
               <span className='mr-[10px] text-12 tracking-[-0.48px] text-fontGrey'>
-                Каталог экспертов
+                Каталог проектов
               </span>
             </div>
           </div>
@@ -57,19 +81,29 @@ const page = ({ params }) => {
 
         <div className='flex gap-x-[30px]'>
           <div className='flex-[0_0_256px]'>
-            <div className='catalog-experts__filters experts-filters'>
-              <div className='experts-filters__top h-[285px]'>
-                <div className='experts-filters__user-image'>
-                  <img src='/images/experts/user-image.svg' alt='' />
+            <div>
+              <div className='flex h-[285px] flex-col items-center rounded-[30px] border border-[#DBDBDB] py-[55px]'>
+                <div className='mb-[25px] h-[82px] w-[82px] overflow-hidden rounded-[50%]'>
+                  <img
+                    className='h-full w-full'
+                    src='/images/experts/user-image.svg'
+                    alt=''
+                  />
                 </div>
-                <div className='experts-filters__user-name'>Гений Г.</div>
-                <div className='experts-filters__user-role'>Заказчик</div>
-                <Link href='#' className='experts-filters__user-office'>
+                <div className='text-19 mb-1 text-center leading-[1.05] tracking-[-0.76px] text-fontBlack'>
+                  Гений Г.
+                </div>
+                <div className='text-13 leading-[1.53] tracking-[-0.52px] text-fontGrey'>
+                  Заказчик
+                </div>
+                <Link
+                  href='#'
+                  className='flex items-center text-15 font-medium tracking-[-0.3px] text-greenDark hover:underline'
+                >
                   <span>Личный кабинет</span>
                   <svg
+                    className='ml-[5px] h-[11px] w-[10px]'
                     xmlns='http://www.w3.org/2000/svg'
-                    width='10'
-                    height='11'
                     viewBox='0 0 10 11'
                     fill='none'
                   >
@@ -81,28 +115,35 @@ const page = ({ params }) => {
                 </Link>
               </div>
 
-              <div className='experts-filters__experience'>
-                <div className='experts-filters__experience-title'>
+              <div className='py-[30px] pb-6'>
+                <div className='mb-[19px] text-17 font-medium tracking-[-0.68px] text-fontBlack'>
                   Опыт исполнителя
                 </div>
-                <Checkbox icon={true} id='c_1' label='Начинающий'>
-                  <img src='/images/experts/diamond-green.svg' alt='' />
-                </Checkbox>
-                <Checkbox icon={true} id='c_2' label='Продвинутый'>
-                  <img src='/images/experts/diamond-blue.svg' alt='' />
-                </Checkbox>
-                <Checkbox icon={true} id='c_3' label='Эксперт'>
-                  <img src='/images/experts/diamond-violet.svg' alt='' />
-                </Checkbox>
+                <div>
+                  <Checkbox icon={true} id='c_1' label='Начинающий'>
+                    <img src='/images/experts/diamond-green.svg' alt='' />
+                  </Checkbox>
+                  <Checkbox icon={true} id='c_2' label='Продвинутый'>
+                    <img src='/images/experts/diamond-blue.svg' alt='' />
+                  </Checkbox>
+                  <Checkbox icon={true} id='c_3' label='Эксперт'>
+                    <img src='/images/experts/diamond-violet.svg' alt='' />
+                  </Checkbox>
+                </div>
               </div>
 
-              <div className='experts-filters__body'>
+              <div>
                 <CatalogAccordion title='Категория'>
-                  <ul className='experts-filters__list'>
+                  <ul className='flex flex-col'>
                     {category.map((item, index) => {
                       return (
-                        <li key={index}>
-                          <button>{item}</button>
+                        <li
+                          key={index}
+                          className='[&:not(:last-child)]:mb-[17px]'
+                        >
+                          <button className='text-15 leading-[1.06] tracking-[-0.6px] text-fontDarkGrey'>
+                            {item}
+                          </button>
                         </li>
                       )
                     })}
@@ -110,11 +151,16 @@ const page = ({ params }) => {
                 </CatalogAccordion>
 
                 <CatalogAccordion title='Подкатегория'>
-                  <ul className='experts-filters__list'>
-                    {[...Array(4)].map((item, index) => {
+                  <ul className='flex flex-col'>
+                    {[...Array(4)].map((_, index) => {
                       return (
-                        <li key={index}>
-                          <button>Мобильная разработка</button>
+                        <li
+                          key={index}
+                          className='[&:not(:last-child)]:mb-[17px]'
+                        >
+                          <button className='text-15 leading-[1.06] tracking-[-0.6px] text-fontDarkGrey'>
+                            Мобильная разработка
+                          </button>
                         </li>
                       )
                     })}
@@ -123,12 +169,20 @@ const page = ({ params }) => {
 
                 <CatalogAccordion title='Стоимость часа работы'></CatalogAccordion>
 
+                <CatalogAccordion title='Срок проекта'>
+                  <div className='experts-filters__language'>
+                    <Checkbox id='p_1' label='Менее месяца' />
+                    <Checkbox id='p_2' label='1 - 3 месяца' />
+                    <Checkbox id='p_3' label='Более 3-х месяцев' />
+                  </div>
+                </CatalogAccordion>
+
                 <CatalogAccordion title='Язык'>
                   <div className='experts-filters__language'>
-                    <Checkbox id='c_4' label='Русский' />
-                    <Checkbox id='c_5' label='English' />
-                    <Checkbox id='c_6' label='Spanish' />
-                    <Checkbox id='c_7' label='Chineese' />
+                    <Checkbox id='l_1' label='Русский' />
+                    <Checkbox id='l_2' label='English' />
+                    <Checkbox id='l_3' label='Spanish' />
+                    <Checkbox id='l_4' label='Chineese' />
                   </div>
                 </CatalogAccordion>
               </div>
@@ -162,95 +216,35 @@ const page = ({ params }) => {
                 />
               </div>
             </div>
-            <div className='experts-block-items'>
-              <div className='experts-block-items__top'>
-                <div className='experts-block-items__title'>
-                  Найдите вашего исполнителя
-                </div>
-                <div className='experts-block-items__post-it experts-post-it'>
-                  <Link href='#' className='experts-post-it__item'>
-                    <div className='experts-post-it__image'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='32'
-                        height='32'
-                        viewBox='0 0 32 32'
-                        fill='none'
-                      >
-                        <path
-                          d='M14.8938 17.1239H9.12389C8.80826 17.1239 8.54204 17.0141 8.32522 16.7945C8.10841 16.5749 8 16.3109 8 16.0025C8 15.6941 8.10841 15.4322 8.32522 15.2168C8.54204 15.0015 8.80826 14.8938 9.12389 14.8938H14.8938V9.12389C14.8938 8.81475 15.0024 8.55015 15.2196 8.33008C15.4368 8.11003 15.6979 8 16.0028 8C16.3077 8 16.5708 8.11003 16.792 8.33008C17.0133 8.55015 17.1239 8.81475 17.1239 9.12389V14.8938H22.8938C23.1979 14.8938 23.4583 15.0025 23.675 15.2199C23.8917 15.4373 24 15.7003 24 16.0087C24 16.3171 23.8917 16.5801 23.675 16.7976C23.4583 17.0151 23.1979 17.1239 22.8938 17.1239H17.1239V22.8938C17.1239 23.1979 17.0136 23.4583 16.7929 23.675C16.5722 23.8917 16.3069 24 15.9969 24C15.6919 24 15.4318 23.8917 15.2166 23.675C15.0014 23.4583 14.8938 23.1979 14.8938 22.8938V17.1239Z'
-                          fill='currentColor'
-                        />
-                        <rect
-                          x='1'
-                          y='1'
-                          width='30'
-                          height='30'
-                          rx='15'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                        />
-                      </svg>
-                    </div>
-                    <div className='experts-post-it__text'>
-                      Разместить задание
-                    </div>
-                  </Link>
-                  <Link href='#' className='experts-post-it__item'>
-                    <div className='experts-post-it__image'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='32'
-                        height='32'
-                        viewBox='0 0 32 32'
-                        fill='none'
-                      >
-                        <path
-                          d='M14.8938 17.1239H9.12389C8.80826 17.1239 8.54204 17.0141 8.32522 16.7945C8.10841 16.5749 8 16.3109 8 16.0025C8 15.6941 8.10841 15.4322 8.32522 15.2168C8.54204 15.0015 8.80826 14.8938 9.12389 14.8938H14.8938V9.12389C14.8938 8.81475 15.0024 8.55015 15.2196 8.33008C15.4368 8.11003 15.6979 8 16.0028 8C16.3077 8 16.5708 8.11003 16.792 8.33008C17.0133 8.55015 17.1239 8.81475 17.1239 9.12389V14.8938H22.8938C23.1979 14.8938 23.4583 15.0025 23.675 15.2199C23.8917 15.4373 24 15.7003 24 16.0087C24 16.3171 23.8917 16.5801 23.675 16.7976C23.4583 17.0151 23.1979 17.1239 22.8938 17.1239H17.1239V22.8938C17.1239 23.1979 17.0136 23.4583 16.7929 23.675C16.5722 23.8917 16.3069 24 15.9969 24C15.6919 24 15.4318 23.8917 15.2166 23.675C15.0014 23.4583 14.8938 23.1979 14.8938 22.8938V17.1239Z'
-                          fill='currentColor'
-                        />
-                        <rect
-                          x='1'
-                          y='1'
-                          width='30'
-                          height='30'
-                          rx='15'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                        />
-                      </svg>
-                    </div>
-                    <div className='experts-post-it__text'>
-                      Разместить вакансию
-                    </div>
-                  </Link>
+
+            <div className='rounded-[30px] border border-[#DBDBDB] p-[42px]'>
+              <div className='mb-[30px]'>
+                <div className='relative'>
+                  <input
+                    type='text'
+                    className='h-[40px] w-full rounded-[50px] border border-greyThrid pb-[10px] pl-[20px] pr-[36px] pt-[14px]'
+                    placeholder='Поиск'
+                  />
+                  <button className='absolute right-1 top-1/2 flex h-8 w-8 translate-y-[-50%] items-center justify-center rounded-[50%] bg-greenLight text-white'>
+                    <svg
+                      className='h-4 w-4 flex-[0_0_16px]'
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 16 16'
+                      fill='none'
+                    >
+                      <path
+                        d='M6.81275 13.5695C4.89554 13.5695 3.28078 12.9117 1.96847 11.5961C0.656156 10.2805 0 8.67673 0 6.78473C0 4.89273 0.656602 3.28895 1.96981 1.97337C3.28299 0.657789 4.88389 0 6.77249 0C8.66107 0 10.262 0.657789 11.5752 1.97337C12.8884 3.28895 13.545 4.89356 13.545 6.78722C13.545 7.51921 13.4362 8.22168 13.2187 8.89462C13.0012 9.56759 12.6722 10.1909 12.2318 10.7646L15.6944 14.2045C15.8981 14.4037 16 14.6535 16 14.9538C16 15.2541 15.8981 15.5036 15.6944 15.7021C15.4907 15.9007 15.2425 16 14.9498 16C14.6571 16 14.4098 15.8979 14.2078 15.6938L10.7864 12.2622C10.2799 12.6759 9.67579 12.9972 8.97421 13.2261C8.27264 13.455 7.55216 13.5695 6.81275 13.5695ZM6.78074 11.4844C8.09394 11.4844 9.20273 11.0291 10.1071 10.1185C11.0115 9.2079 11.4637 8.09664 11.4637 6.78473C11.4637 5.47283 11.012 4.36157 10.1086 3.45096C9.20517 2.54036 8.09638 2.08507 6.7822 2.08507C5.45884 2.08507 4.34452 2.54036 3.43923 3.45096C2.53393 4.36157 2.08128 5.47283 2.08128 6.78473C2.08128 8.09664 2.53393 9.2079 3.43923 10.1185C4.34452 11.0291 5.45835 11.4844 6.78074 11.4844Z'
+                        fill='currentColor'
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
-              <div className='experts-block-items__search catalog-search'>
-                <input
-                  type='text'
-                  className='catalog-search__input'
-                  placeholder='Поиск'
-                />
-                <button className='catalog-search__button-icon'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    viewBox='0 0 16 16'
-                    fill='none'
-                  >
-                    <path
-                      d='M6.81275 13.5695C4.89554 13.5695 3.28078 12.9117 1.96847 11.5961C0.656156 10.2805 0 8.67673 0 6.78473C0 4.89273 0.656602 3.28895 1.96981 1.97337C3.28299 0.657789 4.88389 0 6.77249 0C8.66107 0 10.262 0.657789 11.5752 1.97337C12.8884 3.28895 13.545 4.89356 13.545 6.78722C13.545 7.51921 13.4362 8.22168 13.2187 8.89462C13.0012 9.56759 12.6722 10.1909 12.2318 10.7646L15.6944 14.2045C15.8981 14.4037 16 14.6535 16 14.9538C16 15.2541 15.8981 15.5036 15.6944 15.7021C15.4907 15.9007 15.2425 16 14.9498 16C14.6571 16 14.4098 15.8979 14.2078 15.6938L10.7864 12.2622C10.2799 12.6759 9.67579 12.9972 8.97421 13.2261C8.27264 13.455 7.55216 13.5695 6.81275 13.5695ZM6.78074 11.4844C8.09394 11.4844 9.20273 11.0291 10.1071 10.1185C11.0115 9.2079 11.4637 8.09664 11.4637 6.78473C11.4637 5.47283 11.012 4.36157 10.1086 3.45096C9.20517 2.54036 8.09638 2.08507 6.7822 2.08507C5.45884 2.08507 4.34452 2.54036 3.43923 3.45096C2.53393 4.36157 2.08128 5.47283 2.08128 6.78473C2.08128 8.09664 2.53393 9.2079 3.43923 10.1185C4.34452 11.0291 5.45835 11.4844 6.78074 11.4844Z'
-                      fill='currentColor'
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className='experts-block-items__filters catalog-filters-items'>
-                <button className='catalog-filters-items__item'>
+
+              <div className='flex flex-wrap items-center gap-2.5 pb-[25px] pt-[19px]'>
+                <button className='flex items-center gap-2.5 whitespace-nowrap rounded-[50px] border-greenLight bg-[#5cd034] px-[13px] py-2.5 text-12 leading-[] tracking-[-0.48px] text-white'>
                   <span>Категория: Дизайн и искусство</span>
-                  <div className='catalog-filters-items__remove-icon'>
+                  <div className=''>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       width='10'
@@ -265,7 +259,7 @@ const page = ({ params }) => {
                     </svg>
                   </div>
                 </button>
-                <button className='catalog-filters-items__item'>
+                <button className='flex items-center gap-2.5 whitespace-nowrap rounded-[50px] border-greenLight bg-[#5cd034] px-[13px] py-2.5 text-12 leading-[] tracking-[-0.48px] text-white'>
                   <span>Подкатегория: Дизайн и искусство</span>
                   <div className='catalog-filters-items__remove-icon'>
                     <svg
@@ -282,7 +276,7 @@ const page = ({ params }) => {
                     </svg>
                   </div>
                 </button>
-                <button className='catalog-filters-items__item'>
+                <button className='flex items-center gap-2.5 whitespace-nowrap rounded-[50px] border-greenLight bg-[#5cd034] px-[13px] py-2.5 text-12 leading-[] tracking-[-0.48px] text-white'>
                   <span>Язык: English</span>
                   <div className='catalog-filters-items__remove-icon'>
                     <svg
@@ -299,14 +293,49 @@ const page = ({ params }) => {
                     </svg>
                   </div>
                 </button>
-                <button className='catalog-filters-items__reset-button'>
+                <button className='text-13 tracking-[-0.26px] text-greenDark'>
                   Сбросить фильтры
                 </button>
               </div>
 
-              <div className='experts-block-items__cards'>
-                {[...Array(4)].map((item, index) => {
-                  return <Card key={index} id={2} />
+              <div className='mb-[30px] text-13 leading-[1.53] tracking-[-0.52px] text-fontGrey'>
+                Найдено{' '}
+                <span className='text-13 font-medium leading-[20px] text-fontBlack '>
+                  114
+                </span>{' '}
+                проектов
+              </div>
+
+              <div className='flex items-start justify-between gap-1 border-b border-[#DBDBDB]'>
+                <div className='flex items-center gap-x-10'>
+                  <button className='relative pb-[17px] text-15 leading-[1.06] text-greenDark before:absolute before:bottom-[-1px] before:left-0 before:block before:h-[2px] before:w-full before:rounded-[3px] before:bg-greenDark before:content-[""]'>
+                    Все проекты
+                  </button>
+                  <button className='pb-[17px]'>Просмотренные (6)</button>
+                  <button className='pb-[17px]'>Сохраненные (0)</button>
+                </div>
+
+                <button className='flex items-center'>
+                  <div className='mr-[7px] h-[12px] w-[14px] text-greenDark'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 14 12'
+                      fill='none'
+                      role='image'
+                    >
+                      <path
+                        d='M1.39555 12C1.02203 12 0.696052 11.8645 0.417625 11.5936C0.139208 11.3227 0 11.0056 0 10.6421V2.36551C0 2.00206 0.139208 1.68489 0.417625 1.41399C0.696052 1.14308 1.02203 1.00763 1.39555 1.00763H8.45649C8.37896 1.23035 8.3282 1.45667 8.30419 1.68657C8.2802 1.91647 8.28482 2.14279 8.31805 2.36551H1.39555V10.6421H12.6044V5.10282C12.8724 5.03613 13.1244 4.9338 13.3602 4.79581C13.5961 4.65782 13.8094 4.49254 14 4.29996V10.6421C14 11.0056 13.8608 11.3227 13.5824 11.5936C13.3039 11.8645 12.978 12 12.6044 12H1.39555ZM7 5.83566L9.37026 4.37538C9.52642 4.51615 9.69745 4.64177 9.88335 4.75224C10.0692 4.86272 10.2692 4.95083 10.4834 5.0166L7.35997 6.92409C7.25129 7.00313 7.13273 7.04085 7.00432 7.03725C6.87592 7.03366 6.75448 6.99594 6.64003 6.92409L1.39555 3.67488V2.36551L7 5.83566ZM11.6506 3.94431C11.082 3.94431 10.6031 3.75462 10.2141 3.37524C9.82507 2.99586 9.63055 2.52954 9.63055 1.97628C9.63055 1.42301 9.8255 0.955313 10.2154 0.573188C10.6053 0.191063 11.0846 0 11.6532 0C12.2218 0 12.7025 0.192383 13.0952 0.577148C13.488 0.961924 13.6843 1.42914 13.6843 1.9788C13.6843 2.53208 13.4866 2.99798 13.0912 3.3765C12.6957 3.75504 12.2155 3.94431 11.6506 3.94431Z'
+                        fill='currentColor'
+                      />
+                    </svg>
+                  </div>
+                  <span>Настроить оповещения</span>
+                </button>
+              </div>
+
+              <div>
+                {[...Array(4)].map((_, index) => {
+                  return <Card key={index} />
                 })}
               </div>
 

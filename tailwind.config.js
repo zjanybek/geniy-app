@@ -3,6 +3,9 @@ const plugin = require('tailwindcss/plugin')
 const primary = '#24A322'
 
 module.exports = {
+  // corePlugins: {
+  //   preflight: false
+  // },
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
@@ -34,6 +37,7 @@ module.exports = {
         14: '14px',
         15: '15px',
         17: '17px',
+        17: '19px',
         22: '22px',
         24: '24px',
         40: '40px'
