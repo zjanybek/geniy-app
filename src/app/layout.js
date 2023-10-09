@@ -134,7 +134,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang='en'
-      className={`${baskervillecyrltstd.variable} ${helveticaneuecyr.variable} ${geologica.variable} ${montserrat.variable}`}
+      className={`${helveticaneuecyr.variable} ${baskervillecyrltstd.variable} ${geologica.variable} ${montserrat.variable}`}
     >
       <body>
         <Providers>
