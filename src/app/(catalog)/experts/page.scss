@@ -375,3 +375,19 @@
     letter-spacing: -0.26px;
   }
 }
+
+.catalog-pagination {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &__prev {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  &__next {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+}

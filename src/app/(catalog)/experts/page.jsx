@@ -311,11 +311,10 @@ const page = ({ params }) => {
               </div>
 
               <div className='flex justify-center border-t border-[#DBDBDB] pt-[40px]'>
-                <div className='flex items-center gap-x-[16px]'>
-                  <button className='inline-flex items-center justify-center'>
-                    <span className='inline-flex min-w-[7px] items-center text-[#D1D1D6]'>
+                <div className='flex items-center gap-x-2.5'>
+                  <button className='flex items-center text-13 text-[#DBDBDB]'>
+                    <div className='up-icon mr-2.5 h-[10px] w-[7px]'>
                       <svg
-                        className='block'
                         xmlns='http://www.w3.org/2000/svg'
                         width='7'
                         height='10'
@@ -327,10 +326,8 @@ const page = ({ params }) => {
                           fill='currentColor'
                         />
                       </svg>
-                    </span>
-                    <span className='ml-2.5 text-13 text-[#D1D1D6]'>
-                      Предыдущая
-                    </span>
+                    </div>
+                    <span>Предыдущая</span>
                   </button>
 
                   <div className='flex items-center gap-x-[6px]'>
@@ -368,25 +365,22 @@ const page = ({ params }) => {
                     </ul>
                   </div>
 
-                  <button className='inline-flex items-center justify-center'>
-                    <span className='mr-2.5 text-13 text-greenDark'>
-                      Следующая
-                    </span>
-                    <span className='inline-flex min-w-[7px] items-center text-[#D1D1D6]'>
+                  <button className='flex items-center text-13 text-greenDark'>
+                    <span>Следующая</span>
+                    <div className='up-icon w-[7px ml-2.5 h-[10px]'>
                       <svg
-                        className='block'
                         xmlns='http://www.w3.org/2000/svg'
-                        width='7'
+                        width='6'
                         height='10'
                         viewBox='0 0 6 10'
                         fill='none'
                       >
                         <path
                           d='M6 4.99263C6 5.09097 5.9833 5.18192 5.94989 5.26549C5.91646 5.34907 5.85862 5.43019 5.77636 5.50885L1.30334 9.78615C1.15425 9.92872 0.974299 10 0.763497 10C0.552695 10 0.372748 9.92872 0.223658 9.78615C0.0745526 9.64357 -2.32093e-08 9.46903 -3.22352e-08 9.26254C-4.12612e-08 9.05605 0.0745526 8.88153 0.223658 8.73896L4.14142 4.99263L0.223658 1.24631C0.0745522 1.10374 -3.96389e-07 0.931666 -4.05201e-07 0.730088C-4.14011e-07 0.528525 0.0745522 0.356453 0.223658 0.213872C0.372748 0.07129 0.555263 -2.42713e-08 0.771201 -3.37103e-08C0.98714 -4.31493e-08 1.16966 0.07129 1.31877 0.213872L5.77636 4.47642C5.85862 4.55507 5.91646 4.63619 5.94989 4.71978C5.9833 4.80335 6 4.8943 6 4.99263Z'
-                          fill='#24A322'
+                          fill='currentColor'
                         />
                       </svg>
-                    </span>
+                    </div>
                   </button>
                 </div>
               </div>

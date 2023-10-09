@@ -1,4 +1,3 @@
-import { getServerSession } from 'next-auth'
 import { Geologica, Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 
@@ -75,6 +74,18 @@ const helveticaneuecyr = localFont({
       style: 'italic',
       weight: '200'
     }
+  ],
+  fallback: [
+    'Neue Montreal',
+    'Helvetica Neue',
+    '-apple-system',
+    'Helvetica',
+    'Arial',
+    'sans-serif',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji'
   ],
   display: 'swap',
   variable: '--font-family',
