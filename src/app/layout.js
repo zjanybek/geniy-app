@@ -76,16 +76,17 @@ const helveticaneuecyr = localFont({
     }
   ],
   fallback: [
-    'Neue Montreal',
-    'Helvetica Neue',
-    '-apple-system',
-    'Helvetica',
+    // 'Neue Montreal',
+    // 'Helvetica Neue',
+    // '-apple-system',
+    // 'Helvetica',
     'Arial',
+    'Liberation Sans',
     'sans-serif',
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji'
+    // 'Apple Color Emoji',
+    // 'Segoe UI Emoji',
+    // 'Segoe UI Symbol',
+    // 'Noto Color Emoji'
   ],
   display: 'swap',
   variable: '--font-family',
