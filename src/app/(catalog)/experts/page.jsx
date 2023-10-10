@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import CatalogAccordion from '@/components/CatalogAccordion/CatalogAccordion'
+import CatalogAccordion from '@/components/Catalog/Accordion'
 import Checkbox from '@/components/ui/Checkbox'
 
 import Card from './components/Card/Card'
@@ -27,7 +27,9 @@ const page = ({ params }) => {
     <div className='catalog-experts'>
       <div className='catalog-experts__container-box'>
         <div className='catalog-experts__header'>
-          <div className='catalog-experts__for-text'>Для заказчика</div>
+          <div className='mb-1 text-12 uppercase leading-[2.5] tracking-[0.12] text-fontBlack'>
+            Для Исполнителей
+          </div>
           <h1 className='catalog-experts__title mb-[7px]'>Каталог экспертов</h1>
           <div className='flex items-center gap-x-2'>
             <div className='flex items-center'>

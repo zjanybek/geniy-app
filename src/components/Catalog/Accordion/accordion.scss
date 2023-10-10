@@ -1,0 +1,43 @@
+.catalog-filter-accordion {
+  border-top: 1px solid #dbdbdb;
+  padding: 22px 0;
+  &__button {
+    width: 100%;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &__button-text {
+    color: var(--font-black);
+    font-size: 17px;
+    font-weight: 500;
+    // line-height: 2.64; /* 264.706% */
+    letter-spacing: -0.68px;
+  }
+}
+
+@keyframes inAnimation {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    max-height: 500px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}

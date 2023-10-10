@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import CatalogAccordion from '@/components/CatalogAccordion/CatalogAccordion'
+import CatalogAccordion from '@/components/Catalog/Accordion'
 import Checkbox from '@/components/ui/Checkbox'
 
 import Card from './components/Card/Card'
@@ -25,32 +25,11 @@ const page = () => {
   return (
     <div className='pb-[66px] pt-[51px]'>
       <div className='catalog__second-container'>
-        <div style={{ display: 'flex', alignItems: 'center', padding: '20px' }}>
-          <div
-            style={{ width: '7px', height: '10px', marginRight: '15px' }}
-            className='up-icon'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='7'
-              height='10'
-              viewBox='0 0 7 10'
-              fill='none'
-            >
-              <path
-                d='M0.499999 5.00737C0.499999 4.90903 0.516704 4.81808 0.550113 4.73451C0.583537 4.65093 0.641378 4.56981 0.723635 4.49115L5.19666 0.21385C5.34575 0.0712831 5.5257 -4.2588e-08 5.7365 -3.33735e-08C5.94731 -2.41591e-08 6.12725 0.0712832 6.27634 0.21385C6.42545 0.356431 6.5 0.530966 6.5 0.737456C6.5 0.943945 6.42545 1.11847 6.27634 1.26104L2.35858 5.00737L6.27634 8.75369C6.42545 8.89626 6.5 9.06833 6.5 9.26991C6.5 9.47147 6.42545 9.64355 6.27634 9.78613C6.12725 9.92871 5.94474 10 5.7288 10C5.51286 10 5.33034 9.92871 5.18123 9.78613L0.723635 5.52358C0.641378 5.44493 0.583537 5.36381 0.550113 5.28022C0.516704 5.19665 0.499999 5.1057 0.499999 5.00737Z'
-                fill='currentColor'
-              />
-            </svg>
-          </div>
-          <span>Россия</span>
-        </div>
-
         <div className='mb-[34px]'>
-          <div className='mb-1 text-12 tracking-[0.12] text-fontBlack'>
+          <div className='mb-1 text-12 uppercase leading-[2.5] tracking-[0.12] text-fontBlack'>
             Для Исполнителей
           </div>
-          <h1 className='mb-[7px] text-[40px] font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
+          <h1 className='mb-[7px] font-secondFamily text-[40px] font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
             Каталог проектов
           </h1>
           <div className='flex items-center gap-x-2'>
