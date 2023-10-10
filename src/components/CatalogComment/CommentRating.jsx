@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-const CommentRating = ({ initialValue, maxRating = 5 }) => {
+const CommentRating = ({ initialValue, maxRating = 5, className }) => {
   const [rating, setRating] = useState(initialValue)
 
   const handleRatingClick = (newRating) => {
@@ -12,7 +12,7 @@ const CommentRating = ({ initialValue, maxRating = 5 }) => {
   const remainder = rating % 1
 
   return (
-    <div className='flex items-start space-x-1'>
+    <div className={`flex items-start space-x-1 ${className}`}>
       {Array.from({ length: maxRating }, (_, index) => (
         <svg
           key={index}

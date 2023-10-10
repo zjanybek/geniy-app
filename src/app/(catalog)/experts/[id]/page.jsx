@@ -132,12 +132,9 @@ const page = () => {
                       проектов
                     </span>
                     <div className='flex h-[17px] items-start gap-x-[6px]'>
-                      <div className='h-[14px] w-[14px] text-greenDark'>
+                      <div className='up-icon h-[14px] w-[14px] text-greenDark'>
                         <svg
-                          className='h-full w-full'
                           xmlns='http://www.w3.org/2000/svg'
-                          width='14'
-                          height='14'
                           viewBox='0 0 14 14'
                           fill='none'
                         >
@@ -147,8 +144,9 @@ const page = () => {
                           />
                         </svg>
                       </div>
-                      <span className='text-15 leading-[1.06] tracking-[-0.6px] text-fontBlack'>
-                        <span className='font-medium'>5.0</span> (81 отзыв)
+                      <span className='text-15 tracking-[-0.6px] text-fontBlack'>
+                        <span className='font-medium'>5.0</span>{' '}
+                        <span>(81 отзыв)</span>
                       </span>
                     </div>
                     <div className='flex items-center gap-x-[8px]'>

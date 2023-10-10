@@ -110,12 +110,10 @@ const ExpertModal = ({ onClose }) => {
                   <span className='font-medium'>78</span> завершенных проектов
                 </span>
                 <div className='flex h-[17px] items-start gap-x-[6px]'>
-                  <div className='h-[14px] w-[14px] text-greenDark'>
+                  <div className='up-icon h-[14px] w-[14px] text-greenDark'>
                     <svg
-                      className='h-full w-full'
                       xmlns='http://www.w3.org/2000/svg'
-                      width='14'
-                      height='14'
+                      role='image'
                       viewBox='0 0 14 14'
                       fill='none'
                     >
@@ -125,8 +123,9 @@ const ExpertModal = ({ onClose }) => {
                       />
                     </svg>
                   </div>
-                  <span className='text-15 leading-[1.06] tracking-[-0.6px] text-fontBlack'>
-                    <span className='font-medium'>5.0</span> (81 отзыв)
+                  <span className='text-15 leading-none tracking-[-0.6px] text-fontBlack'>
+                    <span className='font-medium'>5.0</span>{' '}
+                    <span>(81 отзыв)</span>
                   </span>
                 </div>
                 <div className='flex items-center gap-x-[8px]'>
@@ -384,8 +383,13 @@ const ExpertModal = ({ onClose }) => {
                       </div>
                     </div>
                     <div className='flex-auto'>
-                      <div className='mb-2.5 flex items-start'>
-                        <CommentRating initialValue={5} maxRating={5} />
+                      <div className='mb-2.5 flex items-center'>
+                        <CommentRating
+                          initialValue={5}
+                          maxRating={5}
+                          // className='h-full'
+                        />
+
                         <span className='ml-2.5 text-17 font-medium tracking-[-0.68px] text-fontBlack'>
                           5.0
                         </span>
