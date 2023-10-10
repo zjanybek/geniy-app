@@ -314,12 +314,10 @@ const page = ({ params }) => {
 
               <div className='flex justify-center border-t border-[#DBDBDB] pt-[40px]'>
                 <div className='flex items-center gap-x-2.5'>
-                  <button className='flex py-2.5 text-13  text-[#DBDBDB]'>
-                    <div className='up-icon mr-2.5 h-[10px] w-[7px] self-center'>
+                  <button className='flex items-center py-2.5 text-13  text-[#DBDBDB]'>
+                    <div className='up-icon mr-2.5 h-[14px] w-[14px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
-                        width='7'
-                        height='10'
                         viewBox='0 0 7 10'
                         fill='none'
                       >
@@ -367,9 +365,9 @@ const page = ({ params }) => {
                     </ul>
                   </div>
 
-                  <button className='flex py-2.5 text-13 text-greenDark'>
+                  <button className='flex items-center py-2.5 text-13 text-greenDark'>
                     <span>Следующая</span>
-                    <div className='up-icon ml-2.5 h-[10px] w-[7px] self-center'>
+                    <div className='up-icon ml-2.5 h-[14px] w-[14px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='6'

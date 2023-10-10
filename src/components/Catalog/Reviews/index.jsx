@@ -75,14 +75,14 @@ const Reviews = () => {
           </div>
         </div>
         <div className='flex-auto'>
-          <div className='mb-2.5 flex items-center'>
+          <div className='mb-2.5 flex h-[16px]'>
             <CommentRating
               initialValue={5}
               maxRating={5}
               // className='h-full'
             />
 
-            <span className='ml-2.5 text-17 font-medium tracking-[-0.68px] text-fontBlack'>
+            <span className='ml-2.5 text-17 font-medium leading-[0.94] tracking-[-0.68px] text-fontBlack'>
               5.0
             </span>
           </div>

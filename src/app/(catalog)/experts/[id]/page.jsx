@@ -556,61 +556,73 @@ const page = () => {
 
                     <div className='flex justify-center border-t border-[#DBDBDB] pb-[50px] pt-[30px]'>
                       <div className='flex items-center gap-x-[16px]'>
-                        <button className='flex items-center'>
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            width='7'
-                            height='10'
-                            viewBox='0 0 7 10'
-                            fill='none'
-                          >
-                            <path
-                              d='M0.499999 5.00737C0.499999 4.90903 0.516704 4.81808 0.550113 4.73451C0.583537 4.65093 0.641378 4.56981 0.723635 4.49115L5.19666 0.21385C5.34575 0.0712831 5.5257 -4.2588e-08 5.7365 -3.33735e-08C5.94731 -2.41591e-08 6.12725 0.0712832 6.27634 0.21385C6.42545 0.356431 6.5 0.530966 6.5 0.737456C6.5 0.943945 6.42545 1.11847 6.27634 1.26104L2.35858 5.00737L6.27634 8.75369C6.42545 8.89626 6.5 9.06833 6.5 9.26991C6.5 9.47147 6.42545 9.64355 6.27634 9.78613C6.12725 9.92871 5.94474 10 5.7288 10C5.51286 10 5.33034 9.92871 5.18123 9.78613L0.723635 5.52358C0.641378 5.44493 0.583537 5.36381 0.550113 5.28022C0.516704 5.19665 0.499999 5.1057 0.499999 5.00737Z'
-                              fill='#D1D1D6'
-                            />
-                          </svg>
-                          <span className='ml-2.5 text-13 text-[#D1D1D6]'>
-                            Предыдущая
-                          </span>
+                        <button className='flex items-center py-2.5 text-13  text-[#DBDBDB]'>
+                          <div className='up-icon mr-2.5 h-[14px] w-[14px]'>
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              viewBox='0 0 7 10'
+                              fill='none'
+                            >
+                              <path
+                                d='M0.499999 5.00737C0.499999 4.90903 0.516704 4.81808 0.550113 4.73451C0.583537 4.65093 0.641378 4.56981 0.723635 4.49115L5.19666 0.21385C5.34575 0.0712831 5.5257 -4.2588e-08 5.7365 -3.33735e-08C5.94731 -2.41591e-08 6.12725 0.0712832 6.27634 0.21385C6.42545 0.356431 6.5 0.530966 6.5 0.737456C6.5 0.943945 6.42545 1.11847 6.27634 1.26104L2.35858 5.00737L6.27634 8.75369C6.42545 8.89626 6.5 9.06833 6.5 9.26991C6.5 9.47147 6.42545 9.64355 6.27634 9.78613C6.12725 9.92871 5.94474 10 5.7288 10C5.51286 10 5.33034 9.92871 5.18123 9.78613L0.723635 5.52358C0.641378 5.44493 0.583537 5.36381 0.550113 5.28022C0.516704 5.19665 0.499999 5.1057 0.499999 5.00737Z'
+                                fill='currentColor'
+                              />
+                            </svg>
+                          </div>
+                          <span>Предыдущая</span>
                         </button>
 
                         <div className='flex items-center gap-x-[6px]'>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent  text-center text-15 text-fontGrey'>
-                            <span>1</span>
-                          </button>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-greenDark text-center text-15 leading-[0.93] text-[#FFF]'>
-                            <span>2</span>
-                          </button>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
-                            3
-                          </button>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
-                            4
-                          </button>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
-                            5
-                          </button>
-                          <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 leading-[0.93] text-fontGrey'>
-                            6
-                          </button>
+                          <ul>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent  text-center text-15 text-fontGrey'>
+                                <span>1</span>
+                              </button>
+                            </li>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-greenDark text-center text-15 text-[#FFF]'>
+                                <span>2</span>
+                              </button>
+                            </li>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 text-fontGrey'>
+                                3
+                              </button>
+                            </li>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 text-fontGrey'>
+                                4
+                              </button>
+                            </li>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 text-fontGrey'>
+                                5
+                              </button>
+                            </li>
+                            <li className='mx-[3px] inline-block'>
+                              <button className='grid h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[50%] bg-transparent text-center text-15 text-fontGrey'>
+                                6
+                              </button>
+                            </li>
+                          </ul>
                         </div>
 
-                        <button className='flex items-center'>
-                          <span className='mr-2.5 text-13 text-greenDark'>
-                            Предыдущая
-                          </span>
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            width='6'
-                            height='10'
-                            viewBox='0 0 6 10'
-                            fill='none'
-                          >
-                            <path
-                              d='M6 4.99263C6 5.09097 5.9833 5.18192 5.94989 5.26549C5.91646 5.34907 5.85862 5.43019 5.77636 5.50885L1.30334 9.78615C1.15425 9.92872 0.974299 10 0.763497 10C0.552695 10 0.372748 9.92872 0.223658 9.78615C0.0745526 9.64357 -2.32093e-08 9.46903 -3.22352e-08 9.26254C-4.12612e-08 9.05605 0.0745526 8.88153 0.223658 8.73896L4.14142 4.99263L0.223658 1.24631C0.0745522 1.10374 -3.96389e-07 0.931666 -4.05201e-07 0.730088C-4.14011e-07 0.528525 0.0745522 0.356453 0.223658 0.213872C0.372748 0.07129 0.555263 -2.42713e-08 0.771201 -3.37103e-08C0.98714 -4.31493e-08 1.16966 0.07129 1.31877 0.213872L5.77636 4.47642C5.85862 4.55507 5.91646 4.63619 5.94989 4.71978C5.9833 4.80335 6 4.8943 6 4.99263Z'
-                              fill='#24A322'
-                            />
-                          </svg>
+                        <button className='flex items-center py-2.5 text-13 text-greenDark'>
+                          <span>Следующая</span>
+                          <div className='up-icon ml-2.5 h-[14px] w-[14px]'>
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              width='6'
+                              height='10'
+                              viewBox='0 0 6 10'
+                              fill='none'
+                            >
+                              <path
+                                d='M6 4.99263C6 5.09097 5.9833 5.18192 5.94989 5.26549C5.91646 5.34907 5.85862 5.43019 5.77636 5.50885L1.30334 9.78615C1.15425 9.92872 0.974299 10 0.763497 10C0.552695 10 0.372748 9.92872 0.223658 9.78615C0.0745526 9.64357 -2.32093e-08 9.46903 -3.22352e-08 9.26254C-4.12612e-08 9.05605 0.0745526 8.88153 0.223658 8.73896L4.14142 4.99263L0.223658 1.24631C0.0745522 1.10374 -3.96389e-07 0.931666 -4.05201e-07 0.730088C-4.14011e-07 0.528525 0.0745522 0.356453 0.223658 0.213872C0.372748 0.07129 0.555263 -2.42713e-08 0.771201 -3.37103e-08C0.98714 -4.31493e-08 1.16966 0.07129 1.31877 0.213872L5.77636 4.47642C5.85862 4.55507 5.91646 4.63619 5.94989 4.71978C5.9833 4.80335 6 4.8943 6 4.99263Z'
+                                fill='currentColor'
+                              />
+                            </svg>
+                          </div>
                         </button>
                       </div>
                     </div>
@@ -739,18 +751,18 @@ const page = () => {
                   <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                     Языки:
                   </div>
-                  <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                  <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                     <span className='text-fontBlack'>Русский:</span> родной язык
                   </div>
-                  <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                  <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                     <span className='text-fontBlack'>Английский:</span>{' '}
                     разговорный язык
                   </div>
-                  <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                  <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                     <span className='text-fontBlack'>Китайский:</span> базовый
                     язык
                   </div>
-                  <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                  <div className='text-15 tracking-[-0.3px] text-fontGrey'>
                     <span className='text-fontBlack'>Испанский:</span> уровень
                     носителя
                   </div>
@@ -760,14 +772,14 @@ const page = () => {
                     Образование:
                   </div>
                   <div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Программист-техник
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курский Государственный Политехнический Колледж (КГПК)
                       2011 - 2015
                     </div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Бакалавр Инженер-программист
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -801,13 +813,13 @@ const page = () => {
                     Период работы:
                   </div>
                   <div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       NF portal
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Курск, Россия Главный дизайнер 2018 - по настоящее время
                     </div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Art-Hall
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -839,13 +851,13 @@ const page = () => {
                     Сертификаты:
                   </div>
                   <div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                       Skillbox (14.07.2023) 1452 4451 4124
                     </div>
-                    <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                       Дизайнер сайтов на Tilda
                     </div>
                     <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
