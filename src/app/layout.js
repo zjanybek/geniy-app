@@ -10,70 +10,80 @@ import '@/styles/globals.scss'
 const helveticaneuecyr = localFont({
   src: [
     {
-      path: '../fonts/new-test/HelveticaNeueCyr-Roman.woff2',
+      path: '../fonts/neue-montreal/NeueMontreal-Regular.woff2',
       style: 'normal',
       weight: '400'
     },
     {
-      path: '../fonts/new-test/HelveticaNeueCyr-Medium.woff2',
+      path: '../fonts/neue-montreal/NeueMontreal-Medium.woff2',
       style: 'normal',
       weight: '500'
     },
     {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Black.woff2',
-      style: 'normal',
-      weight: '900'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-BlackItalic.woff2',
-      style: 'italic',
-      weight: '900'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Bold.woff2',
+      path: '../fonts/neue-montreal/NeueMontreal-Bold.woff2',
       style: 'normal',
       weight: '700'
     },
     {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-BoldItalic.woff2',
-      style: 'italic',
-      weight: '700'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Italic.woff2',
+      path: '../fonts/neue-montreal/NeueMontreal-Italic.woff2',
       style: 'italic',
       weight: '400'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Light.woff2',
-      style: 'normal',
-      weight: '300'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-LightItalic.woff2',
-      style: 'italic',
-      weight: '300'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Thin.woff2',
-      style: 'normal',
-      weight: '100'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-ThinItalic.woff2',
-      style: 'italic',
-      weight: '100'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-UltraLight.woff2',
-      style: 'normal',
-      weight: '200'
-    },
-    {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-UltraLightItalic.woff2',
-      style: 'italic',
-      weight: '200'
     }
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Black.woff2',
+    //   style: 'normal',
+    //   weight: '900'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-BlackItalic.woff2',
+    //   style: 'italic',
+    //   weight: '900'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Bold.woff2',
+    //   style: 'normal',
+    //   weight: '700'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-BoldItalic.woff2',
+    //   style: 'italic',
+    //   weight: '700'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Italic.woff2',
+    //   style: 'italic',
+    //   weight: '400'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Light.woff2',
+    //   style: 'normal',
+    //   weight: '300'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-LightItalic.woff2',
+    //   style: 'italic',
+    //   weight: '300'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Thin.woff2',
+    //   style: 'normal',
+    //   weight: '100'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-ThinItalic.woff2',
+    //   style: 'italic',
+    //   weight: '100'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-UltraLight.woff2',
+    //   style: 'normal',
+    //   weight: '200'
+    // },
+    // {
+    //   path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-UltraLightItalic.woff2',
+    //   style: 'italic',
+    //   weight: '200'
+    // }
   ],
   // fallback: [
   //   'Neue Montreal',
