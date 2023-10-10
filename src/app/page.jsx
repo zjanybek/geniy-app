@@ -657,173 +657,175 @@ export default function Home() {
 
       <section className='catalog-specialties'>
         <div className='catalog-specialties__main-container'>
-          <h2 className='catalog-specialties__title title-main-page'>
-            Каталог <span>специальностей.</span>
-          </h2>
-          <div className='catalog-specialties__items'>
-            <div className='catalog-specialties__categories'>
-              <button className='catalog-specialties__button'>
-                Веб-разработка
-              </button>
-              <button className='catalog-specialties__button'>
-                Мобильная разработка
-              </button>
-              <button className='catalog-specialties__button'>
-                Дизайн и искусство
-              </button>
-              <button className='catalog-specialties__button'>
-                Веб-разработка
-              </button>
-              <button className='catalog-specialties__button'>
-                Тексты и перевод
-              </button>
-              <button className='catalog-specialties__button'>
-                Маркетинг и SEO
-              </button>
-              <button className='catalog-specialties__button'>
-                IT и сетевый технологии
-              </button>
-              <button className='catalog-specialties__button'>
-                Фото и видео
-              </button>
-              <button className='catalog-specialties__button'>
-                Бизнес-консультации
-              </button>
-              <button className='catalog-specialties__button'>
-                Обучение и консультации
-              </button>
-              <button className='catalog-specialties__button'>
-                Аудио и музыка
-              </button>
-              <button className='catalog-specialties__button'>
-                Игры и AR / VR
-              </button>
-              <button className='catalog-specialties__button'>
-                Архитектурный инжиниринг
-              </button>
-              <button className='catalog-specialties__button'>
-                Продуктовый менеджмент
-              </button>
-            </div>
-            <div className='catalog-specialties__content'>
-              <div className='catalog-specialties__body'>
-                <div className='catalog-specialties__category-heading'>
-                  Заголовок категории
-                </div>
-                <ul className='catalog-specialties__list'>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Мобильная разработка
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Дизайн и искусство
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Тексты и перевод
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Маркетинг и SEO
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      IT и сетевый технологии
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Фото и видео
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Бизнес-консультации
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Обучение и консультации
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Аудио и музыка
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Игры и AR / VR
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Архитектурный инжиниринг
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Продуктовый менеджмент
-                    </Link>
-                  </li>
-                </ul>
+          <div className='catalog-specialties__wrapper'>
+            <h2 className='catalog-specialties__title title-main-page'>
+              Каталог <span>экспертов.</span>
+            </h2>
+            <div className='catalog-specialties__items'>
+              <div className='catalog-specialties__categories'>
+                <button className='catalog-specialties__button'>
+                  Веб-разработка
+                </button>
+                <button className='catalog-specialties__button'>
+                  Мобильная разработка
+                </button>
+                <button className='catalog-specialties__button'>
+                  Дизайн и искусство
+                </button>
+                <button className='catalog-specialties__button'>
+                  Веб-разработка
+                </button>
+                <button className='catalog-specialties__button'>
+                  Тексты и перевод
+                </button>
+                <button className='catalog-specialties__button'>
+                  Маркетинг и SEO
+                </button>
+                <button className='catalog-specialties__button'>
+                  IT и сетевый технологии
+                </button>
+                <button className='catalog-specialties__button'>
+                  Фото и видео
+                </button>
+                <button className='catalog-specialties__button'>
+                  Бизнес-консультации
+                </button>
+                <button className='catalog-specialties__button'>
+                  Обучение и консультации
+                </button>
+                <button className='catalog-specialties__button'>
+                  Аудио и музыка
+                </button>
+                <button className='catalog-specialties__button'>
+                  Игры и AR / VR
+                </button>
+                <button className='catalog-specialties__button'>
+                  Архитектурный инжиниринг
+                </button>
+                <button className='catalog-specialties__button'>
+                  Продуктовый менеджмент
+                </button>
               </div>
-
-              <div className='catalog-specialties__body'>
-                <div className='catalog-specialties__category-heading'>
-                  Заголовок категории
+              <div className='catalog-specialties__content'>
+                <div className='catalog-specialties__body'>
+                  <div className='catalog-specialties__category-heading'>
+                    Заголовок категории
+                  </div>
+                  <ul className='catalog-specialties__list'>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Мобильная разработка
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Дизайн и искусство
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Тексты и перевод
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Маркетинг и SEO
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        IT и сетевый технологии
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Фото и видео
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Бизнес-консультации
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Обучение и консультации
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Аудио и музыка
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Игры и AR / VR
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Архитектурный инжиниринг
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Продуктовый менеджмент
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <ul className='catalog-specialties__list'>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Мобильная разработка
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Дизайн и искусство
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Тексты и перевод
-                    </Link>
 
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Маркетинг и SEO
-                    </Link>
-                  </li>
-                </ul>
+                <div className='catalog-specialties__body'>
+                  <div className='catalog-specialties__category-heading'>
+                    Заголовок категории
+                  </div>
+                  <ul className='catalog-specialties__list'>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Мобильная разработка
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Дизайн и искусство
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Тексты и перевод
+                      </Link>
 
-                <div className='catalog-specialties__category-heading'>
-                  Заголовок категории
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Маркетинг и SEO
+                      </Link>
+                    </li>
+                  </ul>
+
+                  <div className='catalog-specialties__category-heading'>
+                    Заголовок категории
+                  </div>
+                  <ul className='catalog-specialties__list'>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Мобильная разработка
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Дизайн и искусство
+                      </Link>
+                    </li>
+                    <li className='catalog-specialties__list-item'>
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Тексты и перевод
+                      </Link>
+
+                      <Link href='#' className='catalog-specialties__list-link'>
+                        Маркетинг и SEO
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <ul className='catalog-specialties__list'>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Мобильная разработка
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Дизайн и искусство
-                    </Link>
-                  </li>
-                  <li className='catalog-specialties__list-item'>
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Тексты и перевод
-                    </Link>
-
-                    <Link href='#' className='catalog-specialties__list-link'>
-                      Маркетинг и SEO
-                    </Link>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

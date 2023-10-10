@@ -841,7 +841,7 @@
     color: var(--font-black);
 
     &:not(:last-child) {
-      margin-bottom: 1px;
+      margin-bottom: 9px;
     }
   }
 
@@ -1451,6 +1451,12 @@
   // .catalog-specialties__main-container
 
   &__main-container {
+  }
+
+  // .catalog-specialties__content
+
+  &__wrapper {
+    padding: 0 80px;
   }
 
   // .catalog-specialties__title
