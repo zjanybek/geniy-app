@@ -1,14 +1,14 @@
-// * {
-//   padding: 0px;
-//   margin: 0px;
-// }
-// *,
-// *:before,
-// *:after {
-//   -moz-box-sizing: border-box;
-//   -webkit-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
+* {
+  padding: 0px;
+  margin: 0px;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 :focus,
 :active {
   // outline: none;
@@ -24,8 +24,9 @@ a:active {
 // }
 
 body {
-  line-height: normal;
-  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  // text-rendering: optimizeLegibility;
+  // text-rendering: geometricPrecision;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

@@ -10,9 +10,14 @@ import '@/styles/globals.scss'
 const helveticaneuecyr = localFont({
   src: [
     {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Roman.woff2',
+      path: '../fonts/new-test/HelveticaNeueCyr-Roman.woff2',
       style: 'normal',
       weight: '400'
+    },
+    {
+      path: '../fonts/new-test/HelveticaNeueCyr-Medium.woff2',
+      style: 'normal',
+      weight: '500'
     },
     {
       path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Black.woff2',
@@ -50,11 +55,6 @@ const helveticaneuecyr = localFont({
       weight: '300'
     },
     {
-      path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Medium.woff2',
-      style: 'normal',
-      weight: '500'
-    },
-    {
       path: '../fonts/helveticaneuecyr-2/HelveticaNeueCyr-Thin.woff2',
       style: 'normal',
       weight: '100'
@@ -75,19 +75,18 @@ const helveticaneuecyr = localFont({
       weight: '200'
     }
   ],
-  fallback: [
-    // 'Neue Montreal',
-    // 'Helvetica Neue',
-    // '-apple-system',
-    // 'Helvetica',
-    'Arial',
-    'Liberation Sans',
-    'sans-serif',
-    // 'Apple Color Emoji',
-    // 'Segoe UI Emoji',
-    // 'Segoe UI Symbol',
-    // 'Noto Color Emoji'
-  ],
+  // fallback: [
+  //   'Neue Montreal',
+  //   'Helvetica Neue',
+  //   '-apple-system',
+  //   'Helvetica',
+  //   'Arial',
+  //   'sans-serif',
+  //   'Apple Color Emoji',
+  //   'Segoe UI Emoji',
+  //   'Segoe UI Symbol',
+  //   'Noto Color Emoji'
+  // ],
   display: 'swap',
   variable: '--font-family',
   preload: true
@@ -106,25 +105,6 @@ const baskervillecyrltstd = localFont({
   preload: true
 })
 
-const geologica = localFont({
-  src: [
-    {
-      path: '../fonts/geologica/geologicaa-regular.woff2',
-      style: 'normal',
-      weight: '400'
-    }
-  ],
-  display: 'swap',
-  variable: '--font5',
-  preload: true
-})
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font6',
-  display: 'swap'
-})
-
 export const metadata = {
   title: 'Next.js 13.5',
   description: 'React server components (SSR, SSG, ISR, CSR)'
@@ -132,11 +112,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang='en'
-      className={`${helveticaneuecyr.variable} ${baskervillecyrltstd.variable} ${geologica.variable} ${montserrat.variable}`}
-    >
-      <body>
+    <html lang='en'>
+      <body
+        className={`${helveticaneuecyr.variable} ${baskervillecyrltstd.variable}`}
+      >
         <Providers>
           <div className='wrapper'>
             <TheHeader />

@@ -341,8 +341,8 @@ const page = () => {
 
               <div className='flex justify-center border-t border-[#DBDBDB] pt-[40px]'>
                 <div className='flex items-center gap-x-2.5'>
-                  <button className='flex py-2.5 text-13  text-[#DBDBDB]'>
-                    <div className='up-icon mr-2.5 h-[10px] w-[7px] self-center'>
+                  <button className='flex items-center py-2.5 text-13 leading-normal  text-[#DBDBDB]'>
+                    <div className='up-icon mr-2.5 h-[10px] w-[7px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='7'
@@ -394,9 +394,9 @@ const page = () => {
                     </ul>
                   </div>
 
-                  <button className='flex py-2.5 text-13 text-greenDark'>
+                  <button className='flex items-center py-2.5 text-13 leading-normal text-greenDark'>
                     <span>Следующая</span>
-                    <div className='up-icon ml-2.5 h-[10px] w-[7px] self-center'>
+                    <div className='up-icon ml-2.5 h-[10px] w-[7px]'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='6'

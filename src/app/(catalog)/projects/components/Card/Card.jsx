@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
 import CardRating from './CardRating'
+import './card.scss'
 
 const Card = () => {
   return (
-    <Link href='#' className='block py-[35px]'>
+    <Link href='#' className='card-project block py-[35px]'>
       <div className='text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
         Опубликовано:{' '}
         <span className='text-13 font-medium tracking-[-0.52px] text-greenDark'>
@@ -119,77 +120,52 @@ const Card = () => {
       </div>
 
       <div className='mt-[27px] flex items-center justify-between gap-2'>
-        <div className='flex items-center'>
-          <div className='mr-[25px] flex items-center'>
-            <span className='mr-[7px] text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
-              Заказчик:
-            </span>
-            <div className='flex items-center'>
-              <div className='up-icon mr-1 h-[14px] w-[15px] text-blueLight'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='15'
-                  height='14'
-                  viewBox='0 0 15 14'
-                  fill='none'
-                >
-                  <path
-                    d='M6.7715 7.64451L5.6275 6.49738C5.5105 6.37587 5.36706 6.31511 5.19717 6.31511C5.0273 6.31511 4.8786 6.37267 4.75106 6.48779C4.62642 6.61107 4.56411 6.75578 4.56411 6.9219C4.56411 7.08803 4.62642 7.23184 4.75106 7.35335L6.31215 8.86402C6.44209 8.99248 6.59521 9.05671 6.7715 9.05671C6.9478 9.05671 7.10093 8.99248 7.23087 8.86402L10.2568 5.92538C10.3767 5.81027 10.4359 5.67018 10.4344 5.5051C10.433 5.34002 10.3699 5.19903 10.2453 5.08213C10.1254 4.97446 9.98241 4.92177 9.81635 4.92408C9.65029 4.92638 9.51204 4.98226 9.40158 5.09172L6.7715 7.64451ZM4.84696 13.6772L3.81517 11.9614L1.78451 11.55C1.6233 11.5204 1.49123 11.4376 1.38828 11.3016C1.28533 11.1656 1.2453 11.0186 1.26819 10.8606L1.49134 8.91022L0.17182 7.4175C0.0598776 7.30198 0.00390625 7.16281 0.00390625 7C0.00390625 6.83719 0.0598776 6.69802 0.17182 6.5825L1.49134 5.10093L1.26819 3.15058C1.2453 2.99253 1.28533 2.84552 1.38828 2.70956C1.49123 2.57357 1.6233 2.4899 1.78451 2.45855L3.81517 2.04977L4.84696 0.322769C4.93238 0.184937 5.05356 0.089223 5.21049 0.0356296C5.36743 -0.017975 5.52369 -0.0110242 5.67925 0.0564807L7.50391 0.862875L9.32856 0.0564807C9.48413 -0.00923928 9.64038 -0.0176063 9.79732 0.0313797C9.95426 0.0803657 10.0754 0.173774 10.1609 0.311607L11.2041 2.04977L13.2233 2.45855C13.3845 2.4899 13.5166 2.57357 13.6195 2.70956C13.7225 2.84552 13.7625 2.99253 13.7396 3.15058L13.5165 5.10093L14.836 6.5825C14.9479 6.69802 15.0039 6.83719 15.0039 7C15.0039 7.16281 14.9479 7.30198 14.836 7.4175L13.5165 8.91022L13.7396 10.8606C13.7625 11.0186 13.7225 11.1656 13.6195 11.3016C13.5166 11.4376 13.3845 11.5204 13.2233 11.55L11.2041 11.9614L10.1609 13.6884C10.0754 13.8262 9.95426 13.9196 9.79732 13.9686C9.64038 14.0176 9.48413 14.0092 9.32856 13.9435L7.50391 13.1371L5.67925 13.9435C5.52369 14.0092 5.36743 14.0157 5.21049 13.963C5.05356 13.9103 4.93238 13.8151 4.84696 13.6772Z'
-                    fill='currentColor'
-                  />
-                </svg>
-              </div>
-              <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontBlack'>
-                Верифицирован
-              </span>
+        <div className='card-project__account-info-status'>
+          <small className='mr-[25px] inline-flex items-center text-15 leading-[16px] tracking-[-0.52px] text-fontBlack'>
+            <span className='text-fontGrey'>Заказчик:</span>
+            &nbsp;
+            <div className='up-icon h-[14px] w-[14px] text-blueLight'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                aria-hidden='true'
+                viewBox='0 0 14 14'
+                role='img'
+              >
+                <path d='M13.72 7.03c.45-.56.34-1.39-.24-1.82l-.55-.41c-.34-.25-.53-.66-.51-1.08l.03-.68c.03-.72-.53-1.32-1.25-1.33h-.68c-.42 0-.81-.22-1.05-.57L9.11.57c-.39-.6-1.2-.75-1.79-.33l-.55.4c-.34.24-.79.3-1.18.15L4.95.55c-.67-.25-1.41.11-1.64.79l-.21.65c-.14.4-.46.71-.87.82l-.65.18C.89 3.19.5 3.92.71 4.6l.21.65c.13.41.04.85-.22 1.18l-.42.54c-.45.56-.34 1.39.24 1.81l.55.41c.34.25.53.66.51 1.08l-.03.68c-.03.72.54 1.32 1.25 1.33h.68c.42 0 .81.22 1.05.57l.37.57c.39.6 1.21.75 1.79.33l.55-.4c.34-.25.78-.31 1.18-.16l.64.24c.67.25 1.41-.1 1.64-.79l.21-.65c.13-.4.45-.71.86-.82l.65-.17c.69-.19 1.09-.92.87-1.61l-.21-.65c-.13-.4-.05-.85.22-1.18l.42-.53zM6.06 9.84L3.5 7.27l1.23-1.23 1.33 1.33 3.21-3.21L10.5 5.4 6.06 9.84z'></path>
+              </svg>
             </div>
-          </div>
+            &nbsp;
+            <strong className='font-normal'>Верифицирован</strong>
+          </small>
 
-          <div className='flex items-center'>
-            <div className='mr-3'>
-              <CardRating initialValue={4} />
+          <span className='mr-3 self-start'>
+            <CardRating initialValue={4} />
+          </span>
+
+          <small
+            data-test='client-country'
+            className='inline-flex items-center text-13 leading-[16px] tracking-[-0.52px] text-fontGrey'
+          >
+            <div className='up-icon h-[14px] w-[14px]'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                aria-hidden='true'
+                viewBox='0 0 14 14'
+                role='img'
+              >
+                <path
+                  fill-rule='evenodd'
+                  d='M4.856 4.9c0 1.183.928 2.103 2.124 2.103 1.23 0 2.164-.907 2.162-2.102-.001-1.19-.93-2.096-2.154-2.098C5.79 2.801 4.856 3.72 4.856 4.9m2.14 9.1c-.09-.116-.17-.22-.25-.326-1.137-1.507-2.214-3.053-3.16-4.684-.517-.89-.996-1.802-1.328-2.779-.561-1.652-.181-3.133.9-4.453C3.998.737 5.123.181 6.449.032c2.35-.266 4.57 1.128 5.302 3.327.203.611.3 1.24.225 1.884-.06.51-.227.991-.418 1.465-.411 1.018-.947 1.973-1.52 2.91a49.947 49.947 0 01-2.96 4.284l-.08.097'
+                ></path>
+              </svg>
             </div>
-            {/* <div className='flex items-center'>
-              <div className='up-icon mr-[12px] h-[11px] w-[8px] self-end  text-fontGrey'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 8 11'
-                  role='image'
-                  fill='none'
-                >
-                  <path
-                    d='M4 0C1.78857 0 0 1.7215 0 3.85C0 6.7375 4 11 4 11C4 11 8 6.7375 8 3.85C8 1.7215 6.21143 0 4 0ZM4 5.225C3.21143 5.225 2.57143 4.609 2.57143 3.85C2.57143 3.091 3.21143 2.475 4 2.475C4.78857 2.475 5.42857 3.091 5.42857 3.85C5.42857 4.609 4.78857 5.225 4 5.225Z'
-                    fill='currentColor'
-                  />
-                </svg>
-              </div>
-              <div className='self-end text-13 tracking-[-0.52px] text-fontGrey'>
-                Россия
-              </div>
-            </div> */}
-
-            <small data-test='client-country' class='inline-flex items-center'>
-              <div class='up-icon h-[14px] w-[14px]'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  aria-hidden='true'
-                  viewBox='0 0 14 14'
-                  role='img'
-                >
-                  <path
-                    fill-rule='evenodd'
-                    d='M4.856 4.9c0 1.183.928 2.103 2.124 2.103 1.23 0 2.164-.907 2.162-2.102-.001-1.19-.93-2.096-2.154-2.098C5.79 2.801 4.856 3.72 4.856 4.9m2.14 9.1c-.09-.116-.17-.22-.25-.326-1.137-1.507-2.214-3.053-3.16-4.684-.517-.89-.996-1.802-1.328-2.779-.561-1.652-.181-3.133.9-4.453C3.998.737 5.123.181 6.449.032c2.35-.266 4.57 1.128 5.302 3.327.203.611.3 1.24.225 1.884-.06.51-.227.991-.418 1.465-.411 1.018-.947 1.973-1.52 2.91a49.947 49.947 0 01-2.96 4.284l-.08.097'
-                  ></path>
-                </svg>
-              </div>
-              &nbsp;
-              <strong>United States</strong>
-            </small>
-          </div>
+            &nbsp;
+            <strong className='font-normal'>Россия</strong>
+          </small>
         </div>
 
-        <div className='flex items-center gap-x-[29px]'>
-          <div className='flex items-center'>
+        <div className='inline-flex items-center gap-x-[29px]'>
+          <div className='inline-flex items-center'>
             <div className='up-icon mr-2 h-[10px] w-[13px] text-fontGrey'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -209,7 +185,7 @@ const Card = () => {
             </span>
           </div>
 
-          <div className='flex items-center'>
+          <div className='inline-flex items-center'>
             <div className='up-icon mr-2 h-[11px] w-[12px] text-fontGrey'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -229,26 +205,6 @@ const Card = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className='flex items-center'>
-        <div className='up-icon mr-2 h-[10px] w-[13px] text-fontGrey'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='13'
-            height='10'
-            viewBox='0 0 13 10'
-            fill='none'
-          >
-            <path
-              d='M6.5 0.5C3.54545 0.5 1.02227 2.366 0 5C1.02227 7.634 3.54545 9.5 6.5 9.5C9.45455 9.5 11.9777 7.634 13 5C11.9777 2.366 9.45455 0.5 6.5 0.5ZM6.5 8C4.86909 8 3.54545 6.656 3.54545 5C3.54545 3.344 4.86909 2 6.5 2C8.13091 2 9.45455 3.344 9.45455 5C9.45455 6.656 8.13091 8 6.5 8ZM6.5 3.2C5.51909 3.2 4.72727 4.004 4.72727 5C4.72727 5.996 5.51909 6.8 6.5 6.8C7.48091 6.8 8.27273 5.996 8.27273 5C8.27273 4.004 7.48091 3.2 6.5 3.2Z'
-              fill='currentColor'
-            />
-          </svg>
-        </div>
-        <span className='text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
-          Просмотров <span className='font-medium text-fontBlack'>68</span>
-        </span>
       </div>
 
       <button className='btn-primary mt-[25px] px-5'>Подробнее</button>

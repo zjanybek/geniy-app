@@ -180,7 +180,7 @@ const ModalInvite = () => {
             />
             <div className='group relative'>
               <span>
-                <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+                <div className='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 16 16'
@@ -229,7 +229,7 @@ const ModalInvite = () => {
               label='Почасовая оплата'
             />
             <span>
-              <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+              <div className='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 16 16'
@@ -253,7 +253,7 @@ const ModalInvite = () => {
               label='Бюджет не определен'
             />
             <span>
-              <div class='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
+              <div className='up-icon h-[16px] w-[16px] cursor-pointer text-greenDark'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 16 16'
