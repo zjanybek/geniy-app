@@ -736,18 +736,18 @@ const ExpertModal = ({ onClose }) => {
                 <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                   Языки:
                 </div>
-                <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                   <span className='text-fontBlack'>Русский:</span> родной язык
                 </div>
-                <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                   <span className='text-fontBlack'>Английский:</span>{' '}
                   разговорный язык
                 </div>
-                <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
                   <span className='text-fontBlack'>Китайский:</span> базовый
                   язык
                 </div>
-                <div className='text-15 leading-[1.86] tracking-[-0.3px] text-fontGrey'>
+                <div className='text-15 tracking-[-0.3px] text-fontGrey'>
                   <span className='text-fontBlack'>Испанский:</span> уровень
                   носителя
                 </div>
@@ -757,14 +757,14 @@ const ExpertModal = ({ onClose }) => {
                   Образование:
                 </div>
                 <div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     Программист-техник
                   </div>
                   <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                     Курский Государственный Политехнический Колледж (КГПК) 2011
                     - 2015
                   </div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     Бакалавр Инженер-программист
                   </div>
                   <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -797,13 +797,13 @@ const ExpertModal = ({ onClose }) => {
                   Период работы:
                 </div>
                 <div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     NF portal
                   </div>
                   <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                     Курск, Россия Главный дизайнер 2018 - по настоящее время
                   </div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     Art-Hall
                   </div>
                   <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
@@ -835,13 +835,13 @@ const ExpertModal = ({ onClose }) => {
                   Сертификаты:
                 </div>
                 <div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     Дизайнер сайтов на Tilda
                   </div>
                   <div className='mb-[17px] text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
                     Skillbox (14.07.2023) 1452 4451 4124
                   </div>
-                  <div className='mb-1 text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                  <div className='mb-[3px] text-15 leading-[1.33] tracking-[-0.3px] text-fontBlack'>
                     Дизайнер сайтов на Tilda
                   </div>
                   <div className='text-13 leading-[1.53] tracking-[-0.26px] text-fontGrey'>
