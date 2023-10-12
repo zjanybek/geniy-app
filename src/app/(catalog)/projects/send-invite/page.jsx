@@ -95,7 +95,7 @@ const page = () => {
               <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                 Комментарий к заявке
               </div>
-              <label className='mb-5 block text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+              <label className='mb-5 block max-w-[575px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                 Вы можете написать сообщение или уточнить детали, которые вы
                 считаете важными для заказчика.{' '}
               </label>
@@ -116,7 +116,7 @@ const page = () => {
               <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                 Срок выполнения
               </div>
-              <label className='mb-5 block text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+              <label className='mb-5 block max-w-[578px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                 Укажите, сколько времени вам потребуется, чтобы выполнить эту
                 работу. Будьте реалистичны и учтите все возможные факторы,
                 которые могут повлиять на сроки.
@@ -132,7 +132,7 @@ const page = () => {
               <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                 Стоимость работы
               </div>
-              <div className='mb-7 text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+              <div className='mb-7 max-w-[578px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                 Укажите вашу цену за выполнение данного задания. Выберите тип
                 стоимости, который вы хотели бы предложить заказчику:
               </div>
@@ -231,7 +231,7 @@ const page = () => {
                 <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                   Добавить файл
                 </div>
-                <div className='mb-5 text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+                <div className='mb-5 max-w-[578px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                   Вы можете прикрепить файлы, которые могут быть полезны для
                   исполнителя, например, чертежи, документы, образцы и т.д.
                 </div>
@@ -462,7 +462,7 @@ const page = () => {
                             </svg>
                           </div>
                           <strong className='font-normal text-fontBlack'>
-                            22 авг 2023
+                            Эксперт
                           </strong>
                         </div>
                       </div>

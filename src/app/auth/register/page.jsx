@@ -1,7 +1,8 @@
 'use client'
 
+import axiosDefault from 'axios'
 import { signIn } from 'next-auth/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import axios from '@/lib/axios'
 
@@ -12,7 +13,9 @@ const page = () => {
   const [errors, setErrors] = useState(null)
 
   const getToken = async () => {
-    await axios.get('/sanctum/csrf-cookie')
+    await axios.get(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/sanctum/csrf-cookie`
+    )
   }
 
   const handleRegister = async (e) => {
@@ -20,7 +23,7 @@ const page = () => {
 
     try {
       await getToken()
-      const res = await axios.post('/api/v1/register', {
+      const res = await axios.post('/register', {
         name: name,
         email: email,
         password: password

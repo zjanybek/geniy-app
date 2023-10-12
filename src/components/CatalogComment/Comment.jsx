@@ -13,7 +13,7 @@ const Comment = ({}) => {
           5.0
         </span>
       </div>
-      <div className='mb-3 text-15 font-medium leading-none tracking-[-0.6px] text-fontBlack'>
+      <div className='mb-3 text-15 font-medium leading-[1.33] tracking-[-0.6px] text-fontBlack'>
         Создать дизайн сайта визитки с каталогом
       </div>
       <div className='mb-[9px] text-12 leading-[1.33] tracking-[-0.48px] text-fontGrey'>

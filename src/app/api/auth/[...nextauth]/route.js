@@ -9,15 +9,16 @@ export const authOptions = {
       name: 'Credentials',
       credentials: {},
       async authorize(credentials, req) {
-        console.log(credentials)
         if (!credentials) return null
 
         const { email, password } = credentials
 
         try {
-          await axios.get('/sanctum/csrf-cookie')
+          await axios.get(
+            `${process.env.NEXT_PUBLIC_BACKEND_URL}/sanctum/csrf-cookie`
+          )
 
-          const res = await axios.post('/api/v1/login', {
+          const res = await axios.post('/login', {
             email: email,
             password: password
           })
@@ -44,7 +45,7 @@ export const authOptions = {
 
   callbacks: {
     async jwt({ token, user, account }) {
-      console.log('Token Callback', { token, user, account })
+      // console.log('Token Callback', { token, user, account })
 
       if (user) {
         token.user = user
@@ -54,12 +55,10 @@ export const authOptions = {
     },
 
     async session({ session, token, user }) {
-      console.log('Session Callback', { session, token, user })
+      // console.log('Session Callback', { session, token, user })
 
       if (token) {
         session.user = token.user
-
-        console.log(session)
       }
 
       return session

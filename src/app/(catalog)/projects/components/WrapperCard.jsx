@@ -85,7 +85,7 @@ export function WrapperCard({ children, id }) {
               </Link>
             </div>
 
-            <div className='px-[60px]'>
+            <div className='pl-[60px] pr-14'>
               <div className='flex gap-x-10'>
                 {/* Left */}
                 <div className='flex-auto'>
@@ -171,7 +171,7 @@ export function WrapperCard({ children, id }) {
                   </div>
 
                   <div className='mb-14'>
-                    <div className='max-w-[687px] text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
+                    <div className='text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
                       Специализируюсь на проектировании и дизайне сайтов со
                       сложным и нестандартным функционалом (сервисы, порталы,
                       крупные интернет-магазины и тп). <br />
@@ -254,7 +254,7 @@ export function WrapperCard({ children, id }) {
 
                   <div className='border-t border-[##E3E3E3] pb-9 pt-7'>
                     <div className='mb-[22px] text-17 font-medium leading-[1.77] tracking-[0.17px] text-fontBlack'>
-                      Необходимые навыки
+                      Документы и файлы
                     </div>
 
                     <div className='flex flex-col gap-y-[18px]'>

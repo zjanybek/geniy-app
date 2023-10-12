@@ -235,7 +235,7 @@ const page = () => {
 
               <div className='border-t border-[##E3E3E3] pb-9 pt-7'>
                 <div className='mb-[22px] text-17 font-medium leading-[1.77] tracking-[0.17px] text-fontBlack'>
-                  Необходимые навыки
+                  Документы и файлы
                 </div>
 
                 <div className='flex flex-col gap-y-[18px]'>

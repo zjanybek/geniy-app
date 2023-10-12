@@ -95,7 +95,7 @@ const page = () => {
               <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                 Комментарий к заявке
               </div>
-              <label className='mb-5 block text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+              <label className='mb-5 block max-w-[575px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                 Вы можете написать сообщение или уточнить детали, которые вы
                 считаете важными для заказчика.{' '}
               </label>
@@ -117,7 +117,7 @@ const page = () => {
                 <div className='mb-2 text-17 font-medium leading-[1.2] tracking-[-0.17px] text-fontBlack'>
                   Добавить файл
                 </div>
-                <div className='mb-5 text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
+                <div className='mb-5 max-w-[583px] text-15 leading-[1.33] tracking-[-0.15px] text-fontDarkGrey'>
                   Вы можете прикрепить файлы, которые могут быть полезны для
                   исполнителя, например, чертежи, документы, образцы и т.д.
                 </div>
@@ -191,7 +191,7 @@ const page = () => {
             <div className='sticky top-[140px] rounded-[30px] border border-[#DBDBDB] px-[30px] pb-[39px] pt-[17px]'>
               <div className='pb-7'>
                 <span className='inline-block text-13 leading-[2.76] tracking-[0.13px] text-greenDark'>
-                  Проект
+                  Вакансия
                 </span>
                 <div className='mb-[18px] text-17 leading-[1.17] tracking-[0.17px] text-fontBlack'>
                   Создание сайта образовательной организации - интернет-магазина
@@ -206,7 +206,7 @@ const page = () => {
                   href='/vacancies/1'
                   className='flex items-center text-15 leading-[1.06] tracking-[-0.6px] text-greenDark hover:underline'
                 >
-                  <span>Перейти на страницу проекта</span>
+                  <span>Перейти на страницу вакансии</span>
                   <div className='up-icon ml-[9px] h-[10px] w-[10px] text-greenDark'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -224,7 +224,7 @@ const page = () => {
                 <div className='mb-2.5 flex items-center justify-between gap-x-1'>
                   <div className='flex items-center'>
                     <span className='inline-block text-15 tracking-[0.15px] text-fontBlack'>
-                      Статус проекта
+                      Статус вакансии
                     </span>
                     <div className='up-icon ml-2 h-[16px] w-[16px] text-greenDark'>
                       <svg
@@ -251,7 +251,7 @@ const page = () => {
 
                 <div>
                   <div className='mb-2.5 text-15 leading-[2.4] tracking-[0.15px] text-fontBlack'>
-                    Условия проекта
+                    Условия вакансии
                   </div>
 
                   <div className='flex flex-col gap-y-5'>

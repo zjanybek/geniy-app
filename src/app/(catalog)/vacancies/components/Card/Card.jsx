@@ -16,7 +16,7 @@ const Card = () => {
 
   return (
     <WrapperCard id={1}>
-      <div className='card-project cursor-pointer py-[35px]'>
+      <div className='card-project cursor-pointer border-[#DBDBDB] py-[35px] [&:not(:last-child)]:border-b'>
         <div className='text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
           Опубликовано:{' '}
           <span className='text-13 font-medium tracking-[-0.52px] text-greenDark'>
@@ -97,7 +97,7 @@ const Card = () => {
 
         <div className='mt-[27px] flex items-center justify-between gap-2'>
           <div className='card-project__account-info-status'>
-            <small className='mr-[25px] inline-flex items-center text-15 leading-[16px] tracking-[-0.52px] text-fontBlack'>
+            <small className='mr-[25px] inline-flex items-center text-13 leading-[16px] tracking-[-0.52px] text-fontBlack'>
               <span className='mr-[7px] text-fontGrey'>Заказчик:</span>
               <div className='up-icon h-[14px] w-[14px] text-blueLight'>
                 <svg

@@ -4,8 +4,6 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
-import axios from '@/lib/axios'
-
 const page = () => {
   const [email, setEmail] = useState('aimettii333@yandex.r3')
   const [password, setPassword] = useState('12345678')
