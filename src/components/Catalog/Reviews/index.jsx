@@ -82,7 +82,7 @@ const Reviews = () => {
               // className='h-full'
             />
 
-            <span className='ml-2.5 text-17 font-medium leading-[0.94] tracking-[-0.68px] text-fontBlack'>
+            <span className='ml-2.5 text-17 font-medium leading-none tracking-[-0.68px] text-fontBlack'>
               5.0
             </span>
           </div>

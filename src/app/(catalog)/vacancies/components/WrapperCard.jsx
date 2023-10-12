@@ -18,8 +18,8 @@ export function WrapperCard({ children, id }) {
     setShowModal(true)
 
     const params = new URLSearchParams(searchParams)
-    params.set('profile', id)
-    router.replace(`/projects/?${params.toString()}`, { scroll: false })
+    params.set('vacancy', id)
+    router.replace(`/vacancies/?${params.toString()}`, { scroll: false })
   }
 
   const handleClose = () => {
@@ -27,8 +27,8 @@ export function WrapperCard({ children, id }) {
     setShowModal(false)
 
     const params = new URLSearchParams(searchParams)
-    params.delete('profile')
-    router.replace(`/projects/?${params.toString()}`, { scroll: false })
+    params.delete('vacancy')
+    router.replace(`/vacancies/?${params.toString()}`, { scroll: false })
   }
 
   return (
@@ -60,7 +60,7 @@ export function WrapperCard({ children, id }) {
                 </svg>
               </button>
               <Link
-                href='/projects/1'
+                href='/vacancies/1'
                 target='_blank'
                 className='ml-[19px] flex items-center gap-x-[6px]'
               >
@@ -317,7 +317,7 @@ export function WrapperCard({ children, id }) {
                     </div>
                   </div>
 
-                  <div className='border-t border-[##E3E3E3] pt-[18px]'>
+                  <div className='mb-10 border-t border-[##E3E3E3] pt-[18px]'>
                     <div>
                       <Reviews />
                     </div>
@@ -337,7 +337,45 @@ export function WrapperCard({ children, id }) {
                     </div>
                   </div>
 
-                  <div className='flex flex-col pt-[53px]'>
+                  <div className='pb-9'>
+                    <div className='mb-4 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                      Дополнительная информация
+                    </div>
+                    <div className='max-w-[687px] text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
+                      Специализируюсь на проектировании и дизайне сайтов со
+                      сложным и нестандартным функционалом (сервисы, порталы,
+                      крупные интернет-магазины и тп). <br />
+                      <div className='mb-6'></div>
+                      Помимо основной работы занимаюсь обучением дизайну сайтов
+                      (лендинг, визитка, магазин, проектирование интерфейсов,
+                      логика, юзабилити, Figma). <br />
+                      <div className='mb-6'></div>
+                      2023 г. - спикер на Фриланс-форуме "Цифровые воротнички".
+                      Выступала с докладом "Специфика работы с иностранными
+                      заказчиками"...
+                    </div>
+                    <a
+                      href='#'
+                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                    >
+                      <span className='mr-[6px]'>развернуть</span>
+                      <svg
+                        className='h-[6px] w-[10px]'
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='10'
+                        height='6'
+                        viewBox='0 0 10 6'
+                        fill='none'
+                      >
+                        <path
+                          d='M5.00737 6C4.90903 6 4.81808 5.9833 4.73451 5.94989C4.65093 5.91646 4.56981 5.85862 4.49115 5.77636L0.21385 1.30334C0.0712832 1.15425 0 0.974299 0 0.763497C0 0.552695 0.0712832 0.372748 0.21385 0.223658C0.356431 0.0745526 0.530966 0 0.737456 0C0.943945 0 1.11847 0.0745526 1.26104 0.223658L5.00737 4.14142L8.75369 0.223658C8.89626 0.0745526 9.06833 0 9.26991 0C9.47147 0 9.64355 0.0745526 9.78613 0.223658C9.92871 0.372748 10 0.555263 10 0.771202C10 0.98714 9.92871 1.16966 9.78613 1.31877L5.52358 5.77636C5.44493 5.85862 5.36381 5.91646 5.28022 5.94989C5.19665 5.9833 5.1057 6 5.00737 6Z'
+                          fill='currentColor'
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div className='flex flex-col border-t border-[#E3E3E3] pt-7'>
                     <div className='mb-[3px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
                       Часто задаваемые вопросы
                     </div>
@@ -445,10 +483,10 @@ export function WrapperCard({ children, id }) {
                                 />
                               </svg>
                             </div>
-                            <span>Бюджет</span>
+                            <span>Заработная плата</span>
                           </div>
                           <strong className='font-normal text-fontBlack'>
-                            15 000 ₽
+                            68 000 ₽ / месяц
                           </strong>
                         </div>
                       </div>
@@ -465,33 +503,10 @@ export function WrapperCard({ children, id }) {
                                 <path d='M5.28394 1.44306C5.08608 1.44306 4.92114 1.37321 4.78914 1.23349C4.65712 1.09377 4.59111 0.921555 4.59111 0.716854C4.59111 0.512141 4.65712 0.341486 4.78914 0.204891C4.92114 0.0682968 5.08608 0 5.28394 0H8.71303C8.91089 0 9.07582 0.0687729 9.20783 0.206319C9.33985 0.343865 9.40586 0.51559 9.40586 0.721493C9.40586 0.926193 9.33985 1.09763 9.20783 1.23581C9.07582 1.37398 8.91089 1.44306 8.71303 1.44306H5.28394ZM7.00007 10.3675C7.19672 10.3675 7.36103 10.2986 7.493 10.1608C7.62496 10.0229 7.69093 9.85209 7.69093 9.64833V6.45066C7.69093 6.24689 7.62442 6.07609 7.4914 5.93826C7.35837 5.80042 7.19354 5.7315 6.9969 5.7315C6.80024 5.7315 6.63593 5.80042 6.50396 5.93826C6.37201 6.07609 6.30603 6.24689 6.30603 6.45066V9.64833C6.30603 9.85209 6.37254 10.0229 6.50557 10.1608C6.63859 10.2986 6.80343 10.3675 7.00007 10.3675ZM6.99778 17C6.03547 17 5.13008 16.8085 4.28158 16.4255C3.43309 16.0425 2.69147 15.5218 2.05672 14.8633C1.42197 14.2048 0.9205 13.4351 0.552308 12.554C0.184103 11.673 0 10.7329 0 9.73368C0 8.73447 0.184236 7.79427 0.552709 6.91308C0.921194 6.0319 1.42279 5.26152 2.05748 4.60195C2.6922 3.94238 3.43377 3.42079 4.28221 3.03717C5.13064 2.65353 6.03606 2.46172 6.99848 2.46172C7.83584 2.46172 8.63018 2.60487 9.38151 2.89118C10.1328 3.17748 10.8112 3.58209 11.4165 4.10501L11.9808 3.51884C12.118 3.37637 12.2809 3.30513 12.4695 3.30513C12.6581 3.30513 12.821 3.37689 12.9582 3.52043C13.0954 3.66396 13.164 3.83366 13.164 4.02953C13.164 4.22539 13.0954 4.39457 12.9582 4.53706L12.3968 5.12006C12.8664 5.69794 13.251 6.36743 13.5506 7.12852C13.8502 7.88963 14 8.75786 14 9.73323C14 10.7329 13.8155 11.6734 13.4465 12.5549C13.0775 13.4363 12.5754 14.2061 11.9404 14.8643C11.3054 15.5224 10.5634 16.043 9.71454 16.4258C8.86566 16.8086 7.96007 17 6.99778 17ZM6.99797 15.4953C8.54044 15.4953 9.85159 14.9355 10.9314 13.816C12.0113 12.6965 12.5512 11.3357 12.5512 9.73376C12.5512 8.13181 12.0114 6.77009 10.932 5.64861C9.85246 4.52714 8.54148 3.9664 6.999 3.9664C5.45653 3.9664 4.14537 4.52696 3.06553 5.64807C1.9857 6.76919 1.44578 8.13073 1.44578 9.73269C1.44578 11.3346 1.98553 12.6956 3.06501 13.8155C4.1445 14.9354 5.45549 15.4953 6.99797 15.4953Z' />
                               </svg>
                             </div>
-                            <span>Срок выполнения</span>
+                            <span>Тип занятости</span>
                           </div>
                           <strong className='font-normal text-fontBlack'>
-                            14 дней
-                          </strong>
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className='flex items-center justify-between gap-x-1 text-15 leading-[1.06] tracking-[-0.3px] text-fontDarkGrey'>
-                          <div>
-                            <div className='up-icon mr-[6px] h-[16px] w-[16px] text-greenDark'>
-                              <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 14 16'
-                                fill='none'
-                              >
-                                <path
-                                  d='M9.12099 12.9839C8.59663 12.9839 8.1542 12.7973 7.79371 12.4242C7.43321 12.0511 7.25297 11.5944 7.25297 11.0541C7.25297 10.5138 7.43399 10.0578 7.79604 9.68637C8.1581 9.31488 8.6013 9.12914 9.12565 9.12914C9.65 9.12914 10.0924 9.31568 10.4529 9.68876C10.8134 10.0619 10.9937 10.5186 10.9937 11.0589C10.9937 11.5992 10.8126 12.0551 10.4506 12.4266C10.0885 12.7981 9.64534 12.9839 9.12099 12.9839ZM1.44578 16C1.05143 16 0.71188 15.8533 0.427128 15.5599C0.142376 15.2664 0 14.9165 0 14.5102V2.80408C0 2.39686 0.142376 2.04623 0.427128 1.75218C0.71188 1.45813 1.05143 1.31111 1.44578 1.31111H2.48164V0.727241C2.48164 0.523309 2.55031 0.351119 2.68766 0.210671C2.825 0.0702233 2.99227 0 3.18949 0C3.3903 0 3.55965 0.0702233 3.69752 0.210671C3.83539 0.351119 3.90433 0.523309 3.90433 0.727241V1.31111H10.0926V0.727241C10.0926 0.523309 10.1613 0.351119 10.2987 0.210671C10.436 0.0702233 10.6033 0 10.8005 0C11.0013 0 11.1707 0.0702233 11.3085 0.210671C11.4464 0.351119 11.5153 0.523309 11.5153 0.727241V1.31111H12.5512C12.9464 1.31111 13.2866 1.45813 13.572 1.75218C13.8573 2.04623 14 2.39686 14 2.80408V14.5102C14 14.9165 13.8573 15.2664 13.572 15.5599C13.2866 15.8533 12.9464 16 12.5512 16H1.44578ZM1.44578 14.5102H12.5512V6.2971H1.44578V14.5102ZM1.44578 4.98598H12.5512V2.80408H1.44578V4.98598Z'
-                                  fill='currentColor'
-                                />
-                              </svg>
-                            </div>
-                            <span>Дата сдачи проекта</span>
-                          </div>
-                          <strong className='font-normal text-fontBlack'>
-                            14 дней
+                            Полная
                           </strong>
                         </div>
                       </div>
@@ -502,6 +517,14 @@ export function WrapperCard({ children, id }) {
                     </div>
 
                     <div className='flex flex-col gap-y-5 pb-[30px]'>
+                      <div>
+                        <div className='flex items-center justify-between gap-x-1 text-15 leading-[1.06] tracking-[-0.3px] text-fontDarkGrey'>
+                          <span>Статус вакансии</span>
+                          <strong className='font-normal text-greenDark'>
+                            Открыта
+                          </strong>
+                        </div>
+                      </div>
                       <div>
                         <div className='flex items-center justify-between gap-x-1 text-15 leading-[1.06] tracking-[-0.3px] text-fontDarkGrey'>
                           <span>Количество заявок</span>
@@ -537,7 +560,7 @@ export function WrapperCard({ children, id }) {
                     </div>
 
                     <Link
-                      href='/projects/send-invite'
+                      href='/vacancies/send-invite'
                       className='btn-primary inline-flex h-10 w-full items-center justify-center px-5 tracking-[-0.6px]'
                     >
                       Отправить заявку

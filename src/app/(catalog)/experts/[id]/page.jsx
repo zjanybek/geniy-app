@@ -630,11 +630,11 @@ const page = () => {
                 </div>
 
                 <div className='border-t border-[#DBDBDB] pb-[35px] pt-[27px]'>
-                  <div className='mb-[25px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                  <div className='mb-8 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Дополнительная информация
                   </div>
                   <div>
-                    <div className='mb-[9px] text-15 font-medium leading-[1.33] tracking-[-0.3px] text-fontBlack'>
+                    <div className='mb-[11px] text-15 font-medium leading-none tracking-[-0.3px] text-fontBlack'>
                       Прошел что-то гениальное
                     </div>
                     <p className='text-15 leading-[1.33] tracking-[-0.3px] text-fontDarkGrey'>
@@ -667,9 +667,9 @@ const page = () => {
               </div>
 
               {/* right */}
-              <div className='border-l border-[#D9D9D9] px-[30px] py-[21px]'>
-                <div className='pb-[26px]'>
-                  <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+              <div className='border-l border-[#D9D9D9] px-[30px]'>
+                <div className='pb-[26px] pt-[30px]'>
+                  <div className='mb-5 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Специализация:
                   </div>
                   <div className='mb-3 text-15 font-normal leading-[1.06] tracking-[-0.6px] text-fontBlack'>
@@ -682,18 +682,18 @@ const page = () => {
                     UI / UX дизайн
                   </p>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-1.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9] pb-[26px] pt-[26px]'>
+                  <div className='mb-4 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Видеопрезентация:
                   </div>
                   <div className='h-[128px] w-full rounded-[15px] bg-[#D9D9D9]'></div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-[12px] text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9] pb-[26px] pt-[26px]'>
+                  <div className='mb-[22px] text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Верификация:
                   </div>
-                  <div className=''>
-                    <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
+                  <div className='mb-3'>
+                    <div className='flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                       Телефон
                       <div className='h-[14px] w-[15px] text-[#039DF7]'>
                         <svg
@@ -710,8 +710,8 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=''>
-                    <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
+                  <div className='mb-3'>
+                    <div className='flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                       Email
                       <div className='h-[14px] w-[15px] text-[#039DF7]'>
                         <svg
@@ -728,8 +728,8 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=''>
-                    <div className='mb-3 flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
+                  <div>
+                    <div className='flex items-center gap-x-[7px] text-15 leading-[1.06] tracking-[-0.6px] text-fontGrey'>
                       Оплата
                       <div className='h-[14px] w-[15px] text-[#039DF7]'>
                         <svg
@@ -747,8 +747,8 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9] pb-[26px] pt-[26px]'>
+                  <div className='mb-4 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Языки:
                   </div>
                   <div className='mb-3 text-15 tracking-[-0.3px] text-fontGrey'>
@@ -767,8 +767,8 @@ const page = () => {
                     носителя
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9]  pb-[26px] pt-[26px]'>
+                  <div className='mb-5 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Образование:
                   </div>
                   <div>
@@ -789,7 +789,7 @@ const page = () => {
 
                     <a
                       href='#'
-                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                      className='mt-[18px] flex items-center text-15 tracking-[-0.6px] text-greenDark'
                     >
                       <span className='mr-[6px]'>развернуть</span>
                       <svg
@@ -808,8 +808,8 @@ const page = () => {
                     </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9] pb-[26px] pt-[26px]'>
+                  <div className='mb-5 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Период работы:
                   </div>
                   <div>
@@ -827,7 +827,7 @@ const page = () => {
                     </div>
                     <a
                       href='#'
-                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                      className='mt-[18px] flex items-center text-15 tracking-[-0.6px] text-greenDark'
                     >
                       <span className='mr-[6px]'>развернуть</span>
                       <svg
@@ -846,8 +846,8 @@ const page = () => {
                     </a>
                   </div>
                 </div>
-                <div className='border-t border-[#D9D9D9] py-[18px] pb-[18px]'>
-                  <div className='mb-2.5 text-17 font-medium leading-[2.11] tracking-[0.17px] text-fontBlack'>
+                <div className='border-t border-[#D9D9D9] pb-[26px] pt-[26px]'>
+                  <div className='mb-5 text-17 font-medium leading-none tracking-[0.17px] text-fontBlack'>
                     Сертификаты:
                   </div>
                   <div>
@@ -865,7 +865,7 @@ const page = () => {
                     </div>
                     <a
                       href='#'
-                      className='mt-2.5 flex items-center text-15 tracking-[-0.6px] text-greenDark'
+                      className='mt-[18px] flex items-center text-15 tracking-[-0.6px] text-greenDark'
                     >
                       <span className='mr-[6px]'>развернуть</span>
                       <svg

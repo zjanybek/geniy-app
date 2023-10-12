@@ -194,19 +194,6 @@ const ModalInvite = () => {
                   </svg>
                 </div>
               </span>
-              {/* <div className='popaver-view max-w-[369px w-[369px] py-[20px] pl-[25px] pr-[20px] group-hover:visible group-hover:translate-x-[-50%] group-hover:translate-y-0 group-hover:opacity-100'>
-                <div className='mb-2 text-13 tracking-[-0.13px] text-fontBlack'>
-                  Фиксированная цена
-                </div>
-                <div className='mb-3 text-13 leading-[1.23] tracking-[-0.13px] text-fontGrey'>
-                  Вы заранее определяете конечную сумму, которую готовы
-                  заплатить за выполнение всего задания.
-                </div>
-                <div className='text-13 leading-[1.23] tracking-[-0.13px] text-fontGrey'>
-                  Хороший выбор для проектов с четко обозначенными задачами и
-                  сроками.
-                </div>
-              </div> */}
             </div>
           </div>
 

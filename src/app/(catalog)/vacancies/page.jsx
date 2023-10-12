@@ -30,7 +30,7 @@ const page = () => {
             Для Исполнителей
           </div>
           <h1 className='mb-[7px] font-secondFamily text-[40px] font-bold leading-[1.00] tracking-[-0.8px] text-fontBlack'>
-            Каталог проектов
+            Каталог вакансий
           </h1>
           <div className='flex items-center gap-x-2'>
             <div className='flex items-center'>
@@ -52,7 +52,7 @@ const page = () => {
             </div>
             <div className='flex items-center'>
               <span className='mr-[10px] text-12 tracking-[-0.48px] text-fontGrey'>
-                Каталог проектов
+                Каталог вакансий
               </span>
             </div>
           </div>

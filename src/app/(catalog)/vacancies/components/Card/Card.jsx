@@ -39,27 +39,19 @@ const Card = () => {
         <div className='mb-5 flex items-center gap-x-[50px]'>
           <div>
             <div className='mb-[3px] text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
-              Стоимость
+              Заработная плата
             </div>
             <div className='text-15 leading-[1.06] tracking-[-0.6px] text-fontBlack'>
-              <span className='font-medium text-greenDark'>1 500 ₽</span> /
-              проект
+              <span className='font-medium text-greenDark'>68 000 ₽</span> /
+              месяц
             </div>
           </div>
           <div>
             <div className='mb-[3px] text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
-              Срок
+              Тип занятости
             </div>
             <div className='text-15 leading-[1.06] tracking-[-0.6px] text-fontBlack'>
-              14 дней
-            </div>
-          </div>
-          <div>
-            <div className='mb-[3px] text-13 leading-[1.23] tracking-[-0.52px] text-fontGrey'>
-              Оплата
-            </div>
-            <div className='text-15 leading-[1.06] tracking-[-0.6px] text-fontBlack'>
-              Безопасная оплата
+              Полная
             </div>
           </div>
           <div>
