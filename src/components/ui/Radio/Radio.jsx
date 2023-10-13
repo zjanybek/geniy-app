@@ -2,7 +2,7 @@
 
 import styles from './radio.module.scss'
 
-const Radio = ({ id, label, name, value, onChange }) => {
+const Radio = ({ id, label, name, value, onChange, subtext }) => {
   return (
     <div className={styles.option}>
       <div className={styles.option__item}>

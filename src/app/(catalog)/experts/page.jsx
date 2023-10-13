@@ -87,15 +87,17 @@ const page = ({ params }) => {
                 <div className='experts-filters__experience-title'>
                   Опыт исполнителя
                 </div>
-                <Checkbox icon={true} id='c_1' label='Начинающий'>
-                  <img src='/images/experts/diamond-green.svg' alt='' />
-                </Checkbox>
-                <Checkbox icon={true} id='c_2' label='Продвинутый'>
-                  <img src='/images/experts/diamond-blue.svg' alt='' />
-                </Checkbox>
-                <Checkbox icon={true} id='c_3' label='Эксперт'>
-                  <img src='/images/experts/diamond-violet.svg' alt='' />
-                </Checkbox>
+                <div className='flex flex-col gap-y-3.5'>
+                  <Checkbox icon={true} id='c_1' label='Начинающий'>
+                    <img src='/images/experts/diamond-green.svg' alt='' />
+                  </Checkbox>
+                  <Checkbox icon={true} id='c_2' label='Продвинутый'>
+                    <img src='/images/experts/diamond-blue.svg' alt='' />
+                  </Checkbox>
+                  <Checkbox icon={true} id='c_3' label='Эксперт'>
+                    <img src='/images/experts/diamond-violet.svg' alt='' />
+                  </Checkbox>
+                </div>
               </div>
 
               <div className='experts-filters__body'>
@@ -126,7 +128,7 @@ const page = ({ params }) => {
                 <CatalogAccordion title='Стоимость часа работы'></CatalogAccordion>
 
                 <CatalogAccordion title='Язык'>
-                  <div className='experts-filters__language'>
+                  <div className='experts-filters__language flex flex-col gap-y-3.5'>
                     <Checkbox id='c_4' label='Русский' />
                     <Checkbox id='c_5' label='English' />
                     <Checkbox id='c_6' label='Spanish' />

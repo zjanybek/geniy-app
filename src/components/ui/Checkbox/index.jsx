@@ -2,7 +2,16 @@
 
 import styles from './checkbox.module.scss'
 
-const Checkbox = ({ id, selected, label, onChange, children, icon }) => {
+const Checkbox = ({
+  id,
+  selected,
+  label,
+  onChange,
+  children,
+  icon,
+  textColor,
+  variants
+}) => {
   const handleChange = (event) => {
     const { checked } = event.target
     console.log(checked)
@@ -22,7 +31,12 @@ const Checkbox = ({ id, selected, label, onChange, children, icon }) => {
       <label htmlFor={id} className={styles.label}>
         {icon && <span className={styles.icon}>{children}</span>}
         <span
-          className={`${styles.text} ${icon ? `${styles['text_change']}` : ''}`}
+          className={`
+          ${styles.text} 
+          ${icon ? `${styles['text_change']}` : ''} 
+          ${textColor === 'black' ? styles.text_black : ''}
+          ${variants === 'secondary' ? styles.text_secondary : ''}
+          `}
         >
           {label}
         </span>

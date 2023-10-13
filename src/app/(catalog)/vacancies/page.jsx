@@ -98,7 +98,7 @@ const page = () => {
                 <div className='mb-[19px] text-17 font-medium tracking-[-0.68px] text-fontBlack'>
                   Опыт исполнителя
                 </div>
-                <div>
+                <div className='flex flex-col gap-y-3.5'>
                   <Checkbox icon={true} id='c_1' label='Начинающий'>
                     <img src='/images/experts/diamond-green.svg' alt='' />
                   </Checkbox>
@@ -149,7 +149,7 @@ const page = () => {
                 <CatalogAccordion title='Стоимость часа работы'></CatalogAccordion>
 
                 <CatalogAccordion title='Срок проекта'>
-                  <div className='experts-filters__language'>
+                  <div className='experts-filters__language flex flex-col gap-y-3.5'>
                     <Checkbox id='p_1' label='Менее месяца' />
                     <Checkbox id='p_2' label='1 - 3 месяца' />
                     <Checkbox id='p_3' label='Более 3-х месяцев' />
@@ -157,7 +157,7 @@ const page = () => {
                 </CatalogAccordion>
 
                 <CatalogAccordion title='Язык'>
-                  <div className='experts-filters__language'>
+                  <div className='experts-filters__language flex flex-col gap-y-3.5'>
                     <Checkbox id='l_1' label='Русский' />
                     <Checkbox id='l_2' label='English' />
                     <Checkbox id='l_3' label='Spanish' />
