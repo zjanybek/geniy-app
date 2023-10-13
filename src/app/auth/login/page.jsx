@@ -11,22 +11,36 @@ const page = () => {
 
   const router = useRouter()
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault()
 
-    signIn('credentials', {
+    const { ok, error } = await signIn('credentials', {
       email: email,
       password: password,
       redirect: false
-    }).then(({ ok, error }) => {
-      if (ok) {
-        router.push('/')
-      } else {
-        console.log(JSON.parse(error))
-        setErrors(JSON.parse(error))
-        console.log(errors)
-      }
     })
+
+    if (ok) {
+      router.push('/')
+    } else {
+      console.log(JSON.parse(error))
+      setErrors(JSON.parse(error))
+      console.log(errors)
+    }
+
+    // signIn('credentials', {
+    //   email: email,
+    //   password: password,
+    //   redirect: false
+    // }).then(({ ok, error }) => {
+    //   if (ok) {
+    //     router.push('/')
+    //   } else {
+    //     console.log(JSON.parse(error))
+    //     setErrors(JSON.parse(error))
+    //     console.log(errors)
+    //   }
+    // })
   }
 
   return (
